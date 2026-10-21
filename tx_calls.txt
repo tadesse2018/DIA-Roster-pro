@@ -1,0 +1,37 @@
+3431:              <span className="text-[10px] uppercase text-slate-400 font-bold mr-0.5">{tx('ትምህርት ቤት (School)፡')}</span>
+3523:            {tx('🖥️ መተግበሪያ (App Mode)')}
+3544:                <span>{tx('ብርሃን ሁነታ (Light Mode)')}</span>
+3549:                <span>{tx('ጨለማ ሁነታ (Dark Mode)')}</span>
+3572:          {tx('ባለ ብዙ ዘርፍ የተማሪዎች መረጃ፣ የመምህራን ምዝገባ፣ የክፍል ትምህርት ዝርዝር፣ ውጤት እና ሮስተር ማውረጃና ማተሚያ መድረክ። ለተጠቃሚ ምቹና ተለዋዋጭ (Dynamic White-Label SaaS) ተደርጎ የተዘጋጀ።')}
+3586:            <span>{tx('ስርዓቱን ሞክር (Live Portal)')}</span>
+3598:            <span>{tx('ነጭ-መለያ ማበልጸጊያ (SaaS Config)')}</span>
+3610:            <span>{tx('እገዛ እና መረጃ (Help & Info)')}</span>
+3638:                        <span className={`text-[9px] sm:text-[10px] font-bold ${themeMode === 'dark' ? 'text-slate-400' : 'text-indigo-600/90'} uppercase block tracking-wider truncate`}>{tx('ተማሪዎች (Students)')}</span>
+3666:                        <span className={`text-[9px] sm:text-[10px] font-bold ${themeMode === 'dark' ? 'text-slate-400' : 'text-emerald-700'} uppercase block tracking-wider truncate`}>{tx('ውጤቶች (Grades)')}</span>
+3694:                        <span className={`text-[9px] sm:text-[10px] font-bold ${themeMode === 'dark' ? 'text-slate-400' : 'text-purple-700'} uppercase block tracking-wider truncate`}>{tx('መምህራን (Teachers)')}</span>
+3722:                        <span className={`text-[9px] sm:text-[10px] font-bold ${themeMode === 'dark' ? 'text-slate-400' : 'text-amber-700'} uppercase block tracking-wider font-mono truncate`}>{tx('አማካይ (Average)')}</span>
+3833:                            ? tx('የአስተዳዳሪ መግቢያ (Principal Portal)') 
+3835:                              ? tx('የመምህራን መግቢያ (Teacher Portal)') 
+3837:                                ? tx('የወላጅ/ተማሪ መግቢያ (Parent Portal)') 
+3838:                                : tx('የተቀናጀ የደህንነት መግቢያ በር (Unified Secure Portal)')
+3857:                            <p><strong>{tx('የተቀናጀ መግቢያ በር (Unified Portal)፦')}</strong> {tx('ስልክ ቁጥርዎን ወይም ኢሜልዎን ሲያስገቡ ስርዓቱ በራስ-ሰር የአካውንት አይነትዎን ለይቶ ወደ ትክክለኛው የስራ ገበታ ያስገባዎታል። (Enter your registered phone or email, and the system will automatically direct you to your authorized dashboard.)')}</p>
+3861:                                <p>{tx('ርዕሰ መምህር (Principal)፦ መምህራንን ለመመዝገብ፣ አጠቃላይ ሪፖርቶችን ለመመልከት እና ተለዋዋጭ መገለጫዎችን ለመቆጣጠር።')}</p>
+3864:                                <p>{tx('መምህር (Teacher)፦ የተማሪዎችን ውጤት መዛግብት በቀላሉ ለመሙላት እና ክትትል ለማድረግ።')}</p>
+3867:                                <p>{tx('ወላጅ / ተማሪ (Parent/Student)፦ የተማሪዎችን ውጤት ካርድ (Report Card) ለመመልከት እና በፒዲኤፍ ለማውረድ።')}</p>
+3967:                          <label className={`block text-[10px] font-black uppercase tracking-wider mb-1.5 ${themeMode === 'dark' ? 'text-indigo-300' : 'text-slate-600'}`}>📱 {tx("ስልክ ቁጥር ወይም ኢሜል (Phone or Email)")}:</label>
+3973:                              placeholder={tx("ለምሳሌ፡ 0912345678 ወይም ኢሜል (e.g. 0912345678 or Email)")}
+3988:                          <label className={`block text-[10px] font-black uppercase tracking-wider mb-1.5 ${themeMode === 'dark' ? 'text-indigo-300' : 'text-slate-600'}`}>🔑 {tx("የይለፍ ቃል (Password)")}:</label>
+4020:                            <span>{tx("በQR ኮድ በፍጥነት ግባ (Scan QR Code to Login)")}</span>
+4044:                              <span className="text-[11px] font-bold text-slate-700 dark:text-slate-300 select-none">{tx("እኔ ሮቦት አይደለሁም (CAPTCHA)")}</span>
+4067:                            : t(`በ${tx(visualRole)} አካውንት ግባ`, `Login as ${visualRole.toUpperCase()}`)}
+4178:                          <span className="text-[9px] font-bold text-slate-500">{tx('ይህንን መተግበሪያ ወደ Desktop App ቀይረው ይጠቀሙ። (Convert this app to a Desktop App.)')}</span>
+4185:                          {tx('ቀይር (Convert)')}
+4203:                        <span className={`${themeMode === 'dark' ? 'text-slate-400' : 'text-slate-500'} text-[10px] font-bold uppercase tracking-wider block`}>{tx('የገባው ተጠቃሚ (Current Session)')}</span>
+4224:                          <span>{tx('የተማሪ QR ስካነር (Scan QR)')}</span>
+4237:                        <span>{tx('የይለፍ ቃል ቀይር (Change Password)')}</span>
+4249:                        <span>{tx('ውጣ (Logout)')}</span>
+7579:                    <h2 className="text-xl font-black text-slate-900 dark:text-white">{tx('የቅርብ ጊዜ ማስታወቂያዎች (Latest Announcements)')}</h2>
+7581:                      {tx('የትምህርት ቤቱ መረጃዎችና መልእክቶች')}
+7605:                    <p className="text-slate-500 dark:text-slate-400 font-medium">{tx('በአሁኑ ጊዜ ምንም ማስታወቂያ የለም')}</p>
+7617:                    <h2 className="text-xl font-black text-slate-900 dark:text-white">{tx('ስለ አጠቃቀሙ መመሪያ (Usage Guide)')}</h2>
+7619:                      {tx('ስርዓቱን እንዴት መጠቀም እንደሚችሉ የሚያሳይ አጭር መግለጫ')}

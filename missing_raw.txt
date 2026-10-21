@@ -1,0 +1,378 @@
+src/App.tsx:118: (RAW) "ሀ": 'ha', "ሁ": 'hu', "ሂ": 'hi', "ሃ": 'ha', "ሄ": 'he', "ህ": 'h', "ሆ": 'ho',
+src/App.tsx:119: (RAW) "ለ": 'le', "ሉ": 'lu', "ሊ": 'li', "ላ": 'la', "ሌ": 'le', "ል": 'l', "ሎ": 'lo',
+src/App.tsx:120: (RAW) "ሐ": 'ha', "ሑ": 'hu', "ሒ": 'hi', "ሓ": 'ha', "ሔ": 'he', "ሕ": 'h', "ሖ": 'ho',
+src/App.tsx:121: (RAW) "መ": 'me', "ሙ": 'mu', "ሚ": 'mi', "ማ": 'ma', "ሜ": 'me', "ም": 'm', "ሞ": 'mo',
+src/App.tsx:122: (RAW) "ሠ": 'se', "ሡ": 'su', "ሢ": 'si', "ሣ": 'sa', "ሤ": 'se', "ሥ": 's', "ሦ": 'so',
+src/App.tsx:123: (RAW) "ረ": 're', "ሩ": 'ru', "ሪ": 'ri', "ራ": 'ra', "ሬ": 're', "ር": 'r', "ሮ": 'ro',
+src/App.tsx:124: (RAW) "ሰ": 'se', "ሱ": 'su', "ሲ": 'si', "ሳ": 'sa', "ሴ": 'se', "ስ": 's', "ሶ": 'so',
+src/App.tsx:125: (RAW) "ሸ": 'she', "ሹ": 'shu', "ሺ": 'shi', "ሻ": 'sha', "ሼ": 'she', "ሽ": 'sh', "ሾ": 'sho',
+src/App.tsx:126: (RAW) "ቀ": 'ke', "ቁ": 'ku', "ቂ": 'ki', "ቃ": 'ka', "ቄ": 'ke', "ቅ": 'k', "ቆ": 'ko',
+src/App.tsx:127: (RAW) "በ": 'be', "ቡ": 'bu', "ቢ": 'bi', "ባ": 'ba', "ቤ": 'be', "ብ": 'b', "ቦ": 'bo',
+src/App.tsx:128: (RAW) "ተ": 'te', "ቱ": 'tu', "ቲ": 'ti', "ታ": 'ta', "ቴ": 'te', "ት": 't', "ቶ": 'to',
+src/App.tsx:129: (RAW) "ቸ": 'che', "ቹ": 'chu', "ቺ": 'chi', "ቻ": 'cha', "ቼ": 'che', "ች": 'ch', "ቾ": 'cho',
+src/App.tsx:130: (RAW) "ኀ": 'ha', "ኁ": 'hu', "ኂ": 'hi', "ኃ": 'ha', "ኄ": 'he', "ኅ": 'h', "ኆ": 'ho',
+src/App.tsx:131: (RAW) "ነ": 'ne', "ኑ": 'nu', "ኒ": 'ni', "ና": 'na', "ኔ": 'ne', "ን": 'n', "ኖ": 'no',
+src/App.tsx:132: (RAW) "ኘ": 'nye', "ኙ": 'nyu', "ኚ": 'nyi', "ኛ": 'nya', "ኜ": 'nye', "ኝ": 'ny', "ኞ": 'nyo',
+src/App.tsx:133: (RAW) "አ": 'a', "ኡ": 'u', "ኢ": 'i', "ኣ": 'a', "ኤ": 'e', "እ": 'e', "ኦ": 'o',
+src/App.tsx:134: (RAW) "ከ": 'ke', "ኩ": 'ku', "ኪ": 'ki', "ካ": 'ka', "ኬ": 'ke', "ክ": 'k', "ኮ": 'ko',
+src/App.tsx:135: (RAW) "ኸ": 'he', "ኹ": 'hu', "ኺ": 'hi', "ኻ": 'ha', "ኼ": 'he', "ኽ": 'h', 'xo': 'ho',
+src/App.tsx:136: (RAW) "ወ": 'we', "ዉ": 'wu', "ዊ": 'wi', "ዋ": 'wa', "ዌ": 'we', "ው": 'w', "ዎ": 'wo',
+src/App.tsx:137: (RAW) "ዐ": 'a', "ዑ": 'u', "ዒ": 'i', "ዓ": 'a', "ዔ": 'e', "ዕ": 'e', "ዖ": 'o',
+src/App.tsx:138: (RAW) "ዘ": 'ze', "ዙ": 'zu', "ዚ": 'zi', "ዛ": 'za', "ዜ": 'ze', "ዝ": 'z', "ዞ": 'zo',
+src/App.tsx:139: (RAW) "ዠ": 'zhe', "ዡ": 'zhu', "ዢ": 'zhi', "ዣ": 'zha', "ዤ": 'zhe', "ዥ": 'zh', "ዦ": 'zho',
+src/App.tsx:140: (RAW) "የ": 'ye', "ዩ": 'yu', "ዪ": 'yi', "ያ": 'ya', "ዬ": 'ye', "ይ": 'y', "ዮ": 'yo',
+src/App.tsx:141: (RAW) "ደ": 'de', "ዱ": 'du', "ዲ": 'di', "ዳ": 'da', "ዴ": 'de', "ድ": 'd', "ዶ": 'do',
+src/App.tsx:142: (RAW) "ጀ": 'je', "ጁ": 'ju', "ጂ": 'ji', "ጃ": 'ja', "ጄ": 'je', "ጅ": 'j', "ጆ": 'jo',
+src/App.tsx:143: (RAW) "ገ": 'ge', "ጉ": 'gu', "ጊ": 'gi', "ጋ": 'ga', "ጌ": 'ge', "ግ": 'g', "ጎ": 'go',
+src/App.tsx:144: (RAW) "ጠ": 'te', "ጡ": 'tu', "ጢ": 'ti', "ጣ": 'ta', "ጤ": 'te', "ጥ": 't', "ጦ": 'to',
+src/App.tsx:145: (RAW) "ጨ": 'che', "ጩ": 'chu', "ጪ": 'chi', "ጫ": 'cha', "ጬ": 'che', "ጭ": 'ch', "ጮ": 'cho',
+src/App.tsx:146: (RAW) "ጰ": 'pe', "ጳ": 'pa', "ጵ": 'p', "ጶ": 'po',
+src/App.tsx:147: (RAW) "ጸ": 'tse', "ጹ": 'tsu', "ጺ": 'tsi', "ጻ": 'tsa', "ጼ": 'tse', "ፅ": 'ts', "ጾ": 'tso',
+src/App.tsx:148: (RAW) "ፀ": 'tse', "ፁ": 'tsu', "ፂ": 'tsi', "ፃ": 'tsa', "ፄ": 'tse', "ፆ": 'tso',
+src/App.tsx:149: (RAW) "ፈ": 'fe', "ፉ": 'fu', "ፊ": 'fi', "ፋ": 'fa', "ፌ": 'fe', "ፍ": 'f', "ፎ": 'fo',
+src/App.tsx:150: (RAW) "ፐ": 'pe', "ፑ": 'pu', "ፒ": 'pi', "ፓ": 'pa', "ፔ": 'pe', "ፕ": 'p', "ፖ": 'po',
+src/App.tsx:447: (RAW) return `${mins} ደቂቃ ከ ${s} ሰከንድ (${mins}m ${s}s)`;
+src/App.tsx:449: (RAW) return `${s} ሰከንድ (${s}s)`;
+src/App.tsx:1285: (RAW) const expectedName = `${s.name} ወላጅ (ክፍል ${s.grade}-${s.section})`;
+src/App.tsx:2042: (RAW) title: `የተማሪ ${foundStudent.name} ሪፖርት ካርድ (Report Card)`
+src/App.tsx:2132: (RAW) title: `የተማሪ ${student.name} የክትትል ሪፖርት (Attendance Record)`
+src/App.tsx:2367: (RAW) label: `${emoji} - ${acc.name} (${cleanPhone || acc.email}) [ይለፍ ቃል: ${acc.password}]`
+src/App.tsx:2385: (RAW) setAuthError(`🚨 ሲስተሙ ለደህንነት ሲባል ተቆልፏል። እባክዎ ለ ${formatBlockCooldownTime(blockCooldownSecs)} ይጠብቁ። (Rate limited. Wait ${formatBlockCooldownTime(blockCooldownSecs)})`);
+src/App.tsx:2413: (RAW) setTwoFactorError(`🚨 ሲስተሙ ተቆልፏል። እባክዎ ለ ${formatBlockCooldownTime(blockCooldownSecs)} ይጠብቁ።`);
+src/App.tsx:2463: (RAW) setAuthError(`🚨 ሲስተሙ ለደህንነት ሲባል ተቆልፏል። እባክዎ ለ ${formatBlockCooldownTime(blockCooldownSecs)} ይጠብቁ። (Rate limited. Wait ${formatBlockCooldownTime(blockCooldownSecs)})`);
+src/App.tsx:2471: (RAW) "❌ እባክዎ መጀመሪያ \"እኔ ሮቦት አይደለሁም\" ማረጋገጫውን (CAPTCHA) ይጫኑ! (Please complete CAPTCHA human verification!)"
+src/App.tsx:2519: (RAW) "🚨 3 ጊዜ የተሳሳተ ሙከራ! ሲስተሙ ለደህንነትዎ ሲባል ለ 30 ደቂቃዎች ተቆልፏል። (Too many failed attempts. Device locked for 30 minutes.)"
+src/App.tsx:2523: (RAW) setAuthError(`❌ የተሳሳተ ስልክ ቁጥር/ኢሜል ወይም የይለፍ ቃል! የቀረዎት ሙከራ፡ ${3 - nextFailCount} ጊዜ (Wrong credentials. Remaining attempts: ${3 - nextFailCount})`);
+src/App.tsx:2610: (RAW) "ይህ ተጠቃሚ በሲስተሙ ውስጥ አልተመዘገበም (This user is not registered in the school system)"
+src/App.tsx:2656: (RAW) "የአዲሱ ዓመት ሲስተም ኮድ ከአሁኑ ኮድ ጋር አንድ መሆን አይችልም! እባክዎ ይለውጡ። (New workspace ID must be different from current workspace ID)"
+src/App.tsx:2662: (RAW) "እባክዎ የአዲሱን የትምህርት ዘመን ስም ያስገቡ! (Please enter the name of the new academic year)"
+src/App.tsx:2751: (RAW) setTransitionSuccess(`🎉 ለአዲሱ የትምህርት ዘመን (${newYear}) የሲስተም ሽግግር በተሳካ ሁኔታ ተጠናቋል! አዲሱ ወርክስፔስ "${targetId}" ዝግጁ ነው። (System transition completed successfully!)`);
+src/App.tsx:2759: (RAW) setTransitionError(`❌ የትምህርት ዘመን በሚሸጋገርበት ወቅት ስህተት አጋጥሟል: ${err.message || String(err)}`);
+src/App.tsx:2776: (RAW) setWlError(`⚠️ ስህተት፡ የምዘና ውጤቶች ድምር ከ 100 ጋር እኩል መሆን አለበት! አሁን የተመዘገበው ድምር ${activeSum} ነው። እባክዎን ያስተካክሉ። (Assessment components must sum up to exactly 100! Currently: ${activeSum})`);
+src/App.tsx:2847: (RAW) setWlError(`⚠️ ሲስተም ስህተት፡ ${err.message || String(err)}`);
+src/App.tsx:2882: (RAW) "የሲስተሙ የዳታ ምትኬ ፋይል በተሳካ ሁኔታ ተዘጋጅቶ ወርዷል! (System backup exported successfully!)"
+src/App.tsx:2940: (RAW) setRestoreSuccess(`🎉 ዳታ በስኬት ተመልሷል! ${parsed.students.length} ተማሪዎች፣ ${parsed.teachers?.length || 0} መምህራን እና ${parsed.grades.length} ማርኮች ተጭነዋል። (Data restored successfully!)`);
+src/App.tsx:2946: (RAW) setRestoreError(`❌ የተሳሳተ ወይም የተበላሸ የምትኬ ፋይል! (Error: ${err.message || 'Invalid JSON backup format'})`);
+src/App.tsx:2975: (RAW) alert(`⚠️ ተማሪ "${newStudentName.trim()}" ቀደም ሲል በዚህ ክፍል (${newStudentGrade} ${newStudentSection}) ውስጥ ተመዝግቧል! (Student "${newStudentName.trim()}" is already registered in ${newStudentGrade} ${newStudentSection}!)`);
+src/App.tsx:2989: (RAW) "⚠️ እባክዎን ትክክለኛ የኢትዮጵያ ስልክ ቁጥር ያስገቡ! (ለምሳሌ፡ 0912345678 ወይም 0712345678)\n(Please enter a valid Ethiopian phone number, e.g. 0912345678 or 0712345678)"
+src/App.tsx:3026: (RAW) setPrincipalSuccessMsg(`✅ ተማሪው በተሳካ ሁኔታ ተመዝግቧል! ለወላጅ የኢሜል ማሳወቂያ ተልኳል (Student Registered! ID: ${randomId} & email dispatched)`);
+src/App.tsx:3154: (RAW) alert(`⚠️ ተማሪ "${editStudentMainName.trim()}" ቀደም ሲል በዚህ ክፍል (${editStudentMainGrade} ${editStudentMainSection}) ውስጥ ተመዝግቧል! (Student "${editStudentMainName.trim()}" is already registered in ${editStudentMainGrade} ${editStudentMainSection}!)`);
+src/App.tsx:3166: (RAW) "⚠️ እባክዎን ትክክለኛ የኢትዮጵያ ስልክ ቁጥር ያስገቡ! (ለምሳሌ፡ 0912345678 ወይም 0712345678)\n(Please enter a valid Ethiopian phone number, e.g. 0912345678 or 0712345678)"
+src/App.tsx:3250: (RAW) setTeacherErrorMsg(`❌ እባክዎን ትክክለኛ ውጤት ያስገቡ! (ኩዊዝ: 0-${quizMax}, ክፍል ስራ: 0-${cwMax}, የቤት ስራ: 0-${hwMax}, የቡድን ስራ: 0-${gwMax}, ፕሮጀክት: 0-${pwMax}, ተሳትፎ: 0-${cpMax}, ግማሽ ፈተና: 0-${midMax}, ማጠቃለያ ፈተና: 0-${finalMax})`);
+src/App.tsx:3283: (RAW) setTeacherSuccessMsg(`✅ ለተማሪ ${matchedStudent.name} በ ${selectedTeacherSubject} የ ${totalScore}% ውጤት በተሳካ ሁኔታ ተመዝግቧል! (Grade saved successfully!)`);
+src/App.tsx:3328: (RAW) setParentErrorMsg(`⚠️ ተማሪው አልተገኘም። እባክዎን ያስገቡት መታወቂያ ትክክል መሆኑን ያረጋግጡ። (Student not found. Please make sure you entered a valid ID.)`);
+src/App.tsx:3429: (RAW) ? t('☁️ Firebase በመገናኘት ላይ...', '☁️ Connecting to Firebase...')
+src/App.tsx:3431: (RAW) ? t('📶 ከመስመር ውጭ (በአካባቢው የተቀመጠ) • Offline (Local Cache)', '📶 Offline (Local Cache)')
+src/App.tsx:3433: (RAW) ? t(`❌ ፊርቤዝ አልተገናኘም፡ ${syncError}`, `❌ Firebase failed to connect: ${syncError}`)
+src/App.tsx:3434: (RAW) : t('☁️ Firebase Cloud Database ተገናኝቷል (Persistent)', '☁️ Firebase Cloud Database Connected (Persistent)')}
+src/App.tsx:3483: (RAW) "\n                \n                  ➕ አዲስ ትምህርት ቤት ጨምር (Add New School...)\n                "
+src/App.tsx:3911: (RAW) "\n                            ለደህንነት ጥበቃ ሲባል ተደጋጋሚ የተሳሳተ ሙከራ በመደረጉ ሲስተሙ ለ "
+src/App.tsx:3927: (RAW) "\n                            የደህንነት ማረጋገጫ ኮድ ወደ መለያዎ ተልኳል። (A secure access code has been generated for your role).\n                          "
+src/App.tsx:3972: (RAW) "\n                            አረጋግጥ (Verify & Enter)\n                          "
+src/App.tsx:4078: (RAW) ? t('ደህንነቱ በተጠበቀ መንገድ ግባ', 'Secure Sign In')
+src/App.tsx:4298: (RAW) "\n                              🟢 ሁሉም በስራ ላይ (Active status)\n                            "
+src/App.tsx:4623: (RAW) {/* የተማሪው ፕሮፋይል ፎቶ (Student Profile Photo) */}
+src/App.tsx:4626: (RAW) "\n                                    የተማሪው ፕሮፋይል ፎቶ (Profile Photo - Optional):\n                                  "
+src/App.tsx:4640: (RAW) "\n                                            \n                                              አዲስ ታብ ላይ ክፈት (Open in New Tab)\n                                            "
+src/App.tsx:4716: (RAW) "\n                                          \n                                            🗑️ ፎቶውን አጥፋ (Remove Photo)\n                                          "
+src/App.tsx:4727: (RAW) "\n                                \n                                  ➕ ተማሪ መዝግብ (Register Student)\n                                "
+src/App.tsx:4924: (RAW) "\n                                          በዚህ ክፍል የተመዘገበ ተማሪ አልተገኘም (No students registered in this grade)\n                                        "
+src/App.tsx:5107: (RAW) "\n                                  🔑 የይለፍ ቃል እና መለያዎች መቆጣጠሪያ (Credentials & Passwords)\n                                "
+src/App.tsx:5110: (RAW) "\n                                  በሲስተሙ ውስጥ የሚገኙ መምህራንን፣ ወላጆችን እና ርዕሰ መምህሩን መለያዎች እና የይለፍ ቃላት እዚህ መቆጣጠር ይችላሉ። ተጠቃሚዎች ቃላቸውን ሲቀይሩ እዚህ ይታያል።\n                                "
+src/App.tsx:5114: (RAW) "\n                                🔒 ማስታወሻ፡ ይህ መቆጣጠሪያ ለርዕሰ መምህሩ ብቻ የተፈቀደ የደህንነት ገጽ ነው።\n                              "
+src/App.tsx:5361: (RAW) "\n                                              \n                                                ይለፍ ቃል መልስ (Reset)\n                                              "
+src/App.tsx:5373: (RAW) "\n                                              \n                                                ቀይር (Edit)\n                                              "
+src/App.tsx:5417: (RAW) ? `እንኳን በደህና መጡ፣ የክፍል አላፊ መምህር ${currentTeacher.name}! 👨‍🏫`
+src/App.tsx:5464: (RAW) " የክፍል አላፊ ገፅ (የአቴንዳንስ እና የተማሪዎች መቆጣጠሪያ)\n                                  "
+src/App.tsx:5474: (RAW) "እንደ ክፍል አላፊ መምህርነትዎ የተማሪዎችዎን ዕለታዊ መገኘት (Attendance) ይሙሉ፣ አዲስ ተማሪ ይመዝግቡ እንዲሁም የክፍልዎን ሰሌዳና ሪፖርቶች ይከታተሉ።"
+src/App.tsx:5477: (RAW) "እዚህ ላይ በክፍል እና በሴክሽን በመለየት የተማሪዎችን ውጤት መሙላት፣ ማረም፣ ማስተካከል እና ማተም/ማውረድ ይችላሉ።"
+src/App.tsx:5580: (RAW) "\n                                    📌 ማሻሻያ፡ ውጤቱ የሚገናኘው ከተማሪው ID ጋር ብቻ ነው (Fixes Student Name typos)\n                                  "
+src/App.tsx:5827: (RAW) "\n                          \n                            ፈልግ\n                          "
+src/App.tsx:5876: (RAW) "※ የደህንነት መመሪያ፡ ወላጅ ማየት የሚችለው የራሱን ልጅ ውጤት ብቻ ነው። (Security policy: parents can only view their own child's report card.)"
+src/App.tsx:5883: (RAW) "ከእርስዎ የኢሜል አድራሻ ጋር የተገናኘ ተማሪ የለም። እባክዎን ርዕሰ መምህሩን ያነጋግሩ። (No student is linked to your email address.)"
+src/App.tsx:5925: (RAW) {/* Parent tab switchers (ውጤት, ማስታወቂያ, አቴንዳንስ) */}
+src/App.tsx:5968: (RAW) "\n                                      አትም (Print ID Card)\n                                    "
+src/App.tsx:5985: (RAW) " ማተሚያ ፎርማት (Print Report Card)\n                                          "
+src/App.tsx:6029: (RAW) "\n                                                    እስካሁን ምንም የውጤት መረጃ አልተመዘገበም (No grades entered yet)\n                                                  "
+src/App.tsx:6080: (RAW) "\n                                                በክፍል አላፊው የተሰጠ ምዘና (Homeroom Teacher Assessment)\n                                              "
+src/App.tsx:6132: (RAW) "\n                                    ያስገቡት መታወቂያ ቁጥር በስርዓቱ ውስጥ አልተገኘም።\n                                  "
+src/App.tsx:6168: (RAW) "\n                    ይህ ሲስተም ለተለያዩ ትምህርት ቤቶች ተሸጦ መተግበር እንዲችል ሙሉ በሙሉ ተለዋዋጭ (white-label) ሆኖ የተገነባ ነው። እዚህ ላይ የሚቀይሩት ማንኛውም የትምህርት ቤት ስም፣ መሪ ቃል፣ አርማ፣ ቀለማት እና የትምህርት አይነቶች በፖርታሉ፣ በምዝገባ ፎርሞች፣ በማርክ ሊስት እና በሮስተር ማተሚያ ላይ ወዲያውኑ ይንጸባረቃሉ!\n                  "
+src/App.tsx:6180: (RAW) "\n                        ኦፊሴላዊ የገበያ ማስተዋወቂያ መመሪያ (Official Platform Brochure)\n                      "
+src/App.tsx:6240: (RAW) "\n                        🌐 የትምህርት ቤት ወርክስፔስ መቆጣጠሪያ (Multi-School Workspace Controller)\n                        "
+src/App.tsx:6246: (RAW) "\n                        ይህ ሲስተም ባለብዙ-ተከራይ (Multi-Tenant) አርክቴክቸርን በመጠቀም የትምህርት ቤቶችን ዳታ ሙሉ በሙሉ ይለያል። እያንዳንዱ ትምህርት ቤት የየራሱ የሆነ ወርክስፔስ ኮድ አለው። በዚህም ምክንያት የአንዱ ትምህርት ቤት መረጃ (ተማሪዎች፣ ውጤቶች፣ አስተማሪዎችና አወቃቀሮች) ከሌላው ጋር በጭራሽ አይቀላቀልም!\n                      "
+src/App.tsx:6258: (RAW) "\n                          የአሁኑ ንቁ ወርክስፔስ (Active Workspace)\n                        "
+src/App.tsx:6273: (RAW) "\n                          ለዚህ ትምህርት ቤት የሚጋራው ቀጥተኛ ሊንክ (Shareable School URL)\n                        "
+src/App.tsx:6299: (RAW) "\n                          ይህንን ሊንክ ለሌሎች ትምህርት ቤቶች በማጋራት፣ የየራሳቸውን ወርክስፔስ ኮድ አስገብተው ሙሉ በሙሉ ገለልተኛ በሆነ መንገድ እንዲጠቀሙ ማድረግ ይችላሉ።\n                        "
+src/App.tsx:6306: (RAW) "\n                              🔗 አጭር ሊንክ ማመንጫ (Short Link Generator)\n                            "
+src/App.tsx:6339: (RAW) "\n                                \n                                  አዲስ ፍጠር (Clear)\n                                "
+src/App.tsx:6354: (RAW) "\n                                    በማመንጨት ላይ... (Generating...)\n                                  "
+src/App.tsx:6358: (RAW) "\n                                    ⚡ አጭር ሊንክ ፍጠር (Generate Short Link)\n                                  "
+src/App.tsx:6366: (RAW) "\n                                ረጅሙን የሲስተሙን ሊንክ ወደ አጭር እና ለማጋራት ቀላል ወደሆነ ሊንክ ይቀይራል። (Converts the long system URL to a short shareable link).\n                              "
+src/App.tsx:6378: (RAW) "\n                          አዲስ ወርክስፔስ መፍጠር / መቀየር (Create or Switch Workspace)\n                        "
+src/App.tsx:6388: (RAW) "\n                          ፊደላት፣ ቁጥሮች እና ሰረዝ (-) ብቻ መጠቀም ይችላሉ። ትንንሽ ፊደላት ብቻ ይፈቀዳሉ። (Lowercase alphanumeric letters and dashes only.)\n                        "
+src/App.tsx:6408: (RAW) setWorkspaceSuccessMsg(`ወደ "${target}" ወርክስፔስ በተሳካ ሁኔታ ተቀይሯል! የትምህርት ቤቱ መረጃ በመጫን ላይ ነው...`);
+src/App.tsx:6434: (RAW) "\n                      ⚙️ የተመዘገቡ ትምህርት ቤቶች ዝርዝር ማጽጃ (Workspace Registry Cleaner)\n                    "
+src/App.tsx:6437: (RAW) "\n                      እዚህ ጋር በስህተት የፈጠሯቸውን ወይም የማያስፈልጉ የተባዙ ትምህርት ቤቶችን ከመመዝገቢያ ዝርዝሩ ላይ ማስወገድ ይችላሉ። (You can remove unwanted or duplicate schools from this list registry.)\n                    "
+src/App.tsx:6532: (RAW) "ብራንዲንግ በተሳካ ሁኔታ ተቀይሯል! ሙሉ ሲስተሙ አሁን የእርስዎን ትምህርት ቤት ያንጸባርቃል። (Branding updated successfully!)"
+src/App.tsx:6608: (RAW) "። ይህ ሲቀየር በሪፖርት ካርዶች እና በማርክ ሊስቶች ላይ የሚወጣው ዘመን በራስ-ሰር ይስተካከላል። (Enter the current academic year, e.g., 2018 E.C. or 2019 E.C., to display on report cards)\n                      "
+src/App.tsx:6636: (RAW) "የድሮውን መረጃ ሳይነኩ ለአዲሱ ዓመት አዲስ ገለልተኛ የሲስተም ወርክስፔስ መፍጠሪያ (Create a new standalone workspace for the new year while keeping the old one safe)"
+src/App.tsx:6646: (RAW) ") መረጃ ሳይነካ እና ሳይሰርዝ፣ አዲስ ገለልተኛ ሲስተም (ወርክስፔስ) በራስ-ሰር ይፈጥራል። \n                        በቀጣይ አመት ወደ ድሮው ወርክስፔስ ("
+src/App.tsx:6694: (RAW) "ትናንሽ ፊደላት፣ ቁጥር እና ሰረዝ ብቻ ይፈቀዳል። (Lowercase letters, numbers, and dashes only)"
+src/App.tsx:6718: (RAW) "\n                            ብራንዲንግን ብቻ ይወስዳል። አዳዲስ ተማሪዎች፣ መምህራን እና ክፍሎች ሙሉ በሙሉ ከባዶ ይጀምራሉ። (Copy config/branding only. Fresh start.)\n                          "
+src/App.tsx:6738: (RAW) "\n                            ብራንዲንግ፣ መምህራን፣ ክፍሎች እና የተጠቃሚ አካውንቶችን ያሻግራል፤ ነገር ግን ተማሪዎች እና ውጤቶች ከባዶ ይጀምራሉ። (Copy branding, teachers, user accounts, and classes. Zero students.)\n                          "
+src/App.tsx:6759: (RAW) "\n                            ብራንዲንግ፣ መምህራን፣ ክፍሎች እና ተማሪዎችንም ያሻግራል፤ ነገር ግን ሁሉንም ውጤቶች እና መገኘት ባዶ (Reset) ያደርጋል። (Copy teachers, classes, and students list, but reset all grades and attendance.)\n                          "
+src/App.tsx:6775: (RAW) "\n                            በመሸጋገር ላይ... (Transitioning...)\n                          "
+src/App.tsx:6780: (RAW) "\n                            አዲሱን የትምህርት ዘመን ጀምር (Initialize New Academic Year)\n                          "
+src/App.tsx:6864: (RAW) " Logo will be used in reports and headers. (የተቋሙ አርማ በሪፖርቶች ላይ ይታያል)\n                        "
+src/App.tsx:6875: (RAW) "\n                        ትምህርት ቤቱ ውጤትን በሩብ ዓመት (Quarter) ወይስ በሴሚስተር (Semester) ብቻ እንደሚያሰላ እዚህ ይምረጡ። (Select whether results are evaluated by quarters or by semesters)\n                      "
+src/App.tsx:6919: (RAW) "\n                        የትምህርት ቤቱን ደረጃ እዚህ ይምረጡ። አንደኛ ደረጃ (ከ1-8ኛ ክፍል) ወይም ሁለተኛ ደረጃ/መሰናዶ (ከ9-12ኛ ክፍል)። ይህ ሲመረጥ መላው ሲስተም ተዛማጅ ክፍሎችን ብቻ ያሳያል። (Select grade range: 1-8 or 9-12)\n                      "
+src/App.tsx:6963: (RAW) "\n                        ተማሪዎች የሚማሩትን የትምህርት አይነቶች በክፍል ደረጃ መድበው ያስተዳድሩ።\n                      "
+src/App.tsx:7016: (RAW) placeholder={`አዲስ የትምህርት አይነት ለ ${wlSelectedGradeForSubjects}`}
+src/App.tsx:7028: (RAW) alert(`⚠️ የትምህርት አይነት "${val}" ቀደም ሲል በ ${wlSelectedGradeForSubjects} ተመዝግቧል!`);
+src/App.tsx:7042: (RAW) "\n                      \n                        ➕ ጨምር (Add)\n                      "
+src/App.tsx:7059: (RAW) "\n                    \n                        🔄 ይህንን ዝርዝር ለሁሉም ክፍሎች ገልብጥ (Copy to all grades)\n                    "
+src/App.tsx:7068: (RAW) "\n                        የማርክ ዝርዝር እንደየ ትምህርት አይነቶቹ ሊለያይ ይችላል። እዚህ ላይ ለአንድ የተወሰነ የትምህርት አይነት ወይም ለሁሉም እንደ አጠቃላይ መደበኛ (Default) የምዘና ክፍሎችን ማስተካከል ይችላሉ። "
+src/App.tsx:7272: (RAW) "ብራንዲንግ በተሳካ ሁኔታ ተቀይሯል! ሙሉ ሲስተሙ አሁን የእርስዎን ትምህርት ቤት ያንጸባርቃል። (Branding updated successfully!)"
+src/App.tsx:7307: (RAW) "\n                    ይህ ሲስተም ለተጠቃሚ ሲቀርብ ያለ ምንም የመረጃ መጥፋት ስጋት በነጻነት መስራት እንዲችል የሀገር ውስጥ ትምህርት ቤቶችን ፍላጎት መሰረት ባደረገ መልኩ "
+src/App.tsx:7309: (RAW) " ሆኖ የተገነባ ነው። ሁሉም መረጃዎች በብሮውዘርዎ ላይ በቋሚነት ይቀመጣሉ። ለተጨማሪ ጥንቃቄ የሲስተሙን መላ መረጃ (ተማሪዎች፣ አስተማሪዎች፣ ውጤቶች እና ብራንዲንግ) ወደ ኮምፒውተርዎ በፋይል መልክ መቅዳት (Backup ማውረድ) ወይም ቀደም ሲል ያወረዱትን ምትኬ መልሰው መጫን (Restore ማድረግ) ይችላሉ።\n                  "
+src/App.tsx:7342: (RAW) "\n                        የአሁኑን የትምህርት ቤት መረጃዎች በሙሉ በአንድ ደህንነቱ የተጠበቀ የኮምፒውተር ፋይል (.json) አድርገው ማውረድ። ይህንን ፋይል ለወደፊቱ ዳታ ለመመለስ መጠቀም ይችላሉ።\n                      "
+src/App.tsx:7361: (RAW) "\n                        ቀደም ሲል ያስቀመጡትን የትምህርት ቤት የዳታ ምትኬ ፋይል (.json) እዚህ በመጫን መላውን ሲስተም ወደነበረበት ይመልሱ።\n                      "
+src/App.tsx:7387: (RAW) " አዲስ የምትኬ ፋይል ሲጭኑ በአሁኑ ሰዓት በብሮውዘርዎ ላይ የተመዘገቡት የድሮ መረጃዎች በሙሉ በአዲሱ ፋይል ይተካሉ! ከመተካትዎ በፊት የአሁኑን ዳታ ምትኬ አውርደው ማስቀመጥዎን ያረጋግጡ።\n                  "
+src/App.tsx:7408: (RAW) "\n                  በተጠቃሚው ኮድ ውስጥ የተገኙትን ዋና ዋና ክፍተቶች እና ለምን ጎጂ እንደሆኑ በዝርዝር መርምረናል። በፕሮቶታይፑ ላይ ያደረግናቸውን ማሻሻያዎች ከዚህ በታች ያንብቡ።\n                "
+src/App.tsx:7554: (RAW) "\n                        \n                          ዝጋ (Close Analysis)\n                        "
+src/App.tsx:7804: (RAW) "\n                    \n                      ሰርዝ (Cancel)\n                    "
+src/App.tsx:7865: (RAW) "\n                    \n                      አስቀምጥ (Save Password)\n                    "
+src/App.tsx:7939: (RAW) "\n                      🏫 የትምህርት ቤቱ ስም - በእንግሊዝኛ (School Name - English) *\n                    "
+src/App.tsx:7963: (RAW) "\n                      🏫 የትምህርት ቤቱ ስም - በአማርኛ (School Name - Amharic)\n                    "
+src/App.tsx:7977: (RAW) "\n                      🎓 የትምህርት ደረጃ (School Level)\n                    "
+src/App.tsx:7992: (RAW) "\n                      🔑 የሲስተም መለያ ኮድ (Workspace ID / Short Code)\n                    "
+src/App.tsx:8002: (RAW) "\n                      ይህ ኮድ የአዲሱን ትምህርት ቤት የተማሪዎችና የውጤት ፋይል በተናጠል ለመቆለፍ የሚያገለግል የሲስተሙ ሚስጥራዊ መለያ ነው። (This is the unique system database namespace for isolating records.)\n                    "
+src/App.tsx:8020: (RAW) "\n                        📋 ከናሙና መረጃዎች ጋር ይነሳ? (Seed with sample demo data?)\n                      "
+src/App.tsx:8024: (RAW) "\n                      ካበሩት ትምህርት ቤቱ ሲፈጠር መፈተኛ ተማሪዎች፣ ክፍሎች እና መምህራን ተካተው ይፈጠራል። ካላበሩት ግን ሙሉ በሙሉ ባዶ የትምህርት ቤት ዳታቤዝ ይፈጠራል። (If checked, school will be populated with test students/classes. Unchecked creates a clean empty database.)\n                    "
+src/App.tsx:8037: (RAW) "\n                    \n                      ሰርዝ (Cancel)\n                    "
+src/App.tsx:8070: (RAW) "⚠️ የትምህርት ቤቱ መለያ ኮድ ቢያንስ 3 ፊደላት መሆን አለበት! (Workspace ID must be >= 3 chars)"
+src/App.tsx:8078: (RAW) setNewSchoolModalError(`⚠️ "${targetId}" የሚል መለያ ያለው ትምህርት ቤት ቀድሞ ተመዝግቧል! (A school with ID "${targetId}" already exists!)`);
+src/App.tsx:8142: (RAW) setNewSchoolModalError(`❌ ትምህርት ቤቱን በሚፈጥሩበት ጊዜ ስህተት አጋጥሟል: ${err.message || String(err)}`);
+src/App.tsx:8147: (RAW) "\n                    \n                      ትምህርት ቤቱን ፍጥር (Create School)\n                    "
+src/App.tsx:8190: (RAW) "እዚህ ጋር የተደጋገሙ ወይም በስህተት የፈጠሯቸውን ትምህርት ቤቶች ማጥፋት ይችላሉ። (Clean up duplicates or unused school databases)"
+src/App.tsx:8229: (RAW) "\n                                Active / ንቁ\n                              "
+src/App.tsx:8525: (RAW) "\n                    ይህንን የትምህርት ቤት ውጤት አስተዳደር ስርዓት (SaaS School System) በቀላሉ በኮምፒውተርዎ ላይ እንደ ራሱን የቻለ "
+src/App.tsx:8527: (RAW) " አድርገው በመጫን ያለ ኢንተርኔት አሳሽ (Chrome tabs) ቀጥታ በዴስክቶፕ አቋራጭ መጠቀም ይችላሉ።\n                  "
+src/App.tsx:8536: (RAW) " አማራጭ ፩፦ የዊንዶውስ መተግበሪያ ማስነሻ (Windows Launcher Script)\n                    "
+src/App.tsx:8539: (RAW) "\n                      ይህንን ማስነሻ ፋይል በማውረድ ኮምፒውተርዎ ላይ ደብል ክሊክ ሲያደርጉ ሲስተሙን እንደ standalone desktop app ይከፍትልዎታል።\n                    "
+src/App.tsx:8574: (RAW) " አማራጭ ፪፦ በአሳሽዎ ላይ መተግበሪያውን መጫን (PWA App Installation)\n                    "
+src/App.tsx:8577: (RAW) "\n                      በChrome ወይም Edge አሳሽ ሲጠቀሙ ከላይ በስተቀኝ የ \"Install\" ምልክት በመጫን ወይም በመሳሪያ አሞሌው ውስጥ "
+src/App.tsx:8582: (RAW) "\n                        Menu (ሦስቱ ነጥብ) ➡️ Save & Share ➡️ Install page as app\n                      "
+src/App.tsx:8586: (RAW) "\n                        Safari Share ➡️ Add to Home Screen ወይም Chrome Install App\n                      "
+src/App.tsx:8835: (RAW) "\n                         ይህ መታወቂያ በትምህርት ቤቱ መግቢያ በር ላይ ለሚገኘው የQR መግቢያ እና አቴንዳንስ መመዝገቢያ የሚያገለግል ነው።\n                       "
+src/App.tsx:8840: (RAW) "\n                           የርዕሰ መምህር ፊርማ (Principal Signature)\n                         "
+src/App.tsx:9576: (RAW) "\n                        \n                          ዝጋ (Close)\n                        "
+src/App.tsx:9754: (RAW) "\n                        የተማሪ የውጤት ካርድ • STUDENT REPORT CARD\n                      "
+src/App.tsx:9885: (RAW) "\n                                የውጤት ማጠቃለያ / PERFORMANCE SUMMARY\n                              "
+src/App.tsx:9933: (RAW) "\n                            📋 ምግባርና አቴንዳንስ (Conduct & Attendance)\n                          "
+src/App.tsx:10107: (RAW) " የትምህርት ውጤት ዝርዝር (List of Academic Achievements)\n                        "
+src/App.tsx:10239: (RAW) " የሚለውን ማብራትዎን ያረጋግጡ። ይህም የትምህርት ቤቱን አርማና ጌጦች በተሟላ ውበት ለማተም ይረዳል።\n                  "
+src/App.tsx:10362: (RAW) "\n              እባክዎን ትንሽ ይጠብቁ፤ የልጅዎ አቴንዳንስ መዝገብ ወደ ፒዲኤፍ እየተቀየረ ነው።\n            "
+src/App.tsx:10495: (RAW) {/* የተማሪው ፕሮፋይል ፎቶ (Student Profile Photo) */}
+src/App.tsx:10498: (RAW) "\n                  የተማሪው ፕሮፋይል ፎቶ (Profile Photo - Optional):\n                "
+src/App.tsx:10513: (RAW) "\n                            አዲስ ታብ ላይ ክፈት (Open in New Tab)\n                          "
+src/App.tsx:10589: (RAW) "\n                        \n                          🗑️ ፎቶውን አጥፋ (Remove Photo)\n                        "
+src/App.tsx:10605: (RAW) "\n                \n                  አስቀምጥ (Save Changes)\n                "
+src/App.tsx:10628: (RAW) ") ከሲስተሙ ሲሰረዝ ተያያዥነት ያላቸው ውጤቶችና መዛግብት በሙሉ ይወገዳሉ። ይህ ተግባር ሊመለስ የማይችል ነው።\n            "
+src/App.tsx:10772: (RAW) "\n                    * የተማሪዎችን የሪፖርት ካርድ እና ውጤት ማስተዳደሪያውን ለመክፈት ከላይ ያለውን የውጤት ፖርታል (Grade Tracker) ይመልከቱ።\n                  "
+src/App.tsx:10902: (RAW) "\n              በአሳሽዎ የደህንነት ጥበቃ ምክንያት ፒዲኤፍ ፋይሉ በራሱ ካልወረደ፣ እባክዎ ከታች ያለውን "
+src/components/AnnouncementSection.tsx:54: (RAW) setSuccessMsg(`✅ ማስታወቂያው በተሳካ ሁኔታ ተለጥፏል!`);
+src/components/AnnouncementSection.tsx:319: (RAW) "\n                ይህንን ማስታወቂያ ሲያጠፉ ከወላጆችና መምህራን ሰሌዳ ላይ ሙሉ በሙሉ ይወገዳል። ይህ ተግባር ወደ ነበረበት ሊመለስ አይችልም።\n              "
+src/components/ClassSetupSection.tsx:18: (RAW) { key: 'Monday', amh: "ሰኞ", eng: 'Monday' },
+src/components/ClassSetupSection.tsx:19: (RAW) { key: 'Tuesday', amh: "ማክሰኞ", eng: 'Tuesday' },
+src/components/ClassSetupSection.tsx:20: (RAW) { key: 'Wednesday', amh: "ረቡዕ", eng: 'Wednesday' },
+src/components/ClassSetupSection.tsx:21: (RAW) { key: 'Thursday', amh: "ሐሙስ", eng: 'Thursday' },
+src/components/ClassSetupSection.tsx:22: (RAW) { key: 'Friday', amh: "አርብ", eng: 'Friday' },
+src/components/ClassSetupSection.tsx:133: (RAW) setSuccessMsg(`✅ የ ${grade} - ${section} ክፍል የትምህርት መመዝገቢያ በተሳካ ሁኔታ ተፈጥሯል!`);
+src/components/ClassSetupSection.tsx:549: (RAW) "🎉 ሁሉም ክፍሎች የክፍል ኃላፊ መምህር ተመድቦላቸዋል! (All classes have assigned homeroom teachers)"
+src/components/ClassSetupSection.tsx:667: (RAW) "\n                ይህንን ክፍል ሲያጠፉ ተያያዥነት ያላቸው የትምህርት አይነቶች ውቅሮች ከሲስተሙ ሙሉ በሙሉ ይሰረዛሉ። ይህ ተግባር ወደ ነበረበት ሊመለስ አይችልም።\n              "
+src/components/ClassSetupSection.tsx:767: (RAW) "\n                        ☕ የሻይ እረፍት (Tea Break) — 10:45 AM - 11:15 AM (ከጠዋቱ 4:45 - 5:15)\n                      "
+src/components/ClassSetupSection.tsx:773: (RAW) "\n                        🍽️ የምሳ እረፍት (Lunch Break) — 12:45 PM - 2:00 PM (ከረፋዱ 6:45 - ከሰአት 8:00)\n                      "
+src/components/GradeRemindersSection.tsx:278: (RAW) const termLabel = isSemester ? `ሴሚስተር ${selectedTerm}` : `ሩብ ዓመት ${selectedTerm}`;
+src/components/GradeRemindersSection.tsx:319: (RAW) "ሁሉም ተማሪዎች ውጤት ተሞልቶላቸዋል! ማሳሰቢያ መላክ አያስፈልግም። (All students are fully graded! No reminders needed.)"
+src/components/GradeRemindersSection.tsx:326: (RAW) setBulkLogs([`[${new Date().toLocaleTimeString('am-ET')}] የጅምላ ማሳሰቢያ ተግባር ተጀምሯል... (Bulk reminder job initialized...)`]);
+src/components/GradeRemindersSection.tsx:342: (RAW) setBulkLogs(prev => [...prev, `[${new Date().toLocaleTimeString('am-ET')}] ✅ ሁሉም ማሳሰቢያዎች በተሳካ ሁኔታ ተልከው ተጠናቀዋል! (All reminders successfully sent!)`]);
+src/components/GradeRemindersSection.tsx:350: (RAW) const termLabel = isSemester ? `ሴሚስተር ${selectedTerm}` : `ሩብ ዓመት ${selectedTerm}`;
+src/components/GradeRemindersSection.tsx:355: (RAW) `[${new Date().toLocaleTimeString('am-ET')}] ለአስተማሪ/ተማሪ ${target.student.name} ወላጅ (${parentEmail}) በመላክ ላይ...`
+src/components/GradeRemindersSection.tsx:383: (RAW) `  └─ ✅ በተሳካ ሁኔታ ተልኳል (Mail sent successfully)`
+src/components/GradeRemindersSection.tsx:390: (RAW) setBulkLogs(prev => [...prev, `  └─ ❌ መላክ አልተሳካም (Failed to send): ${err}`]);
+src/components/GradeRemindersSection.tsx:412: (RAW) "\n              የውጤት መግለጫ ወላጆች ማሳሰቢያ (Grade Submission Reminders)\n            "
+src/components/GradeRemindersSection.tsx:416: (RAW) "\n            በዚህ ክፍለ ጊዜ (ሩብ ዓመት/ሴሚስተር) ለአንዳንድ የትምህርት አይነቶች ውጤት ያልተሞላላቸውን ተማሪዎች ዝርዝር በመለየት፣ ለወላጆቻቸው በጅምላ ወይም በግል የኢሜይል የውጤት ማሳሰቢያዎችን ለመላክ ይጠቀሙበት።\n          "
+src/components/GradeRemindersSection.tsx:434: (RAW) {isSemester ? `ሴሚስተር ${t}` : `Q${t}`}
+src/components/GradeRemindersSection.tsx:531: (RAW) {`ሰላም ጤና ይስጥልን፣
+src/components/GradeRemindersSection.tsx:533: (RAW) ይህ ማሳሰቢያ የተላከው ከ${schoolConfig.nameAmh} ነው። ልጅዎ [የተማሪ ስም] ([ክፍል] - [ሴክሽን]) ለየሩብ ዓመቱ/ሴሚስተሩ መመዝገብ የሚገባቸው የትምህርት ውጤቶች ገና ሙሉ በሙሉ አልተጠናቀቁም።
+src/components/GradeRemindersSection.tsx:535: (RAW) 📌 ያልተመዘገቡ የትምህርት አይነቶች (Missing Subjects)፡
+src/components/GradeRemindersSection.tsx:536: (RAW) • [የቀሩ የትምህርት አይነቶች ዝርዝር]
+src/components/GradeRemindersSection.tsx:538: (RAW) ውጤቶቹ እንደተጠናቀቁ በወላጅ ፖርታል (Parent Portal) ላይ የሚለቀቁ መሆኑን እንገልጻለን። መምህራን ውጤቶቹን በፍጥነት እንዲያጠናቅቁ ርዕሰ መምህሩ ክትትል እያደረጉ ይገኛሉ።
+src/components/GradeRemindersSection.tsx:540: (RAW) ክብር እና ምስጋና፣
+src/components/GradeRemindersSection.tsx:541: (RAW) የ${schoolConfig.nameAmh} አስተዳደር
+src/components/GradeRemindersSection.tsx:661: (RAW) "\n            በተመረጠው ማጣሪያ መሰረት ምንም ተማሪ አልተገኘም። ሁሉም ተማሪዎች ሙሉ ውጤት ተሞልቶላቸው ሊሆን ይችላል!\n          "
+src/components/GradeRemindersSection.tsx:706: (RAW) "\n                        🟢 ሁሉም ተሞልቷል (Complete)\n                      "
+src/components/GradeRemindersSection.tsx:779: (RAW) "\n                    የጅምላ ማሳሰቢያ መላኪያ ኮንሶል (Bulk Email Console)\n                  "
+src/components/GradeTrackerSection.tsx:49: (RAW) "መስከረም", "ጥቅምት", "ህዳር", "ታኅሣሥ", "ጥር", "የካቲት",
+src/components/GradeTrackerSection.tsx:50: (RAW) "መጋቢት", "ሚያዝያ", "ግንቦት", "ሰኔ", "ሐምሌ", "ነሐሴ", "ጳጉሜ"
+src/components/GradeTrackerSection.tsx:86: (RAW) const ethMonth = ETHIOPIAN_MONTHS[ethMonthIndex] || "መስከረም";
+src/components/GradeTrackerSection.tsx:89: (RAW) const ecFormatted = `${ethMonth} ${ethDay} ቀን ${ethYear} ዓ.ም`;
+src/components/GradeTrackerSection.tsx:140: (RAW) { key: 'Monday', amh: "ሰኞ", eng: 'Monday' },
+src/components/GradeTrackerSection.tsx:141: (RAW) { key: 'Tuesday', amh: "ማክሰኞ", eng: 'Tuesday' },
+src/components/GradeTrackerSection.tsx:142: (RAW) { key: 'Wednesday', amh: "ረቡዕ", eng: 'Wednesday' },
+src/components/GradeTrackerSection.tsx:143: (RAW) { key: 'Thursday', amh: "ሐሙስ", eng: 'Thursday' },
+src/components/GradeTrackerSection.tsx:144: (RAW) { key: 'Friday', amh: "አርብ", eng: 'Friday' },
+src/components/GradeTrackerSection.tsx:367: (RAW) "⚠️ እባክዎን ትክክለኛ የኢትዮጵያ ስልክ ቁጥር ያስገቡ! (ለምሳሌ፡ 0912345678 ወይም 0712345678)\n(Please enter a valid Ethiopian phone number)"
+src/components/GradeTrackerSection.tsx:382: (RAW) alert(`⚠️ ተማሪ "${newStudentName.trim()}" ቀደም ሲል በዚህ ክፍል (${targetGrade} ${targetSection}) ውስጥ ተመዝግቧል! (Student "${newStudentName.trim()}" is already registered in ${targetGrade} ${targetSection}!)`);
+src/components/GradeTrackerSection.tsx:405: (RAW) setRegSuccessMsg(`✅ ተማሪው በተሳካ ሁኔታ ተመዝግቧል! መታወቂያው፡ ${randomId} ነው (Student Registered! ID: ${randomId})`);
+src/components/GradeTrackerSection.tsx:879: (RAW) setWeightError(`⚠️ የክፍፍሉ አጠቃላይ ድምር ${totalWeight}% ነው። እባክዎ ድምሩ በትክክል 100% መሙላቱን ያረጋግጡ። (Total sum is ${totalWeight}%. It must be exactly 100%.)`);
+src/components/GradeTrackerSection.tsx:1155: (RAW) "ውጤት ለመሰረዝ ፍቃድ የለዎትም። ይህንን ማስተማር የሚችለው ያንን የትምህርት አይነት የሚያስተምረው መምህር ብቻ ነው። (You do not have permission to delete this grade. Only the teaching teacher can do this.)"
+src/components/GradeTrackerSection.tsx:1162: (RAW) "ውጤቱ የጸደቀ ስለሆነ መሰረዝ አይቻልም። (This grade is approved and locked. It cannot be deleted.)"
+src/components/GradeTrackerSection.tsx:1170: (RAW) description: `${studentName} የተባለውን ተማሪ የ${selectedSubject} የክፍለ ጊዜ/ሩብ ዓመት ${selectedTerm === 'annual' ? 1 : selectedTerm} ውጤት በቋሚነት መሰረዝ ይፈልጋሉ? ይህ ድርጊት ከተረጋገጠ በኋላ ወደ ነበረበት መመለስ አይቻልም።`,
+src/components/GradeTrackerSection.tsx:1194: (RAW) description: `በክፍል ${selectedGrade}-${selectedSection} ውስጥ ለሚገኙ ተማሪዎች በሙሉ የ${selectedSubject} የክፍለ ጊዜ/ሩብ ዓመት ${termToFilter} ውጤቶችን ማጽደቅ ይፈልጋሉ? ይህም መምህራን ውጤቱን እንዳይቀይሩ ይቆልፋል።`,
+src/components/GradeTrackerSection.tsx:1218: (RAW) "ውጤት ለመሰረዝ ፍቃድ የለዎትም። ይህንን ማስተማር የሚችለው ያንን የትምህርት አይነት የሚያስተምረው መምህር ብቻ ነው። (You do not have permission to delete these grades. Only the teaching teacher can do this.)"
+src/components/GradeTrackerSection.tsx:1239: (RAW) description: `በክፍል ${selectedGrade}-${selectedSection} ውስጥ ለሚገኙ ተማሪዎች በሙሉ የ${selectedSubject} የክፍለ ጊዜ/ሩብ ዓመት ${termToFilter} ውጤቶችን መሰረዝ/ማጥፋት ይፈልጋሉ? ይህ ድርጊት ወደኋላ የማይመለስ እና ሁሉንም የክፍሉን ውጤቶች የሚያጠፋ ነው።`,
+src/components/GradeTrackerSection.tsx:1258: (RAW) "ውጤት ለማስገባት/ለማስተካከል ፍቃድ የለዎትም። ይህንን ማስተማር የሚችለው ያንን የትምህርት አይነት የሚያስተምረው መምህር ብቻ ነው። (You do not have permission to edit/save. Only the teaching teacher can do this.)"
+src/components/GradeTrackerSection.tsx:1284: (RAW) "ውጤት ለማስገባት/ለማስተካከል ፍቃድ የለዎትም። ይህንን ማስተማር የሚችለው ያንን የትምህርት አይነት የሚያስተምረው መምህር ብቻ ነው። (You do not have permission to edit/save. Only the teaching teacher can do this.)"
+src/components/GradeTrackerSection.tsx:1300: (RAW) "እባክዎን ትክክለኛ ውጤት ያስገቡ! (Quiz: 0-100, CW: 0-100, HW: 0-100, Mid: 0-100, Final: 0-100)"
+src/components/GradeTrackerSection.tsx:1311: (RAW) "❌ ይህ ውጤት የጸደቀ ስለሆነ ማሻሻል አይቻልም። (This grade is approved and locked. It cannot be edited.)"
+src/components/GradeTrackerSection.tsx:1440: (RAW) "ፒዲኤፍ ፋይሉ በመዘጋጀት ላይ ነው... እባክዎ ጥቂት ሰኮንዶች ይጠብቁ (Generating high-resolution PDF... Please wait)"
+src/components/GradeTrackerSection.tsx:1474: (RAW) "ቀጥታ ፒዲኤፍ ማውረዱ ዘግይቷል፤ ነገር ግን ትክክለኛውንና የተስተካከለውን ፒዲኤፍ ለማግኘት አሁን በሚመጣው የህትመት ገጽ ላይ \"Save as PDF\" (ፒዲኤፍ አድርገህ አስቀምጥ) የሚለውን ይምረጡ። (Direct PDF render timed out. For a perfect high-resolution document, we are opening the native print dialog. Please choose \"Save as PDF\" as the destination.)"
+src/components/GradeTrackerSection.tsx:1566: (RAW) onRequestManualPdfLink(blobUrl, finalFilename, `የተማሪ መግለጫ ካርድ (${filename})`);
+src/components/GradeTrackerSection.tsx:1727: (RAW) onRequestManualPdfLink(blobUrl, finalFilename, `የክፍል ሪፖርት / ውጤት ሰሌዳ (${filename})`);
+src/components/GradeTrackerSection.tsx:1747: (RAW) setPdfError(`ፒዲኤፍ ማውረድ አልተቻለም (Could not download PDF): ${errMsg}`);
+src/components/GradeTrackerSection.tsx:2379: (RAW) "\n                🖨️ የህትመት እይታ እና ቅንብሮች (Print Preview & Page Setup)\n              "
+src/components/GradeTrackerSection.tsx:2558: (RAW) "የሁሉም ክፍሎች ዕለታዊ አቴንዳንስ ማጠቃለያ ሪፖርት / All Classes Daily Attendance Summary Report"
+src/components/GradeTrackerSection.tsx:2728: (RAW) else if (unmarked < classStudents.length) statusText = `🟡 በከፊል የተጠራ (${classStudents.length - unmarked}/${classStudents.length})`;
+src/components/GradeTrackerSection.tsx:3371: (RAW) {/* CONTROLS: CLASS, SECTION & SUBJECT DROPDOWN BUTTONS (በሴክሽን፣ በክፍል እናበትምህርት አይነት ድሮፕ ዳውን በተን) */}
+src/components/GradeTrackerSection.tsx:3470: (RAW) ? `የ${selectedSubject} መምህር - የውጤት መሙያ እና ማስተካከያ ፍቃድ`
+src/components/GradeTrackerSection.tsx:3492: (RAW) "በመምህሩ ፍላጎት እና በት/ቤቱ መመሪያ መሰረት የእያንዳንዱን የውጤት መስክ ከፍተኛ ማርክ ማስተካከያ (Quiz, Mid, Final, etc.)"
+src/components/GradeTrackerSection.tsx:3571: (RAW) {/* PRINT & DOWNLOAD BUTTONS (ማውረጃ እና ማተሚያ) */}
+src/components/GradeTrackerSection.tsx:3699: (RAW) "በዚህ ክፍል እና ሴክሽን ውስጥ የተመዘገበ ተማሪ አልተገኘም (No students in this Class & Section yet)"
+src/components/GradeTrackerSection.tsx:3963: (RAW) "ይህ ውጤት የጸደቀ ስለሆነ ማሻሻል አይቻልም። (This grade is approved and locked. It cannot be edited.)"
+src/components/GradeTrackerSection.tsx:4015: (RAW) "\n                        በአዲስ ታብ ለመክፈት እዚህ ይጫኑ (Open in New Tab) ↗️\n                      "
+src/components/GradeTrackerSection.tsx:4022: (RAW) "\n                      እያንዳንዱ ተማሪ በሁሉም የትምህርት አይነቶች ያመጣው ውጤት ከ100 ተሰልቶ በዝርዝር ቀርቧል። የተማሪውን "
+src/components/GradeTrackerSection.tsx:4024: (RAW) "➡️ ቀሪ ቀናት (Absents) ኮለመንን ጨምሮ ሙሉውን ሮስተር ለማየት ሰንጠረዡን ወደ ቀኝ ያንሸራትቱት ወይም ያሸብልሉት (Scroll right to see all columns)。"
+src/components/GradeTrackerSection.tsx:4033: (RAW) "\n                        ✍️ ፊርማ ማስተካከያ (Signatures Setup)\n                      "
+src/components/GradeTrackerSection.tsx:4262: (RAW) "\n                        📅 ሲስተም አውቶማቲክ የቀን መቁጠሪያ (Dual Calendar System)\n                      "
+src/components/GradeTrackerSection.tsx:4319: (RAW) "\n                          🕵️‍♂️ የርዕሰ መምህር የክትትል ሰሌዳ (Principal Attendance Monitor)\n                        "
+src/components/GradeTrackerSection.tsx:4389: (RAW) "\n                                🔍 ምንም ክፍል አልተገኘም (No matching classes found)\n                              "
+src/components/GradeTrackerSection.tsx:4415: (RAW) "\n                                  🔴 ስም አልተጠራም\n                                "
+src/components/GradeTrackerSection.tsx:4422: (RAW) "\n                                      🟢 ስም ተጠርቷል\n                                    "
+src/components/GradeTrackerSection.tsx:4478: (RAW) "\n                                      ክፍሉን ይፈትሹ 🔍 (Inspect)\n                                    "
+src/components/GradeTrackerSection.tsx:4644: (RAW) "የዕለቱን የአቴንዳንስ መረጃ ማጽዳት ይፈልጋሉ? (Are you sure you want to clear attendance for this date?)"
+src/components/GradeTrackerSection.tsx:4736: (RAW) {/* PRESENT BUTTON (✔ ራይ) */}
+src/components/GradeTrackerSection.tsx:4754: (RAW) {/* ABSENT BUTTON (✘ ኤክስ) */}
+src/components/GradeTrackerSection.tsx:4772: (RAW) {/* EXCUSED BUTTON (📝 ፈቃድ) */}
+src/components/GradeTrackerSection.tsx:4802: (RAW) "\n                                      ✓ ያለ (Present)\n                                    "
+src/components/GradeTrackerSection.tsx:4808: (RAW) "\n                                      ✗ የለለ (Absent)\n                                    "
+src/components/GradeTrackerSection.tsx:4814: (RAW) "\n                                      ✏ ያስፈቀደ (Excused)\n                                    "
+src/components/GradeTrackerSection.tsx:4959: (RAW) "\n                      ➕ ተማሪ መዝግብ (Register Student)\n                    "
+src/components/GradeTrackerSection.tsx:5036: (RAW) "\n                              በዚህ ክፍል የተመዘገበ ተማሪ የለም (No students registered yet)\n                            "
+src/components/GradeTrackerSection.tsx:5242: (RAW) "ይህ ገፅ ወደ ፒዲኤፍ የሚቀየረው ትክክለኛው የካርድ ቅጽ ነው። (Exact document view for PDF export)"
+src/components/GradeTrackerSection.tsx:5279: (RAW) "\n                          በመዘጋጀት ላይ... (Generating PDF...)\n                        "
+src/components/GradeTrackerSection.tsx:5486: (RAW) {/* PAGE 1: OUTER SIDE (የውጭው ገጽ - የፊትና የጀርባ ሽፋን) */}
+src/components/GradeTrackerSection.tsx:5500: (RAW) {/* Left Half: BACK COVER (የጀርባ ሽፋን) */}
+src/components/GradeTrackerSection.tsx:5506: (RAW) "\n                              የውጤት መግለጫና የማርክ አሰጣጥ ደንብ\n                            "
+src/components/GradeTrackerSection.tsx:5546: (RAW) " ማንኛውም ተማሪ ዜሮ (0) ማርክ ሊሰጠው አይገባም። ምክንያቱም ተማሪው ምንም ዓይነት ሥራ አልሠራም ማለት ስለሆነ። ተማሪው በትምህርት ቀናት በሙሉ ካልተገኘና የተሰጡትንም ሥራዎች ካልሠራ \"Ab\" (Absent) ተብሎ ይጻፋል::\n                            "
+src/components/GradeTrackerSection.tsx:5556: (RAW) "\n                              የወላጅ/የአሳዳጊ መግለጫና ክትትል (PARENT ENGAGEMENT)\n                            "
+src/components/GradeTrackerSection.tsx:5559: (RAW) "\n                              የተማሪዎች ውጤታማነት በትምህርት ቤትና በቤት ውስጥ በሚደረግ የጋራ ጥረትና ክትትል ላይ የተመሰረተ ነው። ወላጆች የተማሪዎችን የዕለት ከዕለት የትምህርት ዝግጅት、ስነ-ምግባርና መገኘት እንዲከታተሉ በአክብሮት እናሳስባለን።\n                            "
+src/components/GradeTrackerSection.tsx:5603: (RAW) {/* Right Half: FRONT COVER (የፊት ገጽ) */}
+src/components/GradeTrackerSection.tsx:5781: (RAW) {/* PAGE 2: INNER SIDE (የውስጥ ገጽ - የማርክ ዝርዝርና አስተያየት) */}
+src/components/GradeTrackerSection.tsx:5793: (RAW) "\n                                የትምህርት ዓይነቶች ውጤት ዝርዝር\n                              "
+src/components/GradeTrackerSection.tsx:5859: (RAW) "\n                                    ድምር (Total Sum)\n                                  "
+src/components/GradeTrackerSection.tsx:5884: (RAW) "\n                                    አማካይ (Average)\n                                  "
+src/components/GradeTrackerSection.tsx:5900: (RAW) "\n                                    ደረጃ (Class Rank)\n                                  "
+src/components/GradeTrackerSection.tsx:5956: (RAW) "\n                              📅 የቀሪ ቀናት ማጠቃለያ / ATTENDANCE SUMMARY\n                            "
+src/components/GradeTrackerSection.tsx:5994: (RAW) "\"የላቀና እጅግ አስደሳች ውጤት ነው፤ ለነበረው ተከታታይ ትጋት ትልቅ አድናቆት ይገባዋል። በቀጣይም እንዲበረታታ።\""
+src/components/GradeTrackerSection.tsx:6093: (RAW) " የትምህርት ውጤት ዝርዝር (List of Academic Achievements)\n                        "
+src/components/GradeTrackerSection.tsx:6613: (RAW) "\n                ይህንን ተማሪ ሲያጠፉ የልጁ መገለጫ፣ የፈተና/የምዘና ውጤቶች፣ የአይዲ መረጃ እና የወላጅ ትስስር ከሲስተሙ ሙሉ በሙሉ ይሰረዛሉ። ይህ ተግባር ሊመለስ አይችልም።\n              "
+src/components/GradeTrackerSection.tsx:6655: (RAW) " እባክዎን የእያንዳንዱን የምዘና ዘርፍ ከፍተኛ ማርክ (Max Mark) በትምህርት ቤትዎ መመሪያ መሰረት ያስተካክሉ። "
+src/components/PerformanceDashboard.tsx:267: (RAW) termLabel: isSemester ? `${term}ኛ ሴሚስተር` : `${term}ኛ ሩብ ዓመት`,
+src/components/PerformanceDashboard.tsx:380: (RAW) {dataObj.studentsList.length > 5 ? ` እና ሌሎች ${dataObj.studentsList.length - 5}...` : ''}
+src/components/PerformanceDashboard.tsx:401: (RAW) "\n              የተማሪዎች ውጤት አፈጻጸም ዳሽቦርድ (Academic Performance)\n            "
+src/components/PerformanceDashboard.tsx:405: (RAW) " ተማሪዎችን የውጤት ስርጭት፣ የእድገት ሁኔታና ጠንካራ/ደካማ ጎን በአሃዝ እና በግራፍ ይከታተሉ።\n            "
+src/components/PerformanceDashboard.tsx:423: (RAW) {isSemester ? `${t}ኛ ሴሚስተር` : `${t}ኛ ሩብ ዓመት`}
+src/components/PerformanceDashboard.tsx:535: (RAW) "\n              ውጤታቸው በተለያዩ ደረጃዎች ውስጥ የሚገኝ ተማሪዎችን ስርጭት ያሳያል። ስማቸውን ለማየት የአሞሌዎቹ ላይ ያንዣብቡ።\n            "
+src/components/PerformanceDashboard.tsx:570: (RAW) "\n              የዚህ ክፍል ተማሪዎች በተለያዩ የትምህርት አይነቶች ያላቸውን አማካይ ውጤት ያነጻጽሩ።\n            "
+src/components/PerformanceDashboard.tsx:620: (RAW) "\n                የአንድን ተማሪ ውጤት ከክፍሉ አማካይና ከልጁ አጠቃላይ አማካይ ጋር በየሩብ ዓመቱ ያነጻጽሩ።\n              "
+src/components/PerformanceDashboard.tsx:655: (RAW) name={`${selectedSubject} ውጤት`}
+src/components/PerformanceDashboard.tsx:738: (RAW) "\n                ከምዘና 1 እስከ ምዘና 4 በውጤታቸው ላይ የላቀ ብልጫ ያሳዩ ተማሪዎች።\n              "
+src/components/PerformanceDashboard.tsx:770: (RAW) "\n                አማካይ ውጤታቸው ከ50% በታች የሆኑ ወይም የወደቁባቸው የትምህርት ክፍሎች የበዙ።\n              "
+src/components/PerformanceDashboard.tsx:809: (RAW) "\n            የአስተማሪ ትንታኔ ማስታወሻ (Instructor's Analytics Action Pad)\n          "
+src/components/PerformanceDashboard.tsx:812: (RAW) "\n            እነዚህ የስታቲስቲክስ መረጃዎች በቀጥታ ከተመዘገቡት የልጅዎን ማርክ ሊስቶች የተቀመሩ ናቸው። ደካማ ጎን የታየባቸውን ተማሪዎች ለይተው በማውጣት ማጠናከሪያ (Tutorial) ለመስጠት፣ ወላጆችን ለማነጋገር፣ ወይም የክፍል አፈጻጸሙን ደረጃ ለማሳደግ ይጠቀሙባቸው።\n          "
+src/components/PrincipalAnalytics.tsx:123: (RAW) አማካይ_ውጤት: avg, // Amharic label for tooltips and charts
+src/components/PrincipalAnalytics.tsx:160: (RAW) { name: 'A (90-100%)', የተማሪዎች_ብዛት: aCount, range: '90-100%', color: '#10b981' },
+src/components/PrincipalAnalytics.tsx:161: (RAW) { name: 'B (80-89%)', የተማሪዎች_ብዛት: bCount, range: '80-89%', color: '#3b82f6' },
+src/components/PrincipalAnalytics.tsx:162: (RAW) { name: 'C (70-79%)', የተማሪዎች_ብዛት: cCount, range: '70-79%', color: '#f59e0b' },
+src/components/PrincipalAnalytics.tsx:163: (RAW) { name: 'D (60-69%)', የተማሪዎች_ብዛት: dCount, range: '60-69%', color: '#ec4899' },
+src/components/PrincipalAnalytics.tsx:164: (RAW) { name: 'F (<60%)', የተማሪዎች_ብዛት: fCount, range: '<60%', color: '#ef4444' }
+src/components/PrincipalAnalytics.tsx:210: (RAW) አማካይ_ውጤት: avg,
+src/components/PrincipalAnalytics.tsx:270: (RAW) "\n              📊 ትንተና እና ማጠቃለያ (School Performance Analytics)\n            "
+src/components/PrincipalAnalytics.tsx:276: (RAW) "\n            በተቋሙ ውስጥ የሚገኙ ተማሪዎች የትምህርት ውጤት ሁኔታን በተለያዩ አመልካቾች የሚገመግም የማጠቃለያ ክፍል\n          "
+src/components/PrincipalAnalytics.tsx:297: (RAW) {isSemester ? `ሴሚስተር ${t} (Semester ${t})` : `ሩብ ዓመት ${t} (Quarter ${t})`}
+src/components/PrincipalAnalytics.tsx:663: (RAW) "\n                    ከላይ ማጣሪያዎችን በመጠቀም ትምህርቶችን ለይተው መፈተሽ ይችላሉ። ውጤታቸው ዝቅተኛ የሆኑ ክፍሎችን በመለየት ከተግባር መምህራን ጋር ምክክር ያድርጉ።\n                  "
+src/components/QRScannerModal.tsx:137: (RAW) "ካሜራውን መክፈት አልተቻለም። እባክዎን የካሜራ ፈቃድ መፍቀድዎን ያረጋግጡ። (Unable to open camera. Please ensure camera permissions are granted.)"
+src/components/QRScannerModal.tsx:247: (RAW) message: `ይህ መለያ ወይም የQR ኮድ "${studentId.substring(0, 40)}${studentId.length > 40 ? '...' : ''}" በሲስተሙ ውስጥ አልተመዘገበም። እባክዎ በትክክል መመዝገቡን ያረጋግጡ። (This QR code/value is not registered in the school database. Login is restricted only to registered Principals, Teachers, Parents, and Students.)`,
+src/components/QRScannerModal.tsx:264: (RAW) message: `የQR ኮዱ ፎርማት ልክ አይደለም። የተማሪ መታወቂያ በ 'ID-' መጀመር አለበት። ያገኙት እሴት: "${studentId.substring(0, 30)}${studentId.length > 30 ? '...' : ''}" (The QR code format is invalid. School student IDs must start with 'ID-'. Scanned value: "${studentId.substring(0, 30)}${studentId.length > 30 ? '...' : ''}")`,
+src/components/QRScannerModal.tsx:287: (RAW) message: `ተማሪ መታወቂያ "${studentId}" በሲስተሙ ውስጥ አልተገኘም። እባክዎ በትክክል መመዝገቡን ያረጋግጡ። (Student ID "${studentId}" was not found in the student database. Please check registration.)`,
+src/components/QRScannerModal.tsx:309: (RAW) ? `የዛሬ አቴንዳንስ ቀደም ብሎ ተመዝግቧል! (Attendance already marked for today!)`
+src/components/QRScannerModal.tsx:310: (RAW) : `የዛሬ መገኘት (Attendance) በተሳካ ሁኔታ ተመዝግቧል! (Attendance successfully marked for today!)`,
+src/components/QRScannerModal.tsx:461: (RAW) "\n                * ማሳሰቢያ፡ መተግበሪያውን በአዲስ ታብ (New Tab) ላይ ከፍተው የካሜራ ፈቃድ በመስጠት ያለ ምንም እንከን መጠቀም ይችላሉ። (Note: Open in a new tab to bypass iframe camera security blocks.)\n              "
+src/components/QRScannerModal.tsx:589: (RAW) "\n                          በ4 ሰከንድ ውስጥ በራሱ ዳግም ይጀምራል... (Auto-resuming in 4s...)\n                        "
+src/components/QRScannerModal.tsx:634: (RAW) "\n                    እነዚህን QR ኮዶች በሌላ ስልክ ስካን ማድረግ ወይም **ክሊክ በማድረግ** በቀጥታ ሲሙሌት አድርገው መግባት ይችላሉ። (Scan these QRs, or simply **click any card** to instantly simulate a scan!)\n                  "
+src/components/SchoolInfoModal.tsx:62: (RAW) "ተቋሙ በ1990 ዓ.ም ተመስርቶ በስነ-ምግባር የታነጹ ዜጎችን በማፍራት ላይ ይገኛል። (Established in 1998, we have been producing well-disciplined citizens.)"
+src/components/SchoolInfoModal.tsx:75: (RAW) "ጥራት ያለው ትምህርት በመስጠት ብቁና ተወዳዳሪ ተማሪዎችን ማፍራት። (To provide quality education and produce competent students.)"
+src/components/SchoolInfoModal.tsx:88: (RAW) "ከትምህርት ሚኒስቴር ሙሉ ዕውቅና የተሰጠው (Fully Accredited by the Ministry of Education)"
+src/components/SimulatedEmailOutbox.tsx:53: (RAW) "\n              ተማሪ ሲመዘገብ ለወላጅ በራስ-ሰር የሚላኩ የኢሜል ማሳወቂያዎች መከታተያ (Simulated automated outbox for parent notification triggers)\n            "
+src/components/SimulatedEmailOutbox.tsx:92: (RAW) "\n            በPrincipal ወይም በTeacher ክፍል ውስጥ አዲስ ተማሪ በተሳካ ሁኔታ ሲመዘገብ፣ ለወላጅ በራስ-ሰር የሚላከው የኢሜል ማሳወቂያ እዚህ ላይ በቀጥታ ይፈጠራል!\n          "
+src/components/SimulatedEmailOutbox.tsx:97: (RAW) "የወላጅ ኢሜል ባይሞላም ሲስተሙ በራስ-ሰር አስመስሎ ይልካል። (Always simulates even if parent email is left blank!)"
+src/components/SimulatedEmailOutbox.tsx:153: (RAW) "\n                            ደርሷል (Delivered)\n                          "
+src/components/SimulatedEmailOutbox.tsx:158: (RAW) "\n                            በመላክ ላይ... (Sending)\n                          "
+src/components/SimulatedEmailOutbox.tsx:219: (RAW) "\n                              ይህ የኢሜል ማሳወቂያ ሲሙሌሽን ማሳያ ሲሆን ተማሪ ሲመዘገብ የሚላክበትን ትክክለኛ ሁኔታ ያሳያል።\n                              "
+src/components/TeacherSection.tsx:189: (RAW) message: `⚠️ ለአንድ ክፍል ለአንድ የትምህርት አይነት ከአንድ በላይ መምህር መመደብ አይቻልም!\n\nክፍል፡ ${alloc.grade} - ${alloc.section}\nየትምህርት አይነት፡ ${sub}\nአስቀድሞ የተመደበ መምህር፡ ${matchingTeacher.name}\n\n(Cannot assign multiple teachers for "${sub}" in ${alloc.grade} - ${alloc.section}. Teacher "${matchingTeacher.name}" is already assigned!)`
+src/components/TeacherSection.tsx:241: (RAW) "እባክዎን ቢያንስ አንድ የክፍልና ሴክሽን ምደባ ያስገቡ (Please add at least one class and section allocation)"
+src/components/TeacherSection.tsx:250: (RAW) "⚠️ የክፍል አላፊ መምህር ከአንድ ሴክሽን በላይ መመደብ አይችልም! እባክዎን የክፍል ምደባዎችን ወደ አንድ ያሳንሱ። (A homeroom teacher cannot be assigned to more than one section!)"
+src/components/TeacherSection.tsx:259: (RAW) "⚠️ የክፍል አላፊ መምህር በትክክል አንድ ክፍልና ሴክሽን ብቻ መመደብ አለበት! (A homeroom teacher must have exactly one class and section allocation!)"
+src/components/TeacherSection.tsx:287: (RAW) alert(`⚠️ መምህር "${name.trim()}" ቀደም ሲል በሲስተሙ ውስጥ ተመዝግቧል! (Teacher "${name.trim()}" is already registered!)`);
+src/components/TeacherSection.tsx:292: (RAW) alert(`⚠️ ይህ የስልክ ቁጥር (${phone.trim()}) በሌላ መምህር ተመዝግቧል! (This phone number is already registered!)`);
+src/components/TeacherSection.tsx:319: (RAW) setSuccessMsg(`✅ መምህር ${name} በተሳካ ሁኔታ ተመዝግቧል! መታወቂያው፡ ${randomId} ነው`);
+src/components/TeacherSection.tsx:374: (RAW) "እባክዎን ቢያንስ አንድ የክፍልና ሴክሽን ምደባ ያስገቡ (Please add at least one class and section allocation)"
+src/components/TeacherSection.tsx:383: (RAW) "⚠️ የክፍል አላፊ መምህር ከአንድ ሴክሽን በላይ መመደብ አይችልም! እባክዎን የክፍል ምደባዎችን ወደ አንድ ያሳንሱ። (A homeroom teacher cannot be assigned to more than one section!)"
+src/components/TeacherSection.tsx:392: (RAW) "⚠️ የክፍል አላፊ መምህር በትክክል አንድ ክፍልና ሴክሽን ብቻ መመደብ አለበት! (A homeroom teacher must have exactly one class and section allocation!)"
+src/components/TeacherSection.tsx:575: (RAW) "\n              የክፍልና ሴክሽን ምደባ (Class & Section Allocations):\n            "
+src/components/TeacherSection.tsx:612: (RAW) "የክፍል አላፊ ከአንድ ሴክሽን በላይ መመደብ አይችልም! (Homeroom teacher cannot be assigned to > 1 section!)"
+src/components/TeacherSection.tsx:620: (RAW) "\n                ለዚህ ክፍል የሚያስተምሩት የትምህርት ዓይነት (Subjects taught in this class):\n              "
+src/components/TeacherSection.tsx:650: (RAW) "⚠️ እባክዎን አስቀድመው መምህሩ የሚያስተምረውን የትምህርት አይነት ከላይ ይምረጡ (Please select teacher's subjects above first)"
+src/components/TeacherSection.tsx:706: (RAW) "የክፍል አላፊ ከአንድ ሴክሽን በላይ መመደብ አይቻልም (A homeroom teacher cannot be assigned to more than one section)"
+src/components/TeacherSection.tsx:712: (RAW) "እባክዎን ለዚህ ክፍል ቢያንስ አንድ የትምህርት አይነት ይምረጡ (Please select at least one subject for this class)"
+src/components/TeacherSection.tsx:749: (RAW) "⚠️ የክፍል አላፊ ከአንድ ሴክሽን በላይ መመደብ አይችልም! እባክዎን የክፍል ምደባዎችን ወደ አንድ ያሳንሱ። (A homeroom teacher cannot be assigned to more than one section!)"
+src/components/TeacherSection.tsx:1081: (RAW) "\n                  የክፍልና ሴክሽን ምደባ (Class & Section Allocations):\n                "
+src/components/TeacherSection.tsx:1118: (RAW) "የክፍል አላፊ ከአንድ ሴክሽን በላይ መመደብ አይችልም! (Homeroom teacher cannot be assigned to > 1 section!)"
+src/components/TeacherSection.tsx:1126: (RAW) "\n                    ለዚህ ክፍል የሚያስተምሩት የትምህርት ዓይነት (Subjects taught in this class):\n                  "
+src/components/TeacherSection.tsx:1156: (RAW) "⚠️ እባክዎን አስቀድመው መምህሩ የሚያስተምረውን የትምህርት አይነት ከላይ ይምረጡ (Please select teacher's subjects above first)"
+src/components/TeacherSection.tsx:1212: (RAW) "የክፍል አላፊ ከአንድ ሴክሽን በላይ መመደብ አይቻልም (A homeroom teacher cannot be assigned to more than one section)"
+src/components/TeacherSection.tsx:1218: (RAW) "እባክዎን ለዚህ ክፍል ቢያንስ አንድ የትምህርት አይነት ይምረጡ (Please select at least one subject for this class)"
+src/components/TeacherSection.tsx:1254: (RAW) "⚠️ የክፍል አላፊ ከአንድ ሴክሽን በላይ መመደብ አይችልም! እባክዎን የክፍል ምደባዎችን ወደ አንድ ያሳንሱ። (A homeroom teacher cannot be assigned to more than one section!)"
+src/components/TeacherSection.tsx:1295: (RAW) "\n                ይህንን መምህር ሲያጠፉ ተያያዥነት ያላቸው መዛግብቶች በሙሉ ከዳታቤዝ ይሰረዛሉ። ይህ ተግባር ወደ ነበረበት ሊመለስ አይችልም።\n              "
+src/lib/firebase.ts:123: (RAW) nameAmh: 'ስማርት ስኩል አፕ',
+src/lib/firebase.ts:125: (RAW) mottoAmh: 'ለክህሎትና ለውጤታማነት እንተጋለን!',
+src/lib/firebase.ts:129: (RAW) address: 'አዲስ አበባ፣ ኢትዮጵያ (Addis Ababa, Ethiopia)',
+src/lib/notificationService.ts:98: (RAW) subject: `📝 የተማሪ ምዝገባ ማረጋገጫ (Student Registration Confirmation) - ${studentName}`,
+src/lib/notificationService.ts:99: (RAW) body: `ሰላም ጤና ይስጥልን፣\n\nልጅዎ ${studentName} በስማርት ስኩል አፕ በተሳካ ሁኔታ ተመዝግቧል።\n\n📌 የተማሪ መረጃ (Student Information)፡\n• ስም (Name)፡ ${studentName}\n• መለያ ቁጥር (Student ID)፡ ${studentId}\n• ክፍል (Grade)፡ ${grade} - ${section}\n\nወላጅ በዚህ መለያ ቁጥር በመጠቀም በወላጅ ፖርታል (Parent Portal) በመግባት የልጅዎን የትምህርት አፈጻጸም፣ የባህሪ ውጤት (Conduct) እና የክፍል መገኘት (Attendance) በቀላሉ መከታተል ይችላሉ።\n\nደሊጀንት እና ምስጋና፣\nየስማርት ስኩል አፕ አስተዳደር\n\n---\nDear Parent,\n\nYour child ${studentName} has been successfully registered at Smart School App.\n\n📌 Registered Student Information:\n• Name: ${studentName}\n• Student ID: ${studentId}\n• Grade & Section: ${grade} - ${section}\n\nYou can use this Student ID to access the Parent Portal and track your child's grades, conduct, and attendance.\n\nBest regards,\nSmart School App Office`,
+src/lib/notificationService.ts:135: (RAW) const subjectsListAmh = missingSubjects.length > 0 ? missingSubjects.join('፣ ') : 'ሁሉም የትምህርት አይነቶች';
+src/lib/notificationService.ts:142: (RAW) body: `ሰላም ጤና ይስጥልን፣\n\nይህ ማሳሰቢያ የተላከው ከ${schoolName} ነው። ልጅዎ ${studentName} (${grade} - ${section}) ለ${termName} መመዝገብ የሚገባቸው የትምህርት ውጤቶች ገና ሙሉ በሙሉ አልተጠናቀቁም።\n\n📌 ያልተመዘገቡ የትምህርት አይነቶች (Missing Subjects)፡\n• ${subjectsListAmh}\n\nውጤቶቹ እንደተጠናቀቁ በወላጅ ፖርታል (Parent Portal) ላይ የሚለቀቁ መሆኑን እንገልጻለን። መምህራን ውጤቶቹን በፍጥነት እንዲያጠናቅቁ ርዕሰ መምህሩ ክትትል እያደረጉ ይገኛሉ።\n\nማናቸውም ጥያቄ ካለዎት በትምህርት ቤታችን ስልክ ቁጥር ማነጋገር ይችላሉ።\n\nደሊጀንት እና ምስጋና፣\nየ${schoolName} አስተዳደር\n\n---\nDear Parent,\n\nThis is a reminder from ${schoolName} regarding your child ${studentName} (${grade} - ${section}). The grade submission for ${termName} has not been completed yet for some subjects.\n\n📌 Outstanding/Missing Subjects:\n• ${subjectsListEng}\n\nWe will notify you as soon as the final grade roster is fully approved and released on the Parent Portal. The school administration is actively coordinating with homeroom teachers to expedite this.\n\nFor any inquiries, feel free to contact the school office.\n\nBest regards,\n${schoolName} Administration`,
+src/schoolData.ts:481: (RAW) title: 'የተማሪ ስም ፍለጋ ስህተት (Data Association Flaw)',
+src/schoolData.ts:484: (RAW) description: 'በዋናው ኮድ ውስጥ የተማሪ ውጤት የሚቀመጠውና የሚፈለገው በስም (studentName) አማካኝነት ነው። አስተማሪው በስህተት አንድ ፊደል ቢያሳስት ወይም ተመሳሳይ ስም ያላቸው ተማሪዎች ቢኖሩ ወላጆች የተሳሳተ ውጤት ያያሉ ወይም ውጤቱ በጭራሽ አይገኝም።',
+src/schoolData.ts:503: (RAW) explanation: 'መፍትሄ፡ እያንዳንዱን ውጤት ከተማሪው ልዩ መታወቂያ (studentId/ID-XXXX) ጋር ማገናኘት እና ፍለጋውን በስም ፈንታ በልዩ መታወቂያው ማካሄድ።'
+src/schoolData.ts:507: (RAW) title: 'አሉታዊ ቁጥሮች ማረጋገጫ አለመኖር (Negative Score Bypass)',
+src/schoolData.ts:510: (RAW) description: 'ውጤት በሚሞላበት ጊዜ ኮዱ ከፍተኛውን ገደብ (max value) ብቻ ያረጋግጣል፤ ነገር ግን ውጤቱ ከዜሮ በታች (ለምሳሌ -15) እንዳይሆን አይከለክልም። ይህም ተማሪው አሉታዊ ድምር ውጤት እንዲኖረው ሊያደርግ ይችላል።',
+src/schoolData.ts:522: (RAW) alert('❌ ስህተት፡ እባክዎን ከ 0 በታች ወይም ከከፍተኛው ገደብ በላይ ውጤት አይሙሉ።');
+src/schoolData.ts:525: (RAW) explanation: 'መፍትሄ፡ እያንዳንዱ ውጤት ከ 0 ያላነሰ እና ከሚፈቀደው ከፍተኛ ነጥብ ያልበለጠ መሆኑን የሚያረጋግጥ የተሟላ የማጣሪያ ተግባር (isValid) መተግበር።'
+src/schoolData.ts:529: (RAW) title: 'የFirebase ውሂብ ጠቋሚ ጠፋት (Missing Database Indexes)',
+src/schoolData.ts:532: (RAW) description: 'በFirebase Realtime Database ውስጥ orderByChild() ስንጠቀም በባክኤንድ ህጎች (Database Rules) ላይ ኢንዴክስ (.indexOn) ካልተገለጸ Firebase ሙሉ ውሂቡን ወደ ተጠቃሚው ስልክ አውርዶ ይመርምራል። ይህም ውሂቡ ሲበዛ ሲስተሙን በጣም ያዘገየዋል፣ የኢንተርኔት ፍጆታንም ያባክናል።',
+src/schoolData.ts:550: (RAW) explanation: 'መፍትሄ፡ በFirebase ኮንሶል Database Rules ውስጥ ለ "Students" (በ "id") እና ለ "Grades" (በ "studentId" እና "teacher") ኢንዴክሶችን መግለጽ።'
+src/schoolData.ts:554: (RAW) title: 'የደህንነት ክፍተት እና የደንበኛ-ወገን ቁጥጥር (Client-Side Role Spoofing)',
+src/schoolData.ts:557: (RAW) description: 'የተጠቃሚው የስራ ድርሻ (Role) የሚመረመረው በብሮውዘር በኩል ብቻ ነው። ማንኛውም ተንኮለኛ ተጠቃሚ የብሮውዘር ኮንሶል በመክፈት currentRole = "principal" ወይም showDashboard() በማለት ብቻ ሁሉንም የተማሪዎችና የውጤት መረጃዎች ማየትና ማጥፋት ይችላል።',
+src/schoolData.ts:581: (RAW) explanation: 'መፍትሄ፡ የስራ ድርሻን (Authorization) በብሮውዘር ብቻ ሳይሆን በFirebase Security Rules በኩል በባክኤንድ ማረጋገጥና መገደብ።'

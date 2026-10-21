@@ -1,0 +1,5 @@
+
+> smart-school-app-v2@0.0.0 lint
+> tsc --noEmit
+
+src/App.tsx(3385,78): error TS2554: Expected 1-2 arguments, but got 3.

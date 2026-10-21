@@ -1,0 +1,26 @@
+    const email = emailInput.trim();
+    const password = passwordInput;
+
+    let matched = testAccounts.find(acc => 
+      (acc.email.toLowerCase() === email.toLowerCase() || acc.phone === email) && 
+      acc.password === password
+    );
+
+    if (!matched) {
+      const defaultAccounts = [
+        { email: 'principal@school.com', phone: '0911223344', password: 'Principal123', role: 'principal' as const, name: 'ርዕሰ መምህር (Principal)' },
+        { email: 'teacher@school.com', phone: '0912345678', password: 'Teacher123', role: 'teacher' as const, name: 'መምህር ግርማ (Teacher Girma)' },
+        { email: 'teacher2@school.com', phone: '0911112222', password: 'Teacher123', role: 'teacher' as const, name: 'መምህርት ዘነበች (Teacher Zenebech)' },
+        { email: 'parent@school.com', phone: '0922334455', password: 'Parent123', role: 'parent' as const, name: 'ወላጅ (Parent)' }
+      ];
+      matched = defaultAccounts.find(acc => 
+        (acc.email.toLowerCase() === email.toLowerCase() || acc.phone === email) && 
+        acc.password === password
+      );
+    }
+
+    if (matched) {
+      // 3. Handle Two-Factor Challenge
+      if (isTwoFactorEnabled && !isDemoAutoFillEnabled) {
+        playInteractiveSound('success');
+        const code = String(Math.floor(1000 + Math.random() * 9000));

@@ -1,0 +1,24 @@
+const fs = require('fs');
+const lines = fs.readFileSync('src/App.tsx', 'utf8').split('\n');
+lines[4251] = '                                 style={{ width: `${filteredGradesForSchool.length > 0 ? Math.round(filteredGradesForSchool.reduce((sum, g) => sum + g.total, 0) / filteredGradesForSchool.length) : 0}%` }}';
+lines[4252] = '                               />';
+lines[4253] = '                            </div>';
+lines[4254] = '                          </div>';
+lines[4255] = '                          <div className="w-10 h-10 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-600">';
+lines[4256] = '                            <span className="text-lg font-black">📈</span>';
+lines[4257] = '                          </div>';
+lines[4258] = '                        </div>';
+lines[4259] = '                      </div>';
+lines[4260] = '                      </div>';
+lines[4261] = '';
+lines[4262] = '                      {/* Principal academic performance analytics bar chart */}';
+lines[4263] = '                      <div className="print:hidden">';
+lines[4264] = '                        <PrincipalAnalytics ';
+lines[4265] = '                          students={filteredStudentsForSchool} ';
+lines[4266] = '                          grades={filteredGradesForSchool} ';
+lines[4267] = '                          schoolConfig={schoolConfig}';
+lines[4268] = '                          classes={filteredClassesForSchool}';
+lines[4269] = '                        />';
+lines[4270] = '                      </div>';
+lines.splice(4271, 3); // remove old ones
+fs.writeFileSync('src/App.tsx', lines.join('\n'), 'utf8');

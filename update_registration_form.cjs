@@ -1,0 +1,165 @@
+const fs = require('fs');
+let content = fs.readFileSync('src/components/GradeTrackerSection.tsx', 'utf8');
+
+// 1. Add state variables for newStudentGrade and newStudentSection
+const stateOld = `  const [newStudentAge, setNewStudentAge] = useState('');
+  const [regSuccessMsg, setRegSuccessMsg] = useState<string | null>(null);`;
+const stateNew = `  const [newStudentAge, setNewStudentAge] = useState('');
+  const [newStudentGrade, setNewStudentGrade] = useState('');
+  const [newStudentSection, setNewStudentSection] = useState('');
+  const [regSuccessMsg, setRegSuccessMsg] = useState<string | null>(null);
+  
+  React.useEffect(() => {
+    setNewStudentGrade(selectedGrade === 'All' ? (currentTeacher?.assignedClass || 'Grade 1') : selectedGrade);
+    setNewStudentSection(selectedSection === 'All' ? (currentTeacher?.assignedSection || 'A') : selectedSection);
+  }, [selectedGrade, selectedSection, currentTeacher]);`;
+content = content.replace(stateOld, stateNew);
+
+// 2. Update handleRegisterStudent to use these new states
+const handlerOld = `  const handleRegisterStudent = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!newStudentName.trim()) {
+      playInteractiveSound('wrong');
+      alert('እባክዎን የተማሪውን ስም ያስገቡ (Please enter student name)');
+      return;
+    }
+
+    if (!onAddStudent) return;
+
+    const targetGrade = selectedGrade === 'All' ? (currentTeacher?.assignedClass || 'Grade 1') : selectedGrade;
+    const targetSection = selectedSection === 'All' ? (currentTeacher?.assignedSection || 'A') : selectedSection;`;
+const handlerNew = `  const handleRegisterStudent = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!newStudentName.trim()) {
+      playInteractiveSound('wrong');
+      alert('እባክዎን የተማሪውን ስም ያስገቡ (Please enter student name)');
+      return;
+    }
+
+    if (!onAddStudent) return;
+
+    const targetGrade = newStudentGrade || (selectedGrade === 'All' ? (currentTeacher?.assignedClass || 'Grade 1') : selectedGrade);
+    const targetSection = newStudentSection || (selectedSection === 'All' ? (currentTeacher?.assignedSection || 'A') : selectedSection);`;
+content = content.replace(handlerOld, handlerNew);
+
+// 3. Update the UI layout of the form
+const formOld = `                <div className="lg:col-span-5 bg-slate-50 border border-slate-200 p-6 rounded-2xl space-y-4 shadow-xs">
+                  <div>
+                    <span className="text-[10px] bg-emerald-550 text-white font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider">የክፍል ኃላፊ መምህር ተግባር</span>
+                    <h3 className="text-lg font-bold text-slate-900 flex items-center gap-1.5 mt-2.5">
+                      <PlusCircle className="text-emerald-600 w-5 h-5" /> አዲስ ተማሪ ይመዝግቡ (Class Register)
+                    </h3>
+                    <p className="text-slate-400 text-xs mt-0.5">ክፍልዎ: {selectedGrade} - ሴክሽን {selectedSection}</p>
+                  </div>
+
+                  {regSuccessMsg && (
+                    <div className="p-3.5 bg-emerald-50 text-emerald-800 border border-emerald-100 text-xs font-semibold rounded-xl animate-pulse">
+                      {regSuccessMsg}
+                    </div>
+                  )}
+
+                  <form onSubmit={handleRegisterStudent} className="space-y-4">
+                    <div>
+                      <label className="block text-xs font-bold uppercase text-slate-600 mb-1">የተማሪው ሙሉ ስም (Student Full Name):</label>
+                      <input 
+                        type="text"
+                        value={newStudentName}
+                        onChange={(e) => setNewStudentName(e.target.value)}
+                        placeholder="መላኩ ገብሬ"
+                        className="w-full p-3 rounded-xl border border-slate-200 text-sm focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 outline-none bg-white"
+                        required
+                      />
+                    </div>
+                    <div className="grid grid-cols-4 gap-2">
+                      <div>
+                        <label className="block text-xs font-bold uppercase text-slate-400 mb-1">ክፍል (Grade):</label>
+                        <div className="w-full p-3 rounded-xl border border-slate-150 text-sm bg-slate-100 font-bold text-slate-600">
+                          {selectedGrade}
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-bold uppercase text-slate-400 mb-1">ሴክሽን (Sec):</label>
+                        <div className="w-full p-3 rounded-xl border border-slate-150 text-sm bg-slate-100 font-bold text-slate-600">
+                          {selectedSection}
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-bold uppercase text-slate-600 mb-1">ጾታ (Gender):</label>
+                        <select 
+                          value={newStudentGender}
+                          onChange={(e) => setNewStudentGender(e.target.value as any)}
+                          className="w-full p-3 rounded-xl border border-slate-200 text-sm focus:border-indigo-600 outline-none bg-white font-medium"
+                        >
+                          <option value="Male">ወንድ (M)</option>
+                          <option value="Female">ሴት (F)</option>
+                        </select>
+                      </div>`;
+const formNew = `                <div className="lg:col-span-5 bg-white border border-slate-200 p-6 rounded-2xl space-y-4 shadow-xs">
+                  <div>
+                    <span className="text-[10px] bg-emerald-50 text-emerald-700 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">የክፍል ኃላፊ መምህር ተግባር</span>
+                    <h3 className="text-lg font-bold text-slate-900 flex items-center gap-1.5 mt-1">
+                      <PlusCircle className="text-emerald-600 w-5 h-5" /> አዲስ ተማሪ ይመዝግቡ
+                    </h3>
+                    <p className="text-slate-400 text-xs mt-0.5">Register a New Student and Assign Class/Section</p>
+                  </div>
+
+                  {regSuccessMsg && (
+                    <div className="p-3.5 bg-emerald-50 text-emerald-800 border border-emerald-100 text-xs font-semibold rounded-xl animate-pulse">
+                      {regSuccessMsg}
+                    </div>
+                  )}
+
+                  <form onSubmit={handleRegisterStudent} className="space-y-4">
+                    <div>
+                      <label className="block text-xs font-bold uppercase text-slate-600 mb-1">የተማሪው ሙሉ ስም (Student Full Name):</label>
+                      <input 
+                        type="text"
+                        value={newStudentName}
+                        onChange={(e) => setNewStudentName(e.target.value)}
+                        placeholder="መላኩ ገብሬ"
+                        className="w-full p-3 rounded-xl border border-slate-200 text-sm focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 outline-none bg-slate-50/50"
+                        required
+                      />
+                    </div>
+                    <div className="grid grid-cols-4 gap-2">
+                      <div>
+                        <label className="block text-xs font-bold uppercase text-slate-600 mb-1">ክፍል (Grade):</label>
+                        <select 
+                          value={newStudentGrade || (selectedGrade === 'All' ? (currentTeacher?.assignedClass || 'Grade 1') : selectedGrade)}
+                          onChange={(e) => setNewStudentGrade(e.target.value)}
+                          className="w-full p-3 rounded-xl border border-slate-200 text-sm focus:border-indigo-600 outline-none bg-white font-medium"
+                        >
+                          {activeGradesList.map(g => (
+                            <option key={g} value={g}>{g}</option>
+                          ))}
+                        </select>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-bold uppercase text-slate-600 mb-1">ሴክሽን (Sec):</label>
+                        <select 
+                          value={newStudentSection || (selectedSection === 'All' ? (currentTeacher?.assignedSection || 'A') : selectedSection)}
+                          onChange={(e) => setNewStudentSection(e.target.value)}
+                          className="w-full p-3 rounded-xl border border-slate-200 text-sm focus:border-indigo-600 outline-none bg-white font-medium"
+                        >
+                          {['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'].map(s => (
+                            <option key={s} value={s}>{s}</option>
+                          ))}
+                        </select>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-bold uppercase text-slate-600 mb-1">ጾታ (Gender):</label>
+                        <select 
+                          value={newStudentGender}
+                          onChange={(e) => setNewStudentGender(e.target.value as any)}
+                          className="w-full p-3 rounded-xl border border-slate-200 text-sm focus:border-indigo-600 outline-none bg-white font-medium"
+                        >
+                          <option value="Male">ወንድ (M)</option>
+                          <option value="Female">ሴት (F)</option>
+                        </select>
+                      </div>`;
+content = content.replace(formOld, formNew);
+
+fs.writeFileSync('src/components/GradeTrackerSection.tsx', content, 'utf8');
+console.log('Updated registration form in GradeTrackerSection.');

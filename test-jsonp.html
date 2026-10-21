@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+window.myfunc = function(data) {
+  console.log("JSONP result:", data);
+  document.body.innerHTML += "Result: " + JSON.stringify(data);
+};
+</script>
+<script src="https://is.gd/create.php?format=json&url=https://example.com&callback=myfunc"></script>
+</body>
+</html>

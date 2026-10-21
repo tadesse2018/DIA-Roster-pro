@@ -1,0 +1,11 @@
+cat << 'INNEREOF' > age_replacement.txt
+                                          <td className="p-3 text-xs font-black bg-white !text-black dark:bg-white dark:!text-black">
+                                            {student.age ? (
+                                              <span className="px-2 py-0.5 bg-white text-black rounded border border-slate-300">
+                                                {student.age} ዓመት
+                                              </span>
+                                            ) : '-'}
+                                          </td>
+INNEREOF
+
+sed -i -e '4895,4901c\' -e "$(cat age_replacement.txt)" src/App.tsx

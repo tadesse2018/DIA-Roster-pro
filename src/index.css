@@ -1,0 +1,293 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Cinzel", serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+/* 🎨 THEME CONFIGURATION VARIABLES */
+:root {
+  --bg-app: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-input: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --border-light: #f1f5f9;
+  --table-border: #cbd5e1;
+}
+
+.dark {
+  --bg-app: #020617;
+  --bg-card: #0f172a;
+  --bg-input: #1e293b;
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #1e293b;
+  --border-light: #334155;
+  --table-border: #1e293b;
+}
+
+/* 🌟 BASE LAYOUT STYLES */
+body, #root, .min-h-screen {
+  background-color: var(--bg-app) !important;
+  background-image: none !important;
+  color: var(--text-primary);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.dark, .dark .min-h-screen {
+  background-color: var(--bg-app) !important;
+  background-image: none !important;
+  color: var(--text-primary) !important;
+}
+
+/* 🔄 SMOOTH SWITCHING TRANSITIONS */
+.transition-all, .transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* 📄 EXEMPTION FOR REPORT CARDS & PRINT PREVIEWS */
+.dark #printable-area, .dark #printable-area *,
+.dark #print-target-sheet, .dark #print-target-sheet *,
+.dark #report-card-print-area, .dark #report-card-print-area * {
+  background-color: var(--text-primary) !important;
+  color: #1c1917 !important;
+  border-color: #e7e5e4 !important;
+}
+
+.dark #printable-area th, .dark #print-target-sheet th, .dark #report-card-print-area th {
+  background-color: #f5f5f4 !important;
+  color: #1c1917 !important;
+  border-color: #d6d3d1 !important;
+}
+
+.dark #printable-area td, .dark #print-target-sheet td, .dark #report-card-print-area td {
+  background-color: var(--text-primary) !important;
+  color: #44403c !important;
+  border-color: #e7e5e4 !important;
+}
+
+/* 📜 PREMIUM SCROLLBARS */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-app); }
+::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* 📊 CHART STYLING */
+.dark .recharts-default-tooltip {
+  background-color: var(--bg-card) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+.dark .recharts-tooltip-item-list {
+  color: var(--text-secondary) !important;
+}
+
+/* 🎥 QR SCANNER ANIMATION */
+@keyframes scan-laser { 0% { top: 0%; } 50% { top: 100%; } 100% { top: 0%; } }
+@utility animate-scan-laser { animation: scan-laser 2.5s infinite linear; }
+
+/* 🖨️ PRINT TARGET TABLE CELLS COHESION AND SNUGNESS */
+#print-target-sheet table {
+  table-layout: fixed !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+#print-target-sheet th, #print-target-sheet td {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  padding: 5px 6px !important;
+  overflow: hidden !important;
+}
+#printable-area table, #printable-area th, #printable-area td,
+#print-target-sheet table, #print-target-sheet th, #print-target-sheet td,
+#report-card-print-area table, #report-card-print-area th, #report-card-print-area td,
+.roster-printable-table, .roster-printable-table th, .roster-printable-table td,
+.marklist-printable-table, .marklist-printable-table th, .marklist-printable-table td {
+  border: 1.5px solid #000000 !important;
+  border-color: #000000 !important;
+}
+
+.dark #printable-area, .dark #printable-area *,
+.dark #print-target-sheet, .dark #print-target-sheet *,
+.dark #report-card-print-area, .dark #report-card-print-area * {
+  border-color: #000000 !important;
+}
+
+.dark #printable-area th, .dark #print-target-sheet th, .dark #report-card-print-area th,
+.dark #printable-area td, .dark #print-target-sheet td, .dark #report-card-print-area td {
+  border-color: #000000 !important;
+}
+
+/* --- DARK MODE OVERRIDES (RESTORED) --- */
+.dark .bg-white, .dark .bg-stone-50, .dark .bg-slate-50, .dark .bg-gray-50, .dark .bg-\[\#F8F9FC\] {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+}
+.dark [class*="bg-white/"] {
+  background-color: rgba(30, 41, 59, 0.7) !important;
+}
+.dark [class*="bg-stone-50/"], .dark [class*="bg-slate-50/"], .dark .bg-stone-100, .dark .bg-slate-100 {
+  background-color: var(--bg-app) !important;
+}
+
+/* Text Overrides */
+.dark .text-stone-950, .dark .text-stone-900, .dark .text-stone-850, .dark .text-stone-800, .dark .text-stone-700,
+.dark .text-slate-900, .dark .text-slate-800, .dark .text-gray-900, .dark .text-gray-800 {
+  color: var(--text-primary) !important;
+}
+.dark .text-stone-600, .dark .text-stone-500, .dark .text-slate-600, .dark .text-slate-500, .dark .text-gray-600, .dark .text-gray-500 {
+  color: var(--text-muted) !important;
+}
+
+/* Borders */
+.dark .border-stone-50, .dark .border-stone-100, .dark .border-stone-150, .dark .border-stone-200, .dark .border-stone-250, .dark .border-stone-300,
+.dark .border-stone-400, .dark .border-stone-500, .dark .border-stone-600, .dark .border-stone-700, .dark .border-stone-800, .dark .border-stone-900,
+.dark .border-stone-950, .dark .border-slate-100, .dark .border-slate-200, .dark .border-slate-300 {
+  border-color: var(--border-color) !important;
+}
+
+/* Inputs */
+.dark input, .dark select, .dark textarea {
+  background-color: var(--bg-input) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+.dark input:focus, .dark select:focus, .dark textarea:focus {
+  border-color: #3b82f6 !important;
+}
+
+/* Force white text in dark mode when requested */
+.dark .text-white,
+.dark [class*="dark:text-white"],
+.dark.text-white,
+.dark .dark-text-white {
+  color: #ffffff !important;
+}
+
+/* Brand Colors */
+.dark .text-indigo-950:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-indigo-900:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-indigo-850:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-indigo-800:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-indigo-700:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-indigo-600:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-indigo-500:not(.text-white):not([class*="dark:text-white"]) { color: #a5b4fc !important; }
+
+.dark .text-emerald-950:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-emerald-900:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-emerald-850:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-emerald-800:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-emerald-700:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-emerald-600:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-emerald-500:not(.text-white):not([class*="dark:text-white"]) { color: #6ee7b7 !important; }
+
+.dark .text-amber-950:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-amber-900:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-amber-850:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-amber-800:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-amber-700:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-amber-600:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-amber-500:not(.text-white):not([class*="dark:text-white"]) { color: #fde047 !important; }
+
+.dark .text-rose-950:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-rose-900:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-rose-850:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-rose-800:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-rose-700:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-rose-600:not(.text-white):not([class*="dark:text-white"]),
+.dark .text-rose-500:not(.text-white):not([class*="dark:text-white"]) { color: #fca5a5 !important; }
+
+/* Additional text overrides */
+.dark .text-stone-400, .dark .text-stone-300, .dark .text-slate-400, .dark .text-slate-300, .dark .text-gray-400, .dark .text-gray-300 {
+  color: var(--text-secondary) !important;
+}
+
+/* 🌟 PRETTY TABLES FOR APP (EXCEPT PRINT) */
+table:not(.marklist-printable-table):not(.roster-printable-table) {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1.5px solid var(--table-border) !important;
+}
+table:not(.marklist-printable-table):not(.roster-printable-table) th {
+  padding: 0.75rem;
+  border: 1.5px solid var(--table-border) !important;
+  font-weight: bold;
+}
+table:not(.marklist-printable-table):not(.roster-printable-table) td {
+  padding: 0.75rem;
+  border: 1.5px solid var(--table-border) !important;
+}
+table:not(.marklist-printable-table):not(.roster-printable-table) tr:hover td {
+  background-color: rgba(0,0,0,0.02);
+}
+.dark table:not(.marklist-printable-table):not(.roster-printable-table) tr:hover td {
+  background-color: rgba(255,255,255,0.02);
+}
+
+/* Ensure report card print tables aren't messed up */
+#report-card-print-area table {
+  border: 1.5px solid #000000 !important;
+}
+
+/* Make all form texts bolder as requested */
+
+
+/* Force background colors to respect the theme */
+.dark .bg-slate-950, .dark .bg-slate-900, .dark .bg-slate-800, .dark .bg-stone-950, .dark .bg-stone-900, .dark .bg-stone-800 {
+  background-color: var(--bg-card) !important;
+}
+
+.bg-slate-950, .bg-slate-900, .bg-slate-800, .bg-stone-950, .bg-stone-900, .bg-stone-800 {
+  background-color: var(--bg-card) !important;
+}
+
+
+
+
+* {
+  font-weight: 800 !important;
+}
+
+
+/* Select Element Styling & Padding Fix */
+select {
+  padding-right: 2.5rem !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e") !important;
+  background-position: right 0.5rem center !important;
+  background-repeat: no-repeat !important;
+  background-size: 1.5em 1.5em !important;
+}
+
+.dark select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e") !important;
+}
+
+
+@theme {
+  --animate-gradient-slow: gradient 8s ease infinite;
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}

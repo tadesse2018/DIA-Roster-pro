@@ -1,0 +1,480 @@
+src/App.tsx:297: { id: 'quiz', name: tx("ኩዊዝ"), nameEng: 'QUIZ', maxMark: 10 },
+src/App.tsx:298: { id: 'cw', name: tx("የክፍል ሥራ"), nameEng: 'CW', maxMark: 10 },
+src/App.tsx:299: { id: 'hw', name: tx("የቤት ሥራ"), nameEng: 'HW', maxMark: 10 },
+src/App.tsx:300: { id: 'gw', name: tx("የቡድን ሥራ"), nameEng: 'GW', maxMark: 10 },
+src/App.tsx:301: { id: 'pw', name: tx("የፕሮጀክት ሥራ"), nameEng: 'PW', maxMark: 10 },
+src/App.tsx:302: { id: 'cp', name: tx("የክፍል ተሳትፎ"), nameEng: 'CP', maxMark: 10 },
+src/App.tsx:303: { id: 'mid', name: tx("ግማሽ ፈተና"), nameEng: 'MEXAM', maxMark: 20 },
+src/App.tsx:304: { id: 'final', name: tx("ማጠቃለያ ፈተና"), nameEng: 'FEXAM', maxMark: 20 },
+src/App.tsx:364: nameAmh: tx("ደሊጀንት ት/ቤት"),
+src/App.tsx:390: nameAmh: nameAmh || tx("ስማርት ስኩል"),
+src/App.tsx:610: if (parsed && (parsed.nameEng?.includes('Diligent') || parsed.nameAmh?.includes(tx("ደሊጀንት")) || parsed.nameEng?.includes('Selam'))) {
+src/App.tsx:611: parsed.nameAmh = tx("ደሊጀንት ት/ቤት");
+src/App.tsx:626: nameAmh: tx("ደሊጀንት ት/ቤት"),
+src/App.tsx:628: mottoAmh: tx("ለክህሎትና ለውጤታማነት እንተጋለን!"),
+src/App.tsx:639: academicYear: tx("2018 ዓ.ም")
+src/App.tsx:711: if (parsed && (parsed.nameEng?.includes('Diligent') || parsed.nameAmh?.includes(tx("ደሊጀንት")) || parsed.nameEng?.includes('Selam'))) {
+src/App.tsx:722: nameAmh: tx("ደሊጀንት ት/ቤት"),
+src/App.tsx:724: mottoAmh: tx("ለክህሎትና ለውጤታማነት እንተጋለን!"),
+src/App.tsx:1547: const [newStudentAcademicYear, setNewStudentAcademicYear] = useState<string>(schoolConfig.academicYear || tx("2018 ዓ.ም"));
+src/App.tsx:1577: setNewStudentCameraError(tx("የካሜራ ፈቃድ መፍቀድዎን ያረጋግጡ ወይም ሌላ ታብ ላይ መተግበሪያውን ይክፈቱ።"));
+src/App.tsx:1680: setEditStudentCameraError(tx("የካሜራ ፈቃድ መፍቀድዎን ያረጋግጡ ወይም ሌላ ታብ ላይ መተግበሪያውን ይክፈቱ።"));
+src/App.tsx:2136: alert(tx("📌 ፒዲኤፍ ለማውረድ አልተቻለም። እባክዎ እንደገና ይሞክሩ።"));
+src/App.tsx:2168: const [wlAcademicYear, setWlAcademicYear] = useState<string>(schoolConfig.academicYear || tx("2018 ዓ.ም"));
+src/App.tsx:2173: const [transitionNewYear, setTransitionNewYear] = useState(tx("2019 ዓ.ም"));
+src/App.tsx:2186: const amhSuffix = wlAcademicYear.includes(tx("ዓ.ም")) ? tx(" ዓ.ም") : '';
+src/App.tsx:2193: setTransitionNewYear(tx("2019 ዓ.ም"));
+src/App.tsx:2231: { id: 'quiz', name: tx("ኩዊዝ"), nameEng: 'QUIZ', maxMark: 10 },
+src/App.tsx:2232: { id: 'cw', name: tx("የክፍል ሥራ"), nameEng: 'CW', maxMark: 10 },
+src/App.tsx:2233: { id: 'hw', name: tx("የቤት ሥራ"), nameEng: 'HW', maxMark: 10 },
+src/App.tsx:2234: { id: 'gw', name: tx("የቡድን ሥራ"), nameEng: 'GW', maxMark: 10 },
+src/App.tsx:2235: { id: 'pw', name: tx("የፕሮጀክት ሥራ"), nameEng: 'PW', maxMark: 10 },
+src/App.tsx:2236: { id: 'cp', name: tx("የክፍል ተሳትፎ"), nameEng: 'CP', maxMark: 10 },
+src/App.tsx:2237: { id: 'mid', name: tx("ግማሽ ፈተና"), nameEng: 'MEXAM', maxMark: 20 },
+src/App.tsx:2238: { id: 'final', name: tx("ማጠቃለያ ፈተና"), nameEng: 'FEXAM', maxMark: 20 },
+src/App.tsx:2241: { id: 'quiz', name: tx("ኩዊዝ"), nameEng: 'QUIZ', maxMark: 10 },
+src/App.tsx:2242: { id: 'cw', name: tx("የክፍል ሥራ"), nameEng: 'CW', maxMark: 10 },
+src/App.tsx:2243: { id: 'hw', name: tx("የቤት ሥራ"), nameEng: 'HW', maxMark: 10 },
+src/App.tsx:2244: { id: 'gw', name: tx("የቡድን ሥራ"), nameEng: 'GW', maxMark: 10 },
+src/App.tsx:2245: { id: 'pw', name: tx("የፕሮጀክት ሥራ"), nameEng: 'PW', maxMark: 10 },
+src/App.tsx:2246: { id: 'cp', name: tx("የክፍል ተሳትፎ"), nameEng: 'CP', maxMark: 10 },
+src/App.tsx:2247: { id: 'mid', name: tx("ግማሽ ፈተና"), nameEng: 'MEXAM', maxMark: 20 },
+src/App.tsx:2248: { id: 'final', name: tx("ማጠቃለያ ፈተና"), nameEng: 'FEXAM', maxMark: 20 },
+src/App.tsx:2277: setWlAcademicYear(schoolConfig.academicYear || tx("2018 ዓ.ም"));
+src/App.tsx:2354: if (acc.role === 'principal') emoji = tx("👨‍💼 ርዕሰ መምህር");
+src/App.tsx:2355: else if (acc.role === 'teacher') emoji = tx("👨‍🏫 መምህር");
+src/App.tsx:2356: else if (acc.role === 'parent') emoji = tx("👨‍👩‍👧 ወላጅ");
+src/App.tsx:2783: { id: 'quiz', name: tx("ኩዊዝ"), nameEng: 'QUIZ', maxMark: wlQuizMax },
+src/App.tsx:2784: { id: 'cw', name: tx("የክፍል ሥራ"), nameEng: 'CW', maxMark: wlCwMax },
+src/App.tsx:2785: { id: 'hw', name: tx("የቤት ሥራ"), nameEng: 'HW', maxMark: wlHwMax },
+src/App.tsx:2786: { id: 'gw', name: tx("የቡድን ሥራ"), nameEng: 'GW', maxMark: wlGwMax },
+src/App.tsx:2787: { id: 'pw', name: tx("የፕሮጀክት ሥራ"), nameEng: 'PW', maxMark: wlPwMax },
+src/App.tsx:2788: { id: 'cp', name: tx("የክፍል ተሳትፎ"), nameEng: 'CP', maxMark: wlCpMax },
+src/App.tsx:2789: { id: 'mid', name: tx("ግማሽ ፈተና"), nameEng: 'MEXAM', maxMark: wlMidMax },
+src/App.tsx:2790: { id: 'final', name: tx("ማጠቃለያ ፈተና"), nameEng: 'FEXAM', maxMark: wlFinalMax },
+src/App.tsx:2810: nameAmh: nameAmhClean || tx("ስማርት ስኩል"),
+src/App.tsx:2812: mottoAmh: mottoAmhClean || tx("ለክህሎትና ለውጤታማነት እንተጋለን!"),
+src/App.tsx:2823: academicYear: academicYearClean || tx("2018 ዓ.ም"),
+src/App.tsx:2929: setWlAcademicYear(parsed.schoolConfig.academicYear || tx("2018 ዓ.ም"));
+src/App.tsx:3010: academicYear: newStudentAcademicYear || schoolConfig.academicYear || tx("2018 ዓ.ም")
+src/App.tsx:3033: setNewStudentAcademicYear(schoolConfig.academicYear || tx("2018 ዓ.ም"));
+src/App.tsx:3668: title={tx("Quick View / ፈጣን መመልከቻ")}>
+src/App.tsx:3696: title={tx("Quick View / ፈጣን መመልከቻ")}>
+src/App.tsx:3724: title={tx("Quick View / ፈጣን መመልከቻ")}>
+src/App.tsx:3752: title={tx("Quick View / ፈጣን መመልከቻ")}>
+src/App.tsx:3912: )}{formatBlockCooldownTime(blockCooldownSecs)}{tx(" ታግዷል። እባክዎ በትዕግስት ይጠብቁ።\n                          ")}</span>
+src/App.tsx:4104: <span>{tx("QR ስካን መግቢያ")}</span>
+src/App.tsx:4279: <span className="text-xs text-slate-500 font-medium">{tx("ተማሪዎች")}</span>
+src/App.tsx:4282: 🙋‍♂️ {filteredStudentsForSchool.filter(s => s.gender === 'Male').length}{tx(" ወንድ | 🙋‍♀️ ")}{filteredStudentsForSchool.filter(s => s.gender === 'Female').length}{tx(" ሴት\n                            ")}</span>
+src/App.tsx:4295: <span className="text-xs text-slate-500 font-medium">{tx("መምህራን")}</span>
+src/App.tsx:4312: <span className="text-xs text-slate-500 font-medium">{tx("ኮርሶች")}</span>
+src/App.tsx:4314: <span className="text-[10px] text-slate-500 font-semibold block">{tx("\n                              ደረጃ: ")}{schoolConfig.schoolLevel === 'secondary' ? tx("9-12ኛ ክፍል") : tx("1-8ኛ ክፍል")}
+src/App.tsx:4332: <span className="text-xs text-slate-500 font-medium">{tx("አማካይ")}</span>
+src/App.tsx:4382: <span>{tx("የመምህራን ምዝገባ")}</span>
+src/App.tsx:4394: <span>{tx("የክፍል ትምህርት ምዝገባ")}</span>
+src/App.tsx:4406: <span>{tx("ማስታወቂያ መለጠፊያ")}</span>
+src/App.tsx:4430: <span>{tx("ዕለታዊ የአቴንዳንስ ቁጥጥር")}</span>
+src/App.tsx:4454: <span>{tx("የይለፍ ቃል አስተዳደር")}</span>
+src/App.tsx:4483: <span className="text-[10px] bg-indigo-50 text-indigo-700 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">{tx("ርዕሰ መምህር ተግባር")}</span>
+src/App.tsx:4485: <PlusCircle className="text-indigo-600 w-5 h-5" />{tx(" አዲስ ተማሪ ይመዝግቡ\n                                ")}</h3>
+src/App.tsx:4502: placeholder={tx("መላኩ ገብሬ")}
+src/App.tsx:4615: placeholder={tx("2018 ዓ.ም")}
+src/App.tsx:4619: <p className="text-[10px] text-slate-400 mt-1">{tx("በመታወቂያና ሪፖርት ካርድ ላይ ይወጣል")}</p>
+src/App.tsx:4737: <Users className="text-indigo-600 dark:text-indigo-450 w-5 h-5" />{tx(" በሲስተሙ የተመዘገቡ ተማሪዎች ዝርዝር\n                                  ")}</h3>
+src/App.tsx:4799: {g.replace('Grade ', '')}{tx("ኛ ክፍል ")}{s}({g}- {s})
+src/App.tsx:4812: <th className="p-3 text-white">{tx("መታወቂያ ID")}</th>
+src/App.tsx:4870: <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-pink-50 dark:bg-rose-950/30 text-pink-700 dark:text-rose-300 rounded-md border border-pink-100/30 dark:border-rose-900/20">{tx("👩 ሴት")}</span>
+src/App.tsx:4872: <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-50 dark:bg-blue-950/30 text-blue-700 dark:text-blue-300 rounded-md border border-blue-100/30 dark:border-blue-900/20">{tx("👨 ወንድ")}</span>
+src/App.tsx:5125: placeholder={tx("በስም ወይም በኢሜል ፈልግ...")}
+src/App.tsx:5214: {lang === 'am' ? tx("አስቀምጥ") : 'Save'}
+src/App.tsx:5223: {lang === 'am' ? tx("ተወው") : 'Cancel'}
+src/App.tsx:5236: title={tx("ስልክ ቁጥር ለመቀየር")}>
+src/App.tsx:5262: <span className="text-[10px] text-rose-600 font-bold block">{lang === 'am' ? tx("ይለፍ ቃል ይመለስ?") : 'Reset?'}</span>
+src/App.tsx:5280: {lang === 'am' ? tx("አዎ") : 'Yes'}
+src/App.tsx:5289: {lang === 'am' ? tx("አይ") : 'No'}
+src/App.tsx:5310: {lang === 'am' ? tx("አስቀምጥ") : 'Save'}
+src/App.tsx:5319: {lang === 'am' ? tx("ተወው") : 'Cancel'}
+src/App.tsx:5330: alert(lang === 'am' ? tx("❌ የራስዎን አካውንት ማጥፋት አይችሉም!") : '❌ You cannot delete your own account!');
+src/App.tsx:5340: {lang === 'am' ? tx("አዎ") : 'Yes'}
+src/App.tsx:5348: {lang === 'am' ? tx("ተው") : 'Cancel'}
+src/App.tsx:5379: alert(lang === 'am' ? tx("❌ የራስዎን አካውንት ማጥፋት አይችሉም!") : '❌ You cannot delete your own account!');
+src/App.tsx:5390: 🗑️ {lang === 'am' ? tx("አጥፋ") : 'Delete'}
+src/App.tsx:5413: {currentTeacher?.isHomeroomTeacher ? tx("የክፍል አላፊ ገፅ / Homeroom Portal") : tx("የመምህራን የክፍል መቆጣጠሪያ / Teacher Portal")}
+src/App.tsx:5418: : tx("እንኳን በደህና መጡ፣ መምህር! 👋")}
+src/App.tsx:5423: : tx("ከተማሪዎችዎ የውጤት መዛግብት፣ ማርክ ሊስት እና ሮስተሮች ጋር እዚህ በምቾት ይስሩ።")}
+src/App.tsx:5468: <FileSpreadsheet className="text-emerald-600 w-5 h-5" />{tx(" የክፍል ማርክ ሊስት እና ሮስተር ማስተዳደሪያ\n                                  ")}</>
+src/App.tsx:5684: let statusText = tx("ውጤት በመጠባበቅ ላይ...");
+src/App.tsx:5731: <FileSpreadsheet className="text-emerald-600 w-5 h-5" />{tx(" የተመዘገቡ ውጤቶች ታሪክ\n                                ")}</h3>
+src/App.tsx:5739: <th className="p-3">{tx("ተማሪ")}</th>
+src/App.tsx:5808: <Search className="text-amber-500 w-6 h-6" />{tx(" የልጅዎን ውጤት ይፈልጉ\n                          ")}</h3>
+src/App.tsx:5870: <span className="text-[10px] text-slate-400 font-sans block font-normal mt-0.5">{c.grade}{tx(" - ሴክሽን ")}{c.section}</span>
+src/App.tsx:5916: <p className="text-slate-500 dark:text-slate-400 text-xs font-semibold mt-1">{tx("\n                                          ጾታ፡ ")}<span className="text-slate-800 dark:text-slate-200 font-bold">{foundStudent.gender === 'Male' ? tx("ወንድ") : tx("ሴት")}</span>{tx(" • ክፍል፡ ")}<span className="text-slate-800 dark:text-slate-200 font-bold">{foundStudent.grade} - {foundStudent.section}</span>
+src/App.tsx:5965: title={tx("QR ካርድ አትም")}>
+src/App.tsx:5994: <th className="p-3 text-center">{tx("ጥያቄ")}</th>
+src/App.tsx:5995: <th className="p-3 text-center">{tx("ክፍል ስራ")}</th>
+src/App.tsx:5996: <th className="p-3 text-center">{tx("የቤት ስራ")}</th>
+src/App.tsx:6067: <p className="text-2xl font-black">{studentExtraInfo[foundStudent?.id || '']?.absent ?? 0}{tx(" ቀናት ቀርተዋል")}</p>
+src/App.tsx:6069: {(studentExtraInfo[foundStudent?.id || '']?.absent ?? 0) === 0 ? tx("💯 ሙሉ መገኘት (Perfect)") : tx("ቀሪ ቀናት ተመዝግቧል")}
+src/App.tsx:6078: <p className="text-2xl font-black">{tx("ውጤት: ")}{studentExtraInfo[foundStudent?.id || '']?.conduct ?? 'A'}</p>
+src/App.tsx:6139: <p className="font-extrabold text-sm text-slate-600">{tx("እባክዎን ከላይ ካሉት ልጆችዎ አንዱን ይምረጡ")}</p>
+src/App.tsx:6182: <h3 className="text-lg font-black text-white mt-1">{tx("የዘመናዊ ትምህርት ቤት አስተዳደር ዲጂታል ፕላትፎርም")}</h3>
+src/App.tsx:6198: <li>{tx("የተማሪዎች እና መምህራን አስተዳደር")}</li>
+src/App.tsx:6199: <li>{tx("የQR ኮድ ዲጂታል መታወቂያ ካርዶች")}</li>
+src/App.tsx:6200: <li>{tx("የትምህርት ቤት ማህተም እና ፊርማ ማረጋገጫ")}</li>
+src/App.tsx:6210: <li>{tx("የራሰዎትን የትምህርት ቤት ወርክስፔስ ኮድ መፍጠር")}</li>
+src/App.tsx:6211: <li>{tx("ተማሪዎችን እና መምህራንን መመዝገብ")}</li>
+src/App.tsx:6212: <li>{tx("ውጤቶችን በዲጂታል መንገድ ማስገባት")}</li>
+src/App.tsx:6213: <li>{tx("አጭር ሊንክ በመፍጠር ለወላጆች ማጋራት")}</li>
+src/App.tsx:6224: <li>{tx("በክላውድ ፋየርሶር ደህንነቱ የተጠበቀ ማከማቻ")}</li>
+src/App.tsx:6226: <li>{tx("ከኢንተርኔት ውጭ እና በኦንላይን የሚሰራ")}</li>
+src/App.tsx:6266: {schoolConfig.nameAmh || tx("ደሊጀንት ት/ቤት")}
+src/App.tsx:6384: placeholder={tx("උදා፦ bole, menelik, shola")}
+src/App.tsx:6414: <span>{tx("ወደዚህ ወርክስፔስ ቀይር / ፍጠር")}</span>
+src/App.tsx:6489: {lang === 'am' ? tx("ሰርዝ!") : 'Delete'}
+src/App.tsx:6499: {lang === 'am' ? tx("ተወው") : 'Cancel'}
+src/App.tsx:6558: placeholder={tx("ስማርት ስኩል አፕ")}
+src/App.tsx:6584: placeholder={tx("ለክህሎትና ለውጤታማነት እንተጋለን!")}
+src/App.tsx:6607: <p className="text-slate-400 text-[11px]">{tx("\n                        የአሁኑን የትምህርት ዘመን እዚህ መለወጥ ይችላሉ። ለምሳሌ፡ ")}<strong>{tx("2018 ዓ.ም")}</strong>{tx(" ወይም ")}<strong>{tx("2019 ዓ.ም")}</strong>{tx(
+src/App.tsx:6616: placeholder={tx("ለምሳሌ፡ 2018 ዓ.ም")}
+src/App.tsx:6679: placeholder={tx("ለምሳሌ፡ 2019 ዓ.ም")}
+src/App.tsx:6690: placeholder={tx("ለምሳሌ፡ diligent_2019")}
+src/App.tsx:6979: {((wlSubjectsByGrade && wlSubjectsByGrade[wlSelectedGradeForSubjects]) || wlSubjects).length}{tx(" ኮርሶች\n                      ")}</span>
+src/App.tsx:7069: )}<strong>{tx("ጠቅላላ የምዘናዎቹ ድምር 100% መሆን አለበት።")}</strong>{tx(" ማንኛውንም ክፍል ለመደበቅ ከፍተኛ ነጥቡን ")}<strong>0</strong>{tx(" ያድርጉት።\n                      ")}</p>
+src/App.tsx:7099: <span className="text-[10px] text-rose-500 font-bold">{tx("⚠️ ድምሩ 100 መሆን አለበት!")}</span>
+src/App.tsx:7386: <strong>{tx("የደህንነት ማስጠንቀቂያ፡")}</strong>{tx(
+src/App.tsx:7583: {tx('የትምህርት ቤቱ መረጃዎችና መልእክቶች')}
+src/App.tsx:7607: <p className="text-slate-500 dark:text-slate-400 font-medium">{tx('በአሁኑ ጊዜ ምንም ማስታወቂያ የለም')}</p>
+src/App.tsx:7621: {tx('ስርዓቱን እንዴት መጠቀም እንደሚችሉ የሚያሳይ አጭር መግለጫ')}
+src/App.tsx:7631: <h3 className="font-bold text-slate-900 dark:text-white">{tx("ለርዕሰ መምህር / አስተዳዳሪ")}</h3>
+src/App.tsx:7634: <li>{tx("ተማሪዎችን፣ መምህራንን እና ክፍሎችን መመዝገብ እና ማስተዳደር")}</li>
+src/App.tsx:7635: <li>{tx("የተማሪዎች ውጤት እና ሪፖርት ማየት")}</li>
+src/App.tsx:7636: <li>{tx("ማስታወቂያዎችን ለሁሉም ማጋራት")}</li>
+src/App.tsx:7645: <h3 className="font-bold text-slate-900 dark:text-white">{tx("ለመምህራን")}</h3>
+src/App.tsx:7648: <li>{tx("በተመደቡበት ክፍል የተማሪዎችን ውጤት መሙላት")}</li>
+src/App.tsx:7651: <li>{tx("የክፍል ደረጃ ሪፖርት ማዘጋጀት")}</li>
+src/App.tsx:7659: <h3 className="font-bold text-slate-900 dark:text-white">{tx("ለወላጆች")}</h3>
+src/App.tsx:7662: <li>{tx("የልጅዎን ውጤት እና መገኘት መከታተል")}</li>
+src/App.tsx:7663: <li>{tx("የትምህርት ቤቱን ማስታወቂያዎች ማንበብ")}</li>
+src/App.tsx:7729: <p className="font-bold text-slate-800 dark:text-slate-200">{currentUser?.name || tx("ተጠቃሚ")}</p>
+src/App.tsx:7739: placeholder={tx("ቢያንስ 4 ፊደላት ወይም ቁጥሮች...")}
+src/App.tsx:7969: placeholder={tx("ምሳሌ፦ ትጉሃን ሊቃውንት አካዳሚ")}
+src/App.tsx:8087: mottoAmh: tx("ለክህሎትና ለውጤታማነት እንተጋለን!"),
+src/App.tsx:8097: academicYear: tx("2018 ዓ.ም"),
+src/App.tsx:8286: {lang === 'am' ? tx("ሰርዝ!") : 'Delete'}
+src/App.tsx:8296: {lang === 'am' ? tx("ተወው") : 'Cancel'}
+src/App.tsx:8450: {lang === 'am' ? tx("ተው") : 'Cancel'}
+src/App.tsx:8578: )}<strong>"Add to Homescreen"</strong> / <strong>"Install Page as App"</strong>{tx(" በመምረጥ ራሱን የቻለ አፕ ማድረግ ይችላሉ።\n                    ")}</p>
+src/App.tsx:8760: <h4 className="text-[14px] font-black text-white tracking-wide text-center leading-tight">{schoolConfig.nameAmh || tx("የደሊጀነት ት/ቤት")}</h4>
+src/App.tsx:8762: <div className="text-[7.5px] font-bold mt-1.5 text-indigo-100 text-center uppercase tracking-widest border-t border-indigo-400/30 pt-1 w-full mx-auto">{tx("\n                          የተማሪዎች መታወቂያ ካርድ (")}{student.academicYear || schoolConfig.academicYear || tx("2018 ዓ.ም")})<br/>STUDENT ID CARD
+src/App.tsx:8812: <h4 className="text-[13px] font-black text-slate-900 tracking-wide text-center mt-0.5">{schoolConfig.nameAmh || tx("የደሊጀነት ት/ቤት")}</h4>
+src/App.tsx:9105: {schoolConfig.nameAmh || tx("የደሊጀነት ት/ቤት")}
+src/App.tsx:9110: <div className="text-[7px] font-black mt-1 text-indigo-50 text-center uppercase tracking-widest border-t border-indigo-400/40 pt-1 w-full mx-auto">{tx("\n                            የተማሪዎች መታወቂያ ካርድ (")}{selectedQRStudent.academicYear || schoolConfig.academicYear || tx("2018 ዓ.ም")})<br/>STUDENT ID CARD
+src/App.tsx:9156: <h4 className="text-[12px] font-black text-slate-900 tracking-wide text-center">{schoolConfig.nameAmh || tx("የደሊጀነት ት/ቤት")}</h4>
+src/App.tsx:9186: <span className="text-[7px] text-slate-500 block uppercase font-bold tracking-wider">{tx("ፋይዳ")}</span>
+src/App.tsx:9336: {schoolConfig.nameAmh || tx("የደሊጀነት ት/ቤት")}
+src/App.tsx:9341: <div className="text-[7px] font-black mt-1 text-indigo-50 text-center uppercase tracking-widest border-t border-indigo-400/40 pt-1 w-full mx-auto">{tx("\n        የመምህራን መታወቂያ ካርድ (")}{schoolConfig.academicYear || tx("2018 ዓ.ም")})<br/>TEACHER ID CARD
+src/App.tsx:9553: <span>{tx("ፒዲኤፍ በመፍጠር ላይ...")}</span>
+src/App.tsx:9761: <p className="text-[9px] font-mono font-bold text-slate-400">Academic Term: {schoolConfig.evaluationMode === 'quarter' ? 'Quarters Combined' : 'Semesters Combined'} - Year {foundStudent.academicYear || schoolConfig.academicYear || tx("2018 ዓ.ም")}</p>
+src/App.tsx:9786: <span className="text-[#854d0e] block text-[8px] font-black uppercase tracking-wider">{tx("የተማሪው ሙሉ ስም")}</span>
+src/App.tsx:9921: {annualAvg >= 50 ? tx("ያለፈ / Promoted 🎉") : 'Needs Support ⚠️'}
+src/App.tsx:9945: {studentExtraInfo[foundStudent.id]?.absent || 0}{tx(" ቀናት\n                              ")}</strong>
+src/App.tsx:9953: <span className="text-slate-400 block font-bold leading-tight">{tx("ጠቅላላ ቀናት")}</span>
+src/App.tsx:9957: <span className="text-slate-400 block font-bold leading-tight">{tx("የቀረበት")}</span>
+src/App.tsx:9958: <strong className="text-rose-700 font-black">{studentExtraInfo[foundStudent.id]?.absent || 0}{tx(" ቀን")}</strong>
+src/App.tsx:9961: <span className="text-slate-400 block font-bold leading-tight">{tx("የተገኘበት")}</span>
+src/App.tsx:9962: <strong className="text-emerald-700 font-black">{180 - (studentExtraInfo[foundStudent.id]?.absent || 0)}{tx(" ቀን")}</strong>
+src/App.tsx:9981: if (k === 'amharic' || k === tx("አማርኛ") || k === 'mathematics' || k === 'math' || k === 'maths' || k === tx("ሒሳብ") || k === 'english' || k === tx("እንግሊዝኛ")) {
+src/App.tsx:9996: <div className="text-xs font-black leading-none">{tx("ያለፈ / PROMOTED")}</div>
+src/App.tsx:9997: <div className="text-[6.5px] font-extrabold tracking-normal mt-0.5">{tx("የርዕሰ መምህራን ምክር ቤት ውሳኔ • SCHOOL BOARD")}</div>
+src/App.tsx:10001: <div className="text-xs font-black leading-none">{tx("ያልተመረቀ / RETAINED")}</div>
+src/App.tsx:10002: <div className="text-[6.5px] font-extrabold tracking-normal mt-0.5">{tx("የርዕሰ መምህራን ምክር ቤት ውሳኔ • SCHOOL BOARD")}</div>
+src/App.tsx:10031: <span className="text-[9.5px] font-black text-slate-700 mt-1">{tx("የክፍል ኃላፊ መምህር ፊርማ")}</span>
+src/App.tsx:10038: <span className="text-[9.5px] font-black text-slate-700 mt-1">{tx("የርዕሰ መምህር ፊርማ እና ማህተም")}</span>
+src/App.tsx:10056: {schoolConfig.nameAmh || tx("የትምህርት ቤቱ ስም እዚህ ይገባል")}
+src/App.tsx:10062: “ {schoolConfig.mottoAmh || tx("ለክህሎትና ለውጤታማነት እንተጋለን!")} ”
+src/App.tsx:10068: <span className="text-slate-400 block text-[9px] font-bold uppercase">{tx("የተማሪ መለያ / Student ID")}</span>
+src/App.tsx:10161: <span className="text-[9px] font-bold text-slate-400 uppercase block">{tx("ፊደል")}</span>
+src/App.tsx:10238: <strong>{tx("ጠቃሚ ምክር፡")}</strong>{tx(" “ወረቀት ላይ አትም” የሚለውን ሲጫኑ የብሮውዘሩ የህትመት ገጽ ይከፈታል። በዚያ ገጽ ላይ ")}<strong>&quot;Headers and Footers&quot;</strong>{tx(" የሚለውን ማጥፋትዎን እና ")}<strong>&quot;Background Graphics&quot;</strong>{tx(
+src/App.tsx:10278: <span className="text-[10px] text-indigo-700 font-black tracking-widest uppercase block">{tx("የተማሪ ዕለታዊ መከታተያ መዝገብ")}</span>
+src/App.tsx:10301: <th className="p-3 w-12 text-center">{tx("ተ.ቁ")}</th>
+src/App.tsx:10358: <h4 className="font-extrabold text-slate-900 text-sm">{tx("የአቴንዳንስ ፒዲኤፍ እየተዘጋጀ ነው...")}</h4>
+src/App.tsx:10627: <p className="text-xs text-slate-600 leading-relaxed">{tx("\n              ተማሪ ")}<strong>{deletingStudentMainTab.name}</strong>{tx(" (መታወቂያ፡ ")}{deletingStudentMainTab.id}{tx(
+src/App.tsx:10865: <span className="text-[10px] text-slate-400 uppercase font-bold block">{tx("ከፍተኛ ውጤት የተመዘገበበት ትምህርት")}</span>
+src/App.tsx:10903: )}<strong>{tx("\"ፒዲኤፍ አውርድ\"")}</strong>{tx(" የሚለውን ሊንክ በመጫን በቀጥታ ማውረድ ይችላሉ።\n            ")}</p>
+src/components/AnnouncementSection.tsx:111: <span className="text-[10px] bg-amber-50 text-amber-700 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">{tx("ርዕሰ መምህር ተግባር")}</span>
+src/components/AnnouncementSection.tsx:113: <PlusCircle className="text-amber-500 w-5 h-5" />{tx(" የማስታወቅያ መለጠፊያ ፎርም\n          ")}</h3>
+src/components/AnnouncementSection.tsx:130: placeholder={tx("የወላጅና መምህራን ምክክር ስብሰባ")}
+src/components/AnnouncementSection.tsx:156: placeholder={tx("ዝርዝር መልዕክቱን እዚህ ይጻፉ...")}
+src/components/AnnouncementSection.tsx:229: <span className="flex items-center gap-1"><User className="w-3 h-3" />{tx(" ርዕሰ መምህር")}</span>
+src/components/AnnouncementSection.tsx:268: <label className="block text-xs font-bold uppercase text-slate-600 mb-1">{tx("የማስታወቂያው ተደራሽነት:")}</label>
+src/components/AnnouncementSection.tsx:313: <span className="font-extrabold text-xs uppercase tracking-wider">{tx("የማስታወቂያ መዝገብ ማጥፊያ ማስጠንቀቂያ")}</span>
+src/components/AnnouncementSection.tsx:317: ⚠️ <strong className="text-rose-700">{tx("ማስጠንቀቂያ፡")}</strong>{tx(" ማስታወቂያ ")}<strong className="text-slate-950 font-black">"{deletingAnn.title}"</strong>{tx("ን በቋሚነት ከሲስተሙ ማጥፋት ይፈልጋሉ?\n              ")}</p>
+src/components/ClassSetupSection.tsx:323: <span className="text-[10px] bg-indigo-50 text-indigo-700 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">{tx("ርዕሰ መምህር ተግባር")}</span>
+src/components/ClassSetupSection.tsx:325: <PlusCircle className="text-indigo-600 w-5 h-5" />{tx(" በክፍል የትምህርት መመዝገቢያ ፎርም\n          ")}</h3>
+src/components/ClassSetupSection.tsx:415: <BookOpen className="text-indigo-600 w-5 h-5" />{tx(" በክፍል የትምህርት ምዝገባዎች ዝርዝር\n            ")}</h3>
+src/components/ClassSetupSection.tsx:452: <th className="p-3 border-b border-slate-100">{tx("ክፍል እና ሴክሽን")}</th>
+src/components/ClassSetupSection.tsx:453: <th className="p-3 border-b border-slate-100 text-center">{tx("ተማሪ ብዛት")}</th>
+src/components/ClassSetupSection.tsx:455: <th className="p-3 border-b border-slate-100">{tx("የተመደቡ የትምህርት አይነቶች")}</th>
+src/components/ClassSetupSection.tsx:457: <th className="p-3 border-b border-slate-100 text-center">{tx("እርምጃዎች")}</th>
+src/components/ClassSetupSection.tsx:661: <span className="font-extrabold text-xs uppercase tracking-wider">{tx("የክፍል ምዝገባ ማጥፊያ ማስጠንቀቂያ")}</span>
+src/components/ClassSetupSection.tsx:665: ⚠️ <strong className="text-rose-700">{tx("ማስጠንቀቂያ፡")}</strong>{tx(" ክፍል ")}<strong className="text-slate-950 font-black">"{deletingClass.grade} - {deletingClass.section}"</strong>{tx("ን በቋሚነት ከሲስተሙ ማጥፋት ይፈልጋሉ?\n              ")}</p>
+src/components/ClassSetupSection.tsx:698: <p className="text-xs text-slate-500 mt-0.5">{tx("\n                    ክፍል: ")}<strong className="text-slate-800 font-bold">{schedulingClass.grade}</strong>{tx(" | ሴክሽን: ")}<strong className="text-slate-800 font-bold">{schedulingClass.section}</strong>{tx(" | ዘርፍ: ")}<strong className="text-indigo-600 font-bold">{schedulingClass.stream}</strong>
+src/components/ClassSetupSection.tsx:748: <span className="font-black text-slate-800 text-xs uppercase tracking-wide">{tx("\n                      የ")}{DAYS_OF_WEEK.find(d => d.key === activeScheduleDay)?.amh}{tx(" እለት ክፍለ ጊዜያት (Periods for ")}{activeScheduleDay})
+src/components/ClassSetupSection.tsx:784: <span className="text-xs font-black text-slate-900 bg-slate-200 px-2.5 py-1 rounded-lg">{tx("ክፍለ ጊዜ ")}{period.number}</span>
+src/components/GradeRemindersSection.tsx:449: <span className="text-xs text-slate-500">{tx("ተማሪዎች")}</span>
+src/components/GradeRemindersSection.tsx:485: <span className="text-xs text-slate-500">{tx("ወላጆች")}</span>
+src/components/GradeRemindersSection.tsx:504: <p className="text-[10px] text-slate-400 mt-0.5">{tx("የሚላከው ኢሜይል ይዘት እና መግለጫ ለማየት እዚህ ይጫኑ")}</p>
+src/components/GradeRemindersSection.tsx:572: placeholder={tx("የተማሪ ስም ወይም መለያ ቁጥር ይፈልጉ...")}
+src/components/GradeRemindersSection.tsx:639: <p className="text-[10px] text-slate-500 mt-0.5">{tx("\n                በአሁኑ ሰዓት በዝርዝሩ ውስጥ ለሚገኙ ")}<strong>{filteredStudents.length}</strong>{tx(" ውጤት የጎደላቸው ተማሪዎች ወላጆች በሙሉ ማሳሰቢያ በአንድ ጊዜ መላክ ይችላሉ።\n              ")}</p>
+src/components/GradeRemindersSection.tsx:659: <h4 className="text-sm font-bold text-slate-700">{tx("ተማሪዎች አልተገኙም")}</h4>
+src/components/GradeRemindersSection.tsx:723: <span className="inline-flex items-center gap-1 text-[10px] bg-indigo-50 text-indigo-700 font-bold px-2 py-0.5 rounded-full border border-indigo-100">{tx("\n                          ✉️ ተልኳል\n                        ")}</span>
+src/components/GradeRemindersSection.tsx:727: <span className="inline-flex items-center gap-1 text-[10px] bg-slate-50 text-slate-400 font-bold px-2 py-0.5 rounded-full border border-slate-150">{tx("\n                        ያልተላከ\n                      ")}</span>
+src/components/GradeRemindersSection.tsx:746: <span>{tx("እየተላከ ነው...")}</span>
+src/components/GradeRemindersSection.tsx:751: <span>{item.lastSentTime ? tx("ደግመህ ላክ") : tx("ማሳሰቢያ ላክ")}</span>
+src/components/GradeTrackerSection.tsx:304: const amhKey = subjectsKeys.find(k => k.toLowerCase() === 'amharic' || k === tx("አማርኛ"));
+src/components/GradeTrackerSection.tsx:305: const mathKey = subjectsKeys.find(k => k.toLowerCase() === 'mathematics' || k.toLowerCase() === 'math' || k.toLowerCase() === 'maths' || k === tx("ሒሳብ"));
+src/components/GradeTrackerSection.tsx:306: const engKey = subjectsKeys.find(k => k.toLowerCase() === 'english' || k === tx("እንግሊዝኛ"));
+src/components/GradeTrackerSection.tsx:872: alert(tx("ስህተት፡ በትምህርት ቤቱ መዋቅር ላይ ለውጥ ለማድረግ ፍቃድ የለዎትም።"));
+src/components/GradeTrackerSection.tsx:884: { id: 'quiz', name: tx("ኩዊዝ"), nameEng: 'QUIZ', maxMark: Number(weightQuiz) },
+src/components/GradeTrackerSection.tsx:885: { id: 'cw', name: tx("የክፍል ሥራ"), nameEng: 'CW', maxMark: Number(weightCw) },
+src/components/GradeTrackerSection.tsx:886: { id: 'hw', name: tx("የቤት ሥራ"), nameEng: 'HW', maxMark: Number(weightHw) },
+src/components/GradeTrackerSection.tsx:887: { id: 'gw', name: tx("የቡድን ሥራ"), nameEng: 'GW', maxMark: Number(weightGw) },
+src/components/GradeTrackerSection.tsx:888: { id: 'pw', name: tx("የፕሮጀክት ሥራ"), nameEng: 'PW', maxMark: Number(weightPw) },
+src/components/GradeTrackerSection.tsx:889: { id: 'cp', name: tx("የክፍል ተሳትፎ"), nameEng: 'CP', maxMark: Number(weightCp) },
+src/components/GradeTrackerSection.tsx:890: { id: 'mid', name: tx("ግማሽ ፈተና"), nameEng: 'MEXAM', maxMark: Number(weightMid) },
+src/components/GradeTrackerSection.tsx:891: { id: 'final', name: tx("ማጠቃለያ ፈተና"), nameEng: 'FEXAM', maxMark: Number(weightFinal) },
+src/components/GradeTrackerSection.tsx:899: { id: 'quiz', name: tx("ኩዊዝ"), nameEng: 'QUIZ', maxMark: 10 },
+src/components/GradeTrackerSection.tsx:900: { id: 'cw', name: tx("የክፍል ሥራ"), nameEng: 'CW', maxMark: 10 },
+src/components/GradeTrackerSection.tsx:901: { id: 'hw', name: tx("የቤት ሥራ"), nameEng: 'HW', maxMark: 10 },
+src/components/GradeTrackerSection.tsx:902: { id: 'gw', name: tx("የቡድን ሥራ"), nameEng: 'GW', maxMark: 10 },
+src/components/GradeTrackerSection.tsx:903: { id: 'pw', name: tx("የፕሮጀክት ሥራ"), nameEng: 'PW', maxMark: 10 },
+src/components/GradeTrackerSection.tsx:904: { id: 'cp', name: tx("የክፍል ተሳትፎ"), nameEng: 'CP', maxMark: 10 },
+src/components/GradeTrackerSection.tsx:905: { id: 'mid', name: tx("ግማሽ ፈተና"), nameEng: 'MEXAM', maxMark: 20 },
+src/components/GradeTrackerSection.tsx:906: { id: 'final', name: tx("ማጠቃለያ ፈተና"), nameEng: 'FEXAM', maxMark: 20 },
+src/components/GradeTrackerSection.tsx:2387: <Download className="w-4 h-4" />{tx(" PDF አውርድ\n              ")}</button>
+src/components/GradeTrackerSection.tsx:2392: <Printer className="w-4 h-4" />{tx(" አትም\n              ")}</button>
+src/components/GradeTrackerSection.tsx:2500: <p className="mt-1">{tx("\n                  በብሮውዘርዎ ወይም በiframe ገደብ ምክንያት ")}<strong>{tx("\"PDF አውርድ\"")}</strong>{tx(" የሚለው ቁልፍ በቀጥታ ካልሰራ፤ በቀላሉ ")}<strong>{tx("\"አትም\" (Print)")}</strong>{tx(" የሚለውን ቁልፍ ተጭነው፣ በሚመጣው የብሮውዘር ህትመት ሳጥን ውስጥ ")}<strong>"Destination"</strong>{tx(" የሚለውን ")}<strong>{tx("\"Save as PDF\" (ፒዲኤፍ አድርገህ አስቀምጥ)")}</strong>{tx(" በማድረግ ሙሉ ሮስተሩን በከፍተኛ ጥራት ማውረድ/ማስቀመጥ ይችላሉ።\n                ")}</p>
+src/components/GradeTrackerSection.tsx:2541: {schoolConfig?.academicYear || tx("2018 ዓ.ም")}
+src/components/GradeTrackerSection.tsx:2549: {schoolConfig?.nameAmh || tx("ደሊጀንት አካዳሚ")}
+src/components/GradeTrackerSection.tsx:2560: : tx("የተማሪዎች ዕለታዊ አቴንዳንስ ሪፖርት / Student Daily Attendance Report")}
+src/components/GradeTrackerSection.tsx:2595: {schoolConfig?.nameAmh || tx("ደሊጀንት አካዳሚ")}
+src/components/GradeTrackerSection.tsx:2600: "{schoolConfig?.mottoAmh || tx("ለክህሎትና ለውጤታማነት እንተጋለን!")}"
+src/components/GradeTrackerSection.tsx:2626: <span className="text-[10px] print:text-[8px] text-slate-600 block font-extrabold uppercase tracking-wide">{tx("ጠቅላላ ተማሪዎች / Students")}</span>
+src/components/GradeTrackerSection.tsx:2630: <span className="text-[10px] print:text-[8px] text-emerald-700 block font-extrabold uppercase tracking-wide">{tx("ተገኝተዋል / Present")}</span>
+src/components/GradeTrackerSection.tsx:2634: <span className="text-[10px] print:text-[8px] text-rose-700 block font-extrabold uppercase tracking-wide">{tx("ቀርተዋል / Absent")}</span>
+src/components/GradeTrackerSection.tsx:2638: <span className="text-[10px] print:text-[8px] text-amber-700 block font-extrabold uppercase tracking-wide">{tx("በፈቃድ / Excused")}</span>
+src/components/GradeTrackerSection.tsx:2646: <span className="text-[10px] print:text-[8px] text-slate-600 block font-extrabold uppercase tracking-wide">{tx("ጠቅላላ ተማሪዎች / Students")}</span>
+src/components/GradeTrackerSection.tsx:2650: <span className="text-[10px] print:text-[8px] text-slate-600 block font-extrabold uppercase tracking-wide">{tx("አማካይ ውጤት / Class Avg")}</span>
+src/components/GradeTrackerSection.tsx:2654: <span className="text-[10px] print:text-[8px] text-slate-600 block font-extrabold uppercase tracking-wide">{tx("ከፍተኛ ውጤት / Highest Score")}</span>
+src/components/GradeTrackerSection.tsx:2658: <span className="text-[10px] print:text-[8px] text-slate-600 block font-extrabold uppercase tracking-wide">{tx("የማለፍ ሪከርድ / Pass Rate")}</span>
+src/components/GradeTrackerSection.tsx:2670: <th className="p-2 border border-slate-300 bg-black text-white" style={{ backgroundColor: '#000000', color: '#ffffff' }}>{tx("ተማሪ መታወቂያ")}</th>
+src/components/GradeTrackerSection.tsx:2671: <th className="p-2 border border-slate-300 bg-black text-white" style={{ backgroundColor: '#000000', color: '#ffffff' }}>{tx("የተማሪ ሙሉ ስም")}</th>
+src/components/GradeTrackerSection.tsx:2702: <th className="p-2 border border-slate-300 bg-black text-white text-center w-12" style={{ backgroundColor: '#000000', color: '#ffffff' }}>{tx("ተ.ቁ")}</th>
+src/components/GradeTrackerSection.tsx:2703: <th className="p-2 border border-slate-300 bg-black text-white" style={{ backgroundColor: '#000000', color: '#ffffff' }}>{tx("ክፍል እና ሴክሽን")}</th>
+src/components/GradeTrackerSection.tsx:2704: <th className="p-2 border border-slate-300 bg-black text-white" style={{ backgroundColor: '#000000', color: '#ffffff' }}>{tx("የክፍል ኃላፊ መምህር")}</th>
+src/components/GradeTrackerSection.tsx:2705: <th className="p-2 border border-slate-300 text-center bg-black text-white" style={{ backgroundColor: '#000000', color: '#ffffff' }}>{tx("ጠቅላላ ተማሪዎች")}</th>
+src/components/GradeTrackerSection.tsx:2723: const hrTeacherName = hrTeacher ? hrTeacher.name : tx("ያልተመደበ");
+src/components/GradeTrackerSection.tsx:2725: let statusText = tx("🔴 ስም አልተጠራም");
+src/components/GradeTrackerSection.tsx:2727: if (unmarked === 0) statusText = tx("🟢 ስም ተጠርቷል");
+src/components/GradeTrackerSection.tsx:2769: <td className="p-2 text-center border border-slate-300">{student.gender === 'M' ? tx("ወንድ") : tx("ሴት")}</td>
+src/components/GradeTrackerSection.tsx:2942: <th className="p-2 border font-bold text-center bg-black text-white" style={{ borderColor: '#ffffff', backgroundColor: '#000000', color: '#ffffff', verticalAlign: 'middle' }}>{tx("Name / ስም")}</th>
+src/components/GradeTrackerSection.tsx:2945: <th className="p-2 border font-bold text-center bg-black text-white" style={{ borderColor: '#ffffff', backgroundColor: '#000000', color: '#ffffff', verticalAlign: 'middle' }}>{tx("Term / ክፍል")}</th>
+src/components/GradeTrackerSection.tsx:2954: <th className="p-2 border text-center font-black text-[10px] bg-black text-white" style={{ backgroundColor: '#000000', borderColor: '#ffffff', color: '#ffffff', verticalAlign: 'middle' }}>{tx("\n                            ድምር")}<br/>Total
+src/components/GradeTrackerSection.tsx:2956: <th className="p-2 border text-center font-black text-[10px] bg-black text-white" style={{ backgroundColor: '#000000', borderColor: '#ffffff', color: '#ffffff', verticalAlign: 'middle' }}>{tx("\n                            አማካይ")}<br/>Avg
+src/components/GradeTrackerSection.tsx:2958: <th className="p-2 border text-center font-black text-[10px] bg-black text-white" style={{ backgroundColor: '#000000', borderColor: '#ffffff', color: '#ffffff', verticalAlign: 'middle' }}>{tx("\n                            ደረጃ")}<br/>Rank
+src/components/GradeTrackerSection.tsx:2960: <th className="p-2 border text-center font-black text-[10px] bg-black text-white" style={{ backgroundColor: '#000000', borderColor: '#ffffff', color: '#ffffff', verticalAlign: 'middle' }}>{tx("\n                            ምግባር")}<br/>Cond.
+src/components/GradeTrackerSection.tsx:2962: <th className="p-2 border text-center font-black text-[10px] bg-black text-white" style={{ backgroundColor: '#000000', borderColor: '#ffffff', color: '#ffffff', verticalAlign: 'middle' }}>{tx("\n                            ቀሪ")}<br/>Abs.
+src/components/GradeTrackerSection.tsx:3173: <span className="text-[5px] font-black uppercase tracking-wider text-blue-600/85 leading-none">{tx("ኪብር መካከለኛ ደረጃ ትምህርት ቤት")}</span>
+src/components/GradeTrackerSection.tsx:3220: <div className="text-[10px] print:text-[8px] text-slate-500 font-bold -mt-0.5">{tx("የመምህሩ ፊርማ")}</div>
+src/components/GradeTrackerSection.tsx:3227: <div className="text-[10px] print:text-[8px] text-slate-500 font-bold -mt-0.5">{tx("የዳይሬክተሩ ፊርማ")}</div>
+src/components/GradeTrackerSection.tsx:3235: <span>{tx("ልዩ ህትመት ማኔጅመንት ፖርታል")}</span>
+src/components/GradeTrackerSection.tsx:3387: <span className="text-[10px] font-bold text-slate-500 uppercase">{tx("ክፍል:")}</span>
+src/components/GradeTrackerSection.tsx:3402: <span className="text-[10px] font-bold text-slate-500 uppercase">{tx("ሴክሽን:")}</span>
+src/components/GradeTrackerSection.tsx:3438: <span className="text-[10px] text-slate-400 block font-bold uppercase">{tx("በክፍሉ ያሉ ተማሪዎች")}</span>
+src/components/GradeTrackerSection.tsx:3439: <strong className="text-xl font-black text-slate-900">{filteredStudents.length}{tx(" ተማሪ")}</strong>
+src/components/GradeTrackerSection.tsx:3477: ? tx("የማርክ ሊስት ሰንጠረዥን በቀጥታ እዚህ ላይ መሙላት እና ማስተካከል ይችላሉ።")
+src/components/GradeTrackerSection.tsx:3479: ? tx("የዚህን ትምህርት አይነት ስለማያስተምሩ ማየት ብቻ ነው የሚፈቀድልዎ።")
+src/components/GradeTrackerSection.tsx:3480: : tx("ውጤቶችን እና ሮስተሩን መመልከት ብቻ ይችላሉ። ማስተካከል አይፈቀድም።")}
+src/components/GradeTrackerSection.tsx:3690: <p className="text-xs text-slate-400">“{studentSearchQuery}{tx("” የሚለውን ቃል የሚያሟላ ተማሪ በዚህ ክፍል ውስጥ የለም።")}</p>
+src/components/GradeTrackerSection.tsx:3741: <th className="p-3 student-name-cell sticky-col-1">{tx("ተማሪ")}</th>
+src/components/GradeTrackerSection.tsx:3915: <span className="text-slate-300 text-xs italic">{tx("ውጤት አልተሞላም")}</span>
+src/components/GradeTrackerSection.tsx:3924: title={currentUserRole !== 'principal' ? tx("ርዕሰ መምህሩ ብቻ ናቸው ማጽደቅ የሚችሉት (Only the Principal can approve grades)") : tx("ውጤቱን ለማጽደቅ ወይም ለመሰረዝ ጠቅ ያድርጉ")}
+src/components/GradeTrackerSection.tsx:3954: <span className="text-[10px] hidden xl:inline">{tx("አስቀምጥ")}</span>
+src/components/GradeTrackerSection.tsx:3975: <span className="text-[10px] hidden xl:inline">{tx("አስተካክል")}</span>
+src/components/GradeTrackerSection.tsx:3984: title={!r ? tx("ምንም ውጤት የለም") : isApproved ? tx("ውጤቱ የጸደቀ ስለሆነ መሰረዝ አይቻልም") : tx("የተማሪውን ውጤት ሰርዝ (Delete Grade)")}
+src/components/GradeTrackerSection.tsx:3987: <span className="text-[10px] hidden xl:inline">{tx("ሰርዝ")}</span>
+src/components/GradeTrackerSection.tsx:4014: <span className="font-extrabold text-amber-800 block mb-1">{tx("💡 ፒዲኤፍ ማውረጃ መመሪያ (PDF Download Guide)፡")}</span>{tx("\n                      በብሮውዘርዎ ወይም በiframe የደህንነት ገደብ ምክንያት ")}<strong>{tx("\"PDF አውርድ\"")}</strong>{tx(" በቀጥታ ካልሰራ፤ እባክዎ መተግበሪያውን \n                      ")}<a href={window.location.href} target="_blank" rel="noopener noreferrer" className="ml-1 px-2.5 py-1 bg-indigo-100 hover:bg-indigo-200 text-indigo-900 border border-indigo-200 rounded-md font-black inline-flex items-center gap-1 transition-colors">{tx(
+src/components/GradeTrackerSection.tsx:4016: )}</a>{tx("። በአዲስ ታብ ላይ ማውረድ በተሟላ ሁኔታ ይሰራል።\n                    ")}</div>
+src/components/GradeTrackerSection.tsx:4023: )}<span className="font-bold">{tx("ምግባር (Conduct)")}</span>{tx(" እና ")}<span className="font-bold">{tx("ቀሪ ቀናት (Absents)")}</span>{tx(" እዚሁ ሰንጠረዥ ላይ በቀጥታ ማስተካከል ይችላሉ። እንዲሁም ")}<span className="font-bold">{tx("\"የተማሪ ካርድ\" (Generate Card)")}</span>{tx(" በመጫን የተሟላ ውጤት ካርድ ማመንጨት ይቻላል።\n                      ")}<span className="block mt-2 font-black text-emerald-700 animate-pulse">{tx(
+src/components/GradeTrackerSection.tsx:4041: <div className="bg-white px-3 py-2 rounded-xl border border-indigo-100 shadow-3xs text-[11px] font-black text-indigo-800 shrink-0 text-center">{tx("\n                        ጠቅላላ ትምህርቶች፡ ")}{subjects.length}
+src/components/GradeTrackerSection.tsx:4104: title={tx("ውጤት ለማስተካከል ጠቅ ያድርጉ")}
+src/components/GradeTrackerSection.tsx:4198: <CheckCircle2 className="w-3 h-3 text-emerald-600" />{tx(" አልፏል\n                                  ")}</span>
+src/components/GradeTrackerSection.tsx:4201: <XCircle className="w-3 h-3 text-rose-600" />{tx(" ወድቋል\n                                  ")}</span>
+src/components/GradeTrackerSection.tsx:4204: <span className="text-slate-300 italic text-xs">{tx("ያልተሞላ")}</span>
+src/components/GradeTrackerSection.tsx:4230: <p>{tx("1. ለማለፍ የሚያስፈልገው ዝቅተኛ ውጤት 50% ነው።")}</p>
+src/components/GradeTrackerSection.tsx:4231: <p>{tx("2. ምግባር ከ \"A\" እስከ \"D\" ባሉ ደረጃዎች መሠረት ይመዘገባል።")}</p>
+src/components/GradeTrackerSection.tsx:4232: <p>{tx("3. ይህ ሰነድ በክፍሉ መምህር እና በፈታኞች ኮሚቴ ተረጋግጦ የጸደቀ ነው።")}</p>
+src/components/GradeTrackerSection.tsx:4302: <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-base shadow-xs">{tx("\n                            ኢ\n                          ")}</div>
+src/components/GradeTrackerSection.tsx:4322: <Users className="w-5 h-5 text-indigo-600" />{tx(" የክፍሎች አቴንዳንስ መከታተያ ሰሌዳ\n                        ")}</h4>
+src/components/GradeTrackerSection.tsx:4323: <p className="text-slate-400 text-xs font-medium">{tx("\n                          በዕለቱ ")}<span className="font-semibold text-slate-700">({selectedDateStr})</span>{tx(" የእያንዳንዱ ክፍል አቴንዳንስ መሙላቱን መከታተያ ሰሌዳ\n                        ")}</p>
+src/components/GradeTrackerSection.tsx:4346: placeholder={tx("በክፍል ወይም በኃላፊ መምህር ፈልግ...")}
+src/components/GradeTrackerSection.tsx:4367: <div className="flex items-center justify-end px-3 py-1.5 text-xs font-extrabold text-indigo-750 font-mono">{tx("\n                        የተገኙ ክፍሎች፡ ")}{filteredAllGradeSections.length} / {allGradeSections.length}
+src/components/GradeTrackerSection.tsx:4376: <th className="p-3 w-12 text-center">{tx("ተ.ቁ")}</th>
+src/components/GradeTrackerSection.tsx:4377: <th className="p-3">{tx("ክፍል እና ሴክሽን")}</th>
+src/components/GradeTrackerSection.tsx:4378: <th className="p-3">{tx("የክፍል ኃላፊ መምህር")}</th>
+src/components/GradeTrackerSection.tsx:4379: <th className="p-3 text-center">{tx("አጠቃላይ ተማሪዎች")}</th>
+src/components/GradeTrackerSection.tsx:4382: <th className="p-3 text-center">{tx("ተግባራት")}</th>
+src/components/GradeTrackerSection.tsx:4411: const hrTeacherName = hrTeacher ? hrTeacher.name : tx("ያልተመደበ");
+src/components/GradeTrackerSection.tsx:4433: <span className="text-slate-400 italic text-xs">{tx("ምንም ተማሪ የለም")}</span>
+src/components/GradeTrackerSection.tsx:4516: <h3 className="text-2xl font-black text-slate-900 leading-tight">{totalCount} <span className="text-xs font-bold text-slate-500">{tx("ተማሪዎች")}</span></h3>
+src/components/GradeTrackerSection.tsx:4517: <p className="text-[10px] text-slate-500 font-bold">{tx("ጠቅላላ የተመዘገቡ የክፍሉ ተማሪዎች")}</p>
+src/components/GradeTrackerSection.tsx:4529: <h3 className="text-xl font-black text-emerald-800 leading-none">{presentCount} <span className="text-xs font-bold text-emerald-600">{tx("ተማሪ")}</span></h3>
+src/components/GradeTrackerSection.tsx:4554: <h3 className="text-xl font-black text-rose-800 leading-none">{absentCount} <span className="text-xs font-bold text-rose-600">{tx("ተማሪ")}</span></h3>
+src/components/GradeTrackerSection.tsx:4580: <h3 className="text-lg font-black text-slate-800 leading-none">{excusedCount} <span className="text-xs font-bold text-slate-500">{tx("ተማሪ")}</span></h3>
+src/components/GradeTrackerSection.tsx:4588: <span className="bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded text-[9px] font-black">{tx("\n                            አጠቃላይ ተሳታፊ፡ ")}{completionRate}%
+src/components/GradeTrackerSection.tsx:4680: <span className="text-[10px] text-slate-500 font-extrabold uppercase tracking-widest bg-slate-200/50 px-2.5 py-1 rounded-md">{tx("\n                    ክፍል: ")}{selectedGrade} {selectedSection}
+src/components/GradeTrackerSection.tsx:4721: {student.gender === 'M' || student.gender === 'Male' ? tx("ወንድ") : tx("ሴት")}
+src/components/GradeTrackerSection.tsx:4730: {extra.absent}{tx(" ቀን ቀርቷል\n                                ")}</span>
+src/components/GradeTrackerSection.tsx:4835: <span className="text-[10px] bg-indigo-50 text-indigo-700 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">{tx("የክፍል ኃላፊ መምህር ተግባር")}</span>
+src/components/GradeTrackerSection.tsx:4837: <PlusCircle className="text-indigo-600 w-5 h-5" />{tx(" አዲስ ተማሪ ይመዝግቡ\n                    ")}</h3>
+src/components/GradeTrackerSection.tsx:4854: placeholder={tx("መላኩ ገብሬ")}
+src/components/GradeTrackerSection.tsx:4920: <p className="text-[10px] text-slate-400 mt-1">{tx("ይህንን ኢሜል በመጠቀም ወላጅ ሲገባ የልጁን ውጤት ያለምንም መታወቂያ እንዲያይ ይደረጋል።")}</p>
+src/components/GradeTrackerSection.tsx:4939: placeholder={tx("አዲስ አበባ፣ ኢትዮጵያ")}
+src/components/GradeTrackerSection.tsx:4969: <Users className="text-emerald-600 w-5 h-5" />{tx(" በክፍልዎ የተመዘገቡ ተማሪዎች\n                      ")}</h3>
+src/components/GradeTrackerSection.tsx:4972: <span className="text-xs bg-emerald-50 text-emerald-800 font-bold px-2.5 py-1 rounded-full border border-emerald-100">{tx("\n                      ጠቅላላ፡ ")}{filteredStudents.length}{tx(" ተማሪዎች\n                    ")}</span>
+src/components/GradeTrackerSection.tsx:4984: <th className="p-3 text-center">{tx("እርምጃዎች")}</th>
+src/components/GradeTrackerSection.tsx:4996: {s.gender === 'Male' ? tx("ወንድ") : tx("ሴት")}
+src/components/GradeTrackerSection.tsx:5389: <span className="font-extrabold text-amber-950">{tx("ተግባራዊ መመሪያ (Help): ")}</span>{tx("\n                      \"ካርዱን በPDF አውርድ\" የሚለው ካልሰራ፣ ")}<strong>{tx("\"ካርዱን አትም\" (Print)")}</strong>{tx(" የሚለውን ተጭነው ")}<strong>"Save as PDF"</strong>{tx(" በመምረጥ ማውረድ ይችላሉ።\n                    ")}</div>
+src/components/GradeTrackerSection.tsx:5536: <span>{tx("ከ 50% በታች")}</span>
+src/components/GradeTrackerSection.tsx:5545: ⚠️ <span className="text-amber-900">{tx("ማስታወሻ፡")}</span>{tx(
+src/components/GradeTrackerSection.tsx:5627: <h3 className="text-[12.5px] font-black tracking-widest text-amber-300 leading-none">{tx("የአዲስ አበባ ከተማ አስተዳደር ትምህርት ቢሮ")}</h3>
+src/components/GradeTrackerSection.tsx:5635: {schoolConfig?.nameAmh || tx("ኪብር መካከለኛ ደረጃ ትምህርት ቤት")}
+src/components/GradeTrackerSection.tsx:5641: " {schoolConfig?.mottoAmh || tx("ለክህሎትና ለውጤታማነት እንተጋለን!")} " / " {schoolConfig?.mottoEng || 'Striving for Skills and Excellence'} "
+src/components/GradeTrackerSection.tsx:5666: <span className="text-indigo-950 font-black text-[12px] mt-0.5">{tx("ኮልፌ ቀራኒዮ")}</span>
+src/components/GradeTrackerSection.tsx:5687: <span className="text-[#854d0e] text-[10px] font-black uppercase tracking-wider shrink-0">{tx("የተማሪው ስም / Name:")}</span>
+src/components/GradeTrackerSection.tsx:5708: <span className="text-[#854d0e] text-[10px] font-black uppercase tracking-wider shrink-0">{tx("ክፍል / Grade:")}</span>
+src/components/GradeTrackerSection.tsx:5712: <span className="text-[#854d0e] text-[10px] font-black uppercase tracking-wider shrink-0">{tx("ዘመን / Year:")}</span>
+src/components/GradeTrackerSection.tsx:5713: <strong className="text-slate-950 font-black text-[11px] truncate">{schoolConfig?.academicYear || tx("2018 ዓ.ም")}</strong>
+src/components/GradeTrackerSection.tsx:5731: <span className="text-[8.5px] text-slate-500 text-center font-bold mt-1 leading-none">{tx("የተማሪው ፎቶ")}<br/>(Photo)</span>
+src/components/GradeTrackerSection.tsx:5741: <span className="text-[13px] font-black leading-none">{tx("ያለፈ / PROMOTED")}</span>
+src/components/GradeTrackerSection.tsx:5746: <span className="text-[13px] font-black leading-none">{tx("አልፏል / RETAINED")}</span>
+src/components/GradeTrackerSection.tsx:5755: <span>{tx("ወደ ቀጣይ ክፍል የተዛወረ/ች / Promoted to: ")}</span>
+src/components/GradeTrackerSection.tsx:5766: {isStudentPassing(rosterItem) ? tx("የተዛወረ / PROMOTED") : tx("አልተዛወረም / RETAINED")}
+src/components/GradeTrackerSection.tsx:5930: <span>{tx("🌟 ባህሪና ሥነ-ምግባር / BEHAVIORS & CONDUCTS")}</span>
+src/components/GradeTrackerSection.tsx:5961: <strong className="text-[#1e1b4b] font-black text-sm block">{tx("180 ቀናት")}</strong>
+src/components/GradeTrackerSection.tsx:5965: <strong className="text-rose-700 font-black text-sm block">{rosterItem.absent}{tx(" ቀን")}</strong>
+src/components/GradeTrackerSection.tsx:5969: <strong className="text-emerald-700 font-black text-sm block">{180 - rosterItem.absent}{tx(" ቀን")}</strong>
+src/components/GradeTrackerSection.tsx:5982: if (s1Avg >= 90) return tx("\"እጅግ በጣም ከፍተኛ ውጤት ያስመዘገበ ተማሪ ነው፤ በቀጣይም ይህንን ውጤት እንዲያስቀጥል ድጋፍ ይደረግለት።\"");
+src/components/GradeTrackerSection.tsx:5983: if (s1Avg >= 75) return tx("\"በጣም ጥሩ ውጤት ነው፤ የበለጠ ውጤታማ እንዲሆን የየዕለት ክትትልና እገዛ ቢደረግለት ይመረጣል።\"");
+src/components/GradeTrackerSection.tsx:5984: if (s1Avg >= 50) return tx("\"ጥሩ ማለፊያ ውጤት ነው፤ በቀጣይ ክፍለ ጊዜ ይበልጥ በትኩረት እንዲያጠና ይበረታታ።\"");
+src/components/GradeTrackerSection.tsx:5985: return tx("\"ውጤቱን ለማሻሻል ከፍተኛ ጥረት፣ የየዕለት እገዛና ተከታታይ ክትትል ያስፈልገዋል።\"");
+src/components/GradeTrackerSection.tsx:5996: if (rosterItem.average >= 75 && isStudentPassing(rosterItem)) return tx("\"አመርቂና በጣም ጥሩ ውጤት ነው፤ በቀጣዩ ክፍል ይህንን የትምህርት ስኬት አስጠብቆ እንዲቀጥል ይመረጣል።\"");
+src/components/GradeTrackerSection.tsx:5997: if (isStudentPassing(rosterItem)) return tx("\"ትምህርቱን በስኬት አጠናቋል፤ በቀጣይ ክፍል ውጤቱን ይበልጥ ለማሳደግ በትጋት እንዲያጠና ይመረጣል።\"");
+src/components/GradeTrackerSection.tsx:5998: return tx("\"በሚቀጥለው ዓመት ውጤቱን ለማሻሻል ከፍተኛ ጥረት፣ የየዕለት እገዛና ተከታታይ ክትትል ያስፈልገዋል።\"");
+src/components/GradeTrackerSection.tsx:6022: <span className="text-[12.5px] font-black text-slate-800 mt-1">{tx("የክፍል ኃላፊ መምህር")}</span>
+src/components/GradeTrackerSection.tsx:6048: {schoolConfig?.nameAmh || tx("ኪብር መካከለኛ ደረጃ ትምህርት ቤት")}
+src/components/GradeTrackerSection.tsx:6054: “ {schoolConfig?.mottoAmh || tx("ለክህሎትና ለውጤታማነት እንተጋለን!")} ”
+src/components/GradeTrackerSection.tsx:6060: <span className="text-slate-400 block text-[9px] font-bold uppercase">{tx("የተማሪ መለያ / Student ID")}</span>
+src/components/GradeTrackerSection.tsx:6123: <span className="block text-[10px] text-slate-400 font-medium">{tx("አስተማሪ፡ ")}{teachDetails.name}</span>
+src/components/GradeTrackerSection.tsx:6170: <span className="text-[9px] font-bold text-slate-400 uppercase block">{tx("ድምር አማካይ")}</span>
+src/components/GradeTrackerSection.tsx:6177: <span className="text-[9px] font-bold text-slate-400 uppercase block">{tx("ፊደል")}</span>
+src/components/GradeTrackerSection.tsx:6188: <span className="text-[9px] font-bold text-slate-400 uppercase block">{tx("ደረጃ")}</span>
+src/components/GradeTrackerSection.tsx:6310: <span className="text-[10px] text-indigo-700 block font-bold uppercase">{tx("የተማሪ ስምና የትምህርት አይነት")}</span>
+src/components/GradeTrackerSection.tsx:6458: <span>{tx("ይህ ተግባር ውጤቶችን በሙሉ የሚያጠፋ ስለሆነ በከፍተኛ ጥንቃቄ እንዲተገበር ይመከራል።")}</span>
+src/components/GradeTrackerSection.tsx:6506: <h4 className="font-extrabold text-slate-900 text-sm">{tx("ፒዲኤፍ እየተዘጋጀ ነው...")}</h4>
+src/components/GradeTrackerSection.tsx:6607: <span className="font-extrabold text-xs uppercase tracking-wider">{tx("የተማሪ መዝገብ ማጥፊያ ማስጠንቀቂያ")}</span>
+src/components/GradeTrackerSection.tsx:6611: ⚠️ <strong className="text-rose-700">{tx("ማስጠንቀቂያ፡")}</strong>{tx(" ተማሪ ")}<strong className="text-slate-950 font-black">"{deletingStudent.name}"</strong>{tx("ን በቋሚነት ከሲስተሙ ማጥፋት ይፈልጋሉ?\n              ")}</p>
+src/components/GradeTrackerSection.tsx:6640: <h3 className="font-extrabold text-sm font-sans text-indigo-950">{tx("የውጤት ክፍፍል መመሪያ ማስተካከያ")}</h3>
+src/components/GradeTrackerSection.tsx:6654: 💡 <strong>{tx("ማሳሰቢያ፡")}</strong>{tx(
+src/components/GradeTrackerSection.tsx:6656: )}<strong>{tx("የሁሉም ድምር በትክክል 100% መሆን አለበት።")}</strong>
+src/components/GradeTrackerSection.tsx:6776: <strong className="text-sm text-slate-700">{tx("መሆን ያለበት፡ 100%")}</strong>
+src/components/PerformanceDashboard.tsx:374: <p className="font-black text-amber-400 text-base">{dataObj.count === 1 ? tx("1 ተማሪ") : `${dataObj.count} ተማሪዎች`}</p>
+src/components/PerformanceDashboard.tsx:377: <span className="text-[10px] text-slate-400 font-bold uppercase block mb-0.5">{tx("የተማሪዎች ስም፡")}</span>
+src/components/PerformanceDashboard.tsx:384: <p className="text-[10px] text-slate-500 italic">{tx("በዚህ ደረጃ ውስጥ ያለ ተማሪ የለም")}</p>
+src/components/PerformanceDashboard.tsx:404: {selectedGrade === 'All' ? tx("የሁሉም ክፍሎች") : `የ${selectedGrade}`}{tx(" - ሴክሽን ")}{selectedSection}{tx(
+src/components/PerformanceDashboard.tsx:412: <span className="text-xs font-bold text-slate-500">{tx("ምዘና፡")}</span>
+src/components/PerformanceDashboard.tsx:432: <span className="text-xs font-bold text-slate-500">{tx("የትምህርት አይነት:")}</span>
+src/components/PerformanceDashboard.tsx:455: <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">{tx("የክፍሉ አማካይ")}</span>
+src/components/PerformanceDashboard.tsx:462: <p className="text-[10px] text-slate-400 font-semibold mt-1">{tx("የክፍሉ አጠቃላይ የውጤት ድምር")}</p>
+src/components/PerformanceDashboard.tsx:469: <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">{tx("የማለፊያ ምጣኔ")}</span>
+src/components/PerformanceDashboard.tsx:477: <span className="text-[10px] text-emerald-700 font-bold">{stats.passCount}{tx(" ተማሪ አልፏል")}</span>
+src/components/PerformanceDashboard.tsx:485: <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">{tx("ከፍተኛ ውጤት")}</span>
+src/components/PerformanceDashboard.tsx:492: <p className="text-[10px] text-slate-400 font-semibold mt-1">{tx("የላቀ ውጤት ያስመዘገበ ተማሪ")}</p>
+src/components/PerformanceDashboard.tsx:499: <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">{tx("ዝቅተኛ ውጤት")}</span>
+src/components/PerformanceDashboard.tsx:506: <p className="text-[10px] text-slate-400 font-semibold mt-1">{tx("ደካማ የክፍል ውስጥ ውጤት")}</p>
+src/components/PerformanceDashboard.tsx:513: <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">{tx("የተገመገሙ")}</span>
+src/components/PerformanceDashboard.tsx:519: <h4 className="text-2xl font-black text-slate-900">{stats.totalCount}{tx(" ተማሪ")}</h4>
+src/components/PerformanceDashboard.tsx:520: <p className="text-[10px] text-slate-400 font-semibold mt-1">{tx("ውጤት የተመዘገበላቸው ተማሪዎች")}</p>
+src/components/PerformanceDashboard.tsx:541: <p className="italic">{tx("ለዚህ ትምህርት አይነትና የክፍለ ጊዜ ውጤት አልተመዘገበም")}</p>
+src/components/PerformanceDashboard.tsx:542: <p className="text-[10px] mt-1">{tx("እባክዎን ከላይ ሌላ ሩብ አመት ወይም ትምህርት ይምረጡ")}</p>
+src/components/PerformanceDashboard.tsx:567: <span>{tx("📐 የሁሉም ትምህርቶች አማካይ ንፅፅር")}</span>
+src/components/PerformanceDashboard.tsx:641: <div className="h-72 border border-dashed border-slate-200 rounded-xl flex items-center justify-center text-slate-400 text-xs italic">{tx("\n              እባክዎን የውጤት እድገት ሁኔታውን ለማየት ተማሪ ይምረጡ።\n            ")}</div>
+src/components/PerformanceDashboard.tsx:704: <span className="font-extrabold text-xs text-slate-800 block">{tx("የውጤት ትንተና ማሳሰቢያ፡")}</span>
+src/components/PerformanceDashboard.tsx:705: <span className="text-[10px] text-slate-500 block">{tx("\n                          የዚህ ተማሪ የ")}{selectedSubject}{tx(" ውጤት ከመጀመሪያው ምዘና ወደ መጨረሻው ምዘና ሲታይ ")}{' '}
+src/components/PerformanceDashboard.tsx:707: {change > 0 ? `በ +${change}% ጨምሯል` : change < 0 ? `በ ${change}% ቀንሷል` : tx("ምንም ለውጥ አላሳየም")}
+src/components/PerformanceDashboard.tsx:708: </span>{tx("።\n                        ")}</span>
+src/components/PerformanceDashboard.tsx:714: <TrendingUp className="w-3 h-3" />{tx(" ማሻሻል የታየበት\n                        ")}</span>
+src/components/PerformanceDashboard.tsx:717: <TrendingDown className="w-3 h-3" />{tx(" ድጋፍ የሚፈልግ\n                        ")}</span>
+src/components/PerformanceDashboard.tsx:719: <span className="bg-slate-100 text-slate-700 text-[10px] font-black uppercase px-2 py-1 rounded-md inline-block">{tx("\n                          የተረጋጋ\n                        ")}</span>
+src/components/PerformanceDashboard.tsx:753: <span className="text-emerald-600 font-black block">+{lead.delta}{tx("% እድገት")}</span>
+src/components/PerformanceDashboard.tsx:776: <p className="text-xs text-emerald-600 font-bold">{tx("🎉 ሁሉም ተማሪዎች ማለፊያ ነጥብ ላይ ናቸው!")}</p>
+src/components/PerformanceDashboard.tsx:777: <p className="text-[9px] text-slate-400">{tx("ከ 50% በታች የሆነ አማካይ ውጤት አልተገኘም።")}</p>
+src/components/PerformanceDashboard.tsx:788: <span className="text-rose-600 font-black block">{tx("አማካይ፡ ")}{st.average}%</span>
+src/components/PerformanceDashboard.tsx:791: {st.failingSubjectsCount}{tx(" ት/ት የወደቀ\n                        ")}</span>
+src/components/PerformanceDashboard.tsx:820: alert(tx("የተማሪዎች ውጤት ትንታኔ ሪፖርት በተሳካ ሁኔታ ተዘጋጅቷል!"));
+src/components/PrincipalAnalytics.tsx:274: <BarChart3 className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />{tx(" የትምህርት ውጤት አጠቃላይ ግራፍ ማሳያ\n          ")}</h2>
+src/components/PrincipalAnalytics.tsx:332: <span className="text-xs text-slate-500 font-medium">{tx("ውጤቶች")}</span>
+src/components/PrincipalAnalytics.tsx:334: <span className="text-[10px] text-indigo-650 dark:text-indigo-400 font-bold block">{tx("\n              📊 በጥናቱ የተካተቱ ጠቅላላ ውጤቶች\n            ")}</span>
+src/components/PrincipalAnalytics.tsx:349: <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold block">{tx("\n              📈 የሁሉም ክፍሎች እና ትምህርቶች አማካይ\n            ")}</span>
+src/components/PrincipalAnalytics.tsx:364: <span className="text-[10px] text-slate-500 font-semibold block">{tx("\n              🎉 ያለፉ ተማሪዎች፡ ")}{overallAverages.passed}{tx(" | ያላለፉ፡ ")}{overallAverages.failed}
+src/components/PrincipalAnalytics.tsx:384: <span className="text-[10px] text-amber-600 dark:text-amber-500 font-semibold block">{tx("\n              🏆 ከፍተኛ አፈጻጸም ያስመዘገበ ክፍል\n            ")}</span>
+src/components/PrincipalAnalytics.tsx:434: <span className="text-[10px] font-black text-slate-400 uppercase">{tx("ለንጽጽር የተመረጠ ክፍል፡")}</span>
+src/components/PrincipalAnalytics.tsx:483: dataKey={tx("አማካይ_ውጤት")}
+src/components/PrincipalAnalytics.tsx:530: dataKey={tx("የተማሪዎች_ብዛት")}
+src/components/PrincipalAnalytics.tsx:545: <span>{tx("ℹ️ በዚህ ክፍል ውስጥ ለተመረጡት ማጣሪያዎች ምንም የውጤት መረጃ አልተገኘም።")}</span>
+src/components/PrincipalAnalytics.tsx:577: dataKey={tx("አማካይ_ውጤት")}
+src/components/PrincipalAnalytics.tsx:604: <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 bg-emerald-500 rounded-xs" />{tx(" A ደረጃ ተማሪዎች")}</span>
+src/components/PrincipalAnalytics.tsx:605: <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 bg-blue-500 rounded-xs" />{tx(" B ደረጃ ተማሪዎች")}</span>
+src/components/PrincipalAnalytics.tsx:606: <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 bg-amber-500 rounded-xs" />{tx(" C ደረጃ ተማሪዎች")}</span>
+src/components/PrincipalAnalytics.tsx:607: <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 bg-pink-500 rounded-xs" />{tx(" D ደረጃ ተማሪዎች")}</span>
+src/components/PrincipalAnalytics.tsx:612: <span className="text-center italic font-medium">{tx("በተመረጠው የክፍል ደረጃ ስር የሚገኙ ሴክሽኖች አማካይ ውጤት ንጽጽር")}</span>
+src/components/PrincipalAnalytics.tsx:630: <h4 className="font-black text-slate-800 dark:text-slate-200">{tx("አጠቃላይ አፈጻጸም ግምገማ")}</h4>
+src/components/PrincipalAnalytics.tsx:631: <p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed">{tx("\n                    በአሁኑ ሰዓት የተማሪዎች አጠቃላይ ማለፍ ምጣኔ ")}<span className="font-bold text-indigo-650 dark:text-indigo-400">{overallAverages.passRate}%</span>{tx(" ሲሆን አማካይ ውጤት ደግሞ ")}<span className="font-bold text-slate-700 dark:text-slate-300">{overallAverages.avg}%</span>{tx(" ነው።\n                  ")}</p>
+src/components/PrincipalAnalytics.tsx:640: <h4 className="font-black text-slate-800 dark:text-slate-200">{tx("ምርጥ ውጤት ያለው ክፍል")}</h4>
+src/components/PrincipalAnalytics.tsx:641: <p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed">{tx("\n                      በከፍተኛ ውጤት እየመራ የሚገኘው ክፍል ")}<span className="font-bold text-emerald-650 dark:text-emerald-400">{gradeRankings.topGrade.name}</span>{tx(" በአማካይ ")}<span className="font-bold text-emerald-600 dark:text-emerald-400">{gradeRankings.topGrade.avgScore}%</span>{tx(" በማስመዝገብ ነው።\n                    ")}</p>
+src/components/PrincipalAnalytics.tsx:651: <h4 className="font-black text-rose-800 dark:text-rose-400">{tx("ልዩ እገዛ የሚፈልግ ክፍል")}</h4>
+src/components/PrincipalAnalytics.tsx:652: <p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed">{tx("\n                      አንጻራዊ ዝቅተኛ አማካይ ውጤት ያለው ")}<span className="font-semibold text-rose-700 dark:text-rose-400">{gradeRankings.strugglingGrade.name}</span>{tx(" ሲሆን አማካዩ ")}<span className="font-bold text-rose-600">{gradeRankings.strugglingGrade.avgScore}%</span>{tx(" ነው። ልዩ ድጋፍ ያስፈልገዋል።\n                    ")}</p>
+src/components/PrincipalAnalytics.tsx:661: <h4 className="font-black text-slate-800 dark:text-slate-200">{tx("ርምጃ መውሰጃ")}</h4>
+src/components/PrincipalAnalytics.tsx:674: <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-ping" />{tx(" እውነተኛ የውጤት ትንተና\n            ")}</span>
+src/components/QRScannerModal.tsx:467: <p className="text-xs font-semibold text-slate-600 dark:text-slate-300">{tx("ካሜራውን ለመክፈት ፍቃድ እየጠየቅን ነው...")}</p>
+src/components/QRScannerModal.tsx:659: <span className="text-[10px] font-black text-slate-900 dark:text-white block leading-tight">{tx("ርዕሰ መምህር")}</span>
+src/components/QRScannerModal.tsx:684: <span className="text-[10px] font-black text-slate-900 dark:text-white block leading-tight">{tx("መምህር")}</span>
+src/components/QRScannerModal.tsx:709: <span className="text-[10px] font-black text-slate-900 dark:text-white block leading-tight">{tx("ወላጅ")}</span>
+src/components/SimulatedEmailOutbox.tsx:47: <h3 className="text-base font-extrabold text-[var(--text-primary)] font-black">{tx("\n                📧 የወላጅ ኢሜል ማሳወቂያ ሲሙሌተር\n              ")}</h3>
+src/components/SimulatedEmailOutbox.tsx:90: <h4 className="text-sm font-bold text-[var(--text-primary)] font-black">{tx("እስካሁን የተላከ የኢሜል ማሳወቂያ የለም")}</h4>
+src/components/SimulatedEmailOutbox.tsx:135: <span className="text-[10px] text-[var(--text-secondary)] font-bold font-medium">{tx("\n                            ወደ: ")}{email.to}
+src/components/SimulatedEmailOutbox.tsx:205: <h5 className="font-black text-[var(--text-primary)] font-black text-xs tracking-tight">{tx("ኪብር መካከለኛ ደረጃ ትምህርት ቤት")}</h5>
+src/components/TeacherSection.tsx:268: alert(`⚠️ ክፍል ${homeroomAlloc.grade} - ${homeroomAlloc.section} አስቀድሞ በሌላ የክፍል ኃላፊ መምህር (${otherTeacher?.name || tx("ሌላ መምህር")}) ተይዟል! (This section is already assigned to another homeroom teacher!)`);
+src/components/TeacherSection.tsx:401: alert(`⚠️ ክፍል ${homeroomAlloc.grade} - ${homeroomAlloc.section} አስቀድሞ በሌላ የክፍል ኃላፊ መምህር (${otherTeacher?.name || tx("ሌላ መምህር")}) ተይዟል! (This section is already assigned to another homeroom teacher!)`);
+src/components/TeacherSection.tsx:456: <span className="text-[10px] bg-indigo-50 text-indigo-700 font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">{tx("ርዕሰ መምህር ተግባር")}</span>
+src/components/TeacherSection.tsx:458: <PlusCircle className="text-indigo-600 w-5 h-5" />{tx(" አዲስ መምህር መመዝገቢያ ፎርም\n          ")}</h3>
+src/components/TeacherSection.tsx:475: placeholder={tx("አቶ በቀለ አስማማው")}
+src/components/TeacherSection.tsx:670: <option value="">{tx("ምንም ነጻ ክፍል የለም")}</option>
+src/components/TeacherSection.tsx:691: <option value="">{tx("ምንም ነጻ ሴክሽን የለም")}</option>
+src/components/TeacherSection.tsx:773: <Users className="text-indigo-600 w-5 h-5" />{tx(" በሲስተሙ የተመዘገቡ መምህራን ዝርዝር\n          ")}</h3>
+src/components/TeacherSection.tsx:810: <span className="text-slate-400 font-bold block text-[9px] uppercase tracking-wider mb-0.5">{tx("የት/ት ደረጃ")}</span>
+src/components/TeacherSection.tsx:816: <span className="text-slate-400 font-bold block text-[9px] uppercase tracking-wider mb-0.5">{tx("ስልክ ቁጥር")}</span>
+src/components/TeacherSection.tsx:820: <span className="text-slate-400 font-bold block text-[9px] uppercase tracking-wider mb-0.5">{tx("ጾታ እና ዕድሜ")}</span>
+src/components/TeacherSection.tsx:861: <th className="p-3 border-b border-slate-100">{tx("የመምህር ስም")}</th>
+src/components/TeacherSection.tsx:862: <th className="p-3 border-b border-slate-100">{tx("ጾታ")}</th>
+src/components/TeacherSection.tsx:863: <th className="p-3 border-b border-slate-100">{tx("ዕድሜ")}</th>
+src/components/TeacherSection.tsx:864: <th className="p-3 border-b border-slate-100">{tx("የት/ት ደረጃ")}</th>
+src/components/TeacherSection.tsx:865: <th className="p-3 border-b border-slate-100">{tx("ስልክ ቁጥር")}</th>
+src/components/TeacherSection.tsx:868: <th className="p-3 border-b border-slate-100 text-center">{tx("እርምጃዎች")}</th>
+src/components/TeacherSection.tsx:884: <td className="p-3 text-xs">{teacher.gender === 'Female' ? tx("👩 ሴት") : tx("👨 ወንድ")}</td>
+src/components/TeacherSection.tsx:1003: <label className="block text-xs font-bold uppercase text-slate-600 mb-1">{tx("የትምህርት ደረጃ:")}</label>
+src/components/TeacherSection.tsx:1176: <option value="">{tx("ምንም ነጻ ክፍል የለም")}</option>
+src/components/TeacherSection.tsx:1197: <option value="">{tx("ምንም ነጻ ሴክሽን የለም")}</option>
+src/components/TeacherSection.tsx:1247: <label className="block text-xs font-bold uppercase text-slate-600 mb-1">{tx("የክፍል አላፊ/ተጠሪ መምህር:")}</label>
+src/components/TeacherSection.tsx:1289: <span className="font-extrabold text-xs uppercase tracking-wider">{tx("የመምህር መዝገብ ማጥፊያ ማስጠንቀቂያ")}</span>
+src/components/TeacherSection.tsx:1293: ⚠️ <strong className="text-rose-700">{tx("ማስጠንቀቂያ፡")}</strong>{tx(" መምህር ")}<strong className="text-slate-950 font-black">"{deletingTeacher.name}"</strong>{tx("ን በቋሚነት ከሲስተሙ ማጥፋት ይፈልጋሉ?\n              ")}</p>

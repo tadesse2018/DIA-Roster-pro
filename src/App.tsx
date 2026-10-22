@@ -1062,21 +1062,19 @@ export default function App() {
             }
             loadedAccounts.push(acc);
           });
-          if (loadedAccounts.length > 0) {
-            setUserAccounts(loadedAccounts);
-          } else {
-            // Seed default accounts
-            const initialAccountsList: UserAccount[] = [
-              { email: 'tadessemisganaw4@gmail.com', phone: '0911223344', password: 'Owner123', role: 'admin', name: tx("የሲስተም ባለቤትና አድሚን (System Owner & Admin)") },
-              { email: 'principal@school.com', phone: '0911334455', password: 'Principal123', role: 'principal', name: tx("ርዕሰ መምህር (Principal)") },
-              { email: 'viceprincipal@school.com', phone: '0911554433', password: 'Teacher123', role: 'vice_principal', name: tx("ምክትል ርዕሰ መምህር (Vice Principal)") },
-              { email: 'parent@school.com', phone: '0922334455', password: 'Parent123', role: 'parent', name: tx("ወላጅ (Parent)") }
-            ];
-            for (const acc of initialAccountsList) {
-              await setDoc(doc(db, 'schools', schoolWorkspaceId, 'userAccounts', acc.email.replace(/\./g, '_')), acc);
+          const requiredDefaults: UserAccount[] = [
+            { email: 'tadessemisganaw4@gmail.com', phone: '0911223344', password: 'Owner123', role: 'admin', name: tx("ሲስተም አድሚን (System Admin)") },
+            { email: 'principal@school.com', phone: '0911334455', password: 'Principal123', role: 'principal', name: tx("ርዕሰ መምህር (Principal)") },
+            { email: 'viceprincipal@school.com', phone: '0911554433', password: 'Teacher123', role: 'vice_principal', name: tx("ምክትል ርዕሰ መምህር (Vice Principal)") },
+            { email: 'parent@school.com', phone: '0922334455', password: 'Parent123', role: 'parent', name: tx("ወላጅ (Parent)") }
+          ];
+
+          for (const defAcc of requiredDefaults) {
+            if (!loadedAccounts.some(a => a.email.toLowerCase() === defAcc.email.toLowerCase())) {
+              loadedAccounts.unshift(defAcc);
             }
-            setUserAccounts(initialAccountsList);
           }
+          setUserAccounts(loadedAccounts);
         } catch (e: any) {
           console.warn('Loaded user accounts from local storage (offline mode)', e);
           const cachedAccounts = localStorage.getItem(`school_user_accounts_${schoolWorkspaceId}`);
@@ -2920,7 +2918,9 @@ export default function App() {
   // Test accounts for quick click-to-login
   const testAccounts = React.useMemo(() => {
     const defaultAccounts = [
-      { email: 'tadessemisganaw4@gmail.com', phone: '0911223344', password: 'Owner123', role: 'principal' as const, name: tx("የሲስተም ባለቤት (System Owner)") },
+      { email: 'tadessemisganaw4@gmail.com', phone: '0911223344', password: 'Owner123', role: 'admin' as const, name: tx("ሲስተም አድሚን (System Admin)") },
+      { email: 'principal@school.com', phone: '0911334455', password: 'Principal123', role: 'principal' as const, name: tx("ርዕሰ መምህር (Principal)") },
+      { email: 'viceprincipal@school.com', phone: '0911554433', password: 'Teacher123', role: 'vice_principal' as const, name: tx("ምክትል ርዕሰ መምህር (Vice Principal)") },
       { email: 'parent@school.com', phone: '0922334455', password: 'Parent123', role: 'parent' as const, name: tx("ወላጅ (Parent)") }
     ];
 
@@ -2936,7 +2936,8 @@ export default function App() {
 
     return merged.map(acc => {
       let emoji = '🔑';
-      if (acc.role === 'principal') emoji = tx("👨‍💼 ርዕሰ መምህር");
+      if (acc.role === 'admin') emoji = tx("👑 አድሚን");
+      else if (acc.role === 'principal') emoji = tx("👨‍💼 ርዕሰ መምህር");
       else if (acc.role === 'vice_principal') emoji = tx("👩‍💼 ምክትል ር/መ");
       else if (acc.role === 'teacher') emoji = tx("👨‍🏫 መምህር");
       else if (acc.role === 'parent') emoji = tx("👨‍👩‍👧 ወላጅ");
@@ -5267,7 +5268,7 @@ export default function App() {
                   )}
 
                   {/* 1. PRINCIPAL & VICE PRINCIPAL ADMIN WORKSPACE */}
-                  {(currentUser?.role === 'principal' || (currentUser?.role === 'vice_principal' && vicePrincipalActiveView === 'admin')) && (
+                  {(currentUser?.role === 'admin' || currentUser?.role === 'principal' || (currentUser?.role === 'vice_principal' && vicePrincipalActiveView === 'admin')) && (
                     <div className="space-y-6" id="principal-workspace">
 
                       {/* Principal Dashboard Overview KPI metrics */}
@@ -9027,7 +9028,7 @@ export default function App() {
                       type="text"
                       value={newPasswordInput}
                       onChange={(e) => setNewPasswordInput(e.target.value)}
-                      placeholder={tx("ቢያንስ 4 ፊደላት ወይም ቁጥሮች...")}
+                      placeholder={tx("ቢያንስ 8 ፊደላት፣ 1 ዋና ፊደል እና 1 ቁጥር...")}
                       className={`w-full bg-white dark:bg-slate-950 border text-xs px-3.5 py-2.5 rounded-xl focus:outline-none focus:ring-1 focus:ring-indigo-500 text-slate-800 dark:text-slate-200 font-black tracking-widest ${
                         themeMode === 'dark' ? 'border-slate-800' : 'border-slate-250'
                       }`}
@@ -9103,9 +9104,9 @@ export default function App() {
                         setPasswordChangeSuccessMsg(null);
 
                         const passClean = newPasswordInput.trim();
-                        if (passClean.length < 4) {
+                        if (passClean.length < 8 || !/[A-Z]/.test(passClean) || !/[0-9]/.test(passClean)) {
                           playInteractiveSound('wrong');
-                          setPasswordChangeErrorMsg(tx("የይለፍ ቃሉ ርዝመት ቢያንስ 4 ቁምፊዎች መሆን አለበት! (Password must be >= 4 chars)"));
+                          setPasswordChangeErrorMsg(tx("የይለፍ ቃል ቢያንስ 8 ፊደላት፣ 1 ዋና ፊደል (Uppercase) እና 1 ቁጥር (Number) መያዝ አለበት! (Password must be >= 8 chars, include at least 1 uppercase letter and 1 number)"));
                           return;
                         }
 

@@ -11,7 +11,7 @@ import {
   LogOut, 
   AlertTriangle, 
   Code, 
-  CheckCircle, 
+  Code2, 
   Users, 
   Briefcase, 
   BookOpen, 
@@ -438,6 +438,8 @@ export default function App() {
   const [confirmDeleteAccountEmail, setConfirmDeleteAccountEmail] = useState<string | null>(null);
   const [editingPhoneEmail, setEditingPhoneEmail] = useState<string | null>(null);
   const [editingPhoneValue, setEditingPhoneValue] = useState<string>('');
+  const [githubRepoUrl, setGithubRepoUrl] = useState(() => localStorage.getItem('diligent_github_repo_url') || '');
+  const [generatedGitHubLink, setGeneratedGitHubLink] = useState(() => localStorage.getItem('diligent_github_live_link') || '');
 
   // --- PRODUCTION-GRADE SECURE ENTRANCE PORTAL STATES ---
   const [isDemoAutoFillEnabled, setIsDemoAutoFillEnabled] = useState<boolean>(false);
@@ -5454,17 +5456,19 @@ export default function App() {
                           <span>{tx("ውጤት መከታተያ (Grade Tracker)")}</span>
                         </button>
 
-                        <button
-                          onClick={() => { playInteractiveSound('click'); setPrincipalSubTab('attendance'); }}
-                          className={`flex-1 min-w-[130px] py-2.5 px-3.5 text-xs font-black rounded-xl transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer transform hover:scale-[1.03] ${
-                            principalSubTab === 'attendance' 
-                              ? 'bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-700 text-white shadow-md border-transparent' 
-                              : 'bg-white dark:bg-slate-900/50 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-50 border border-slate-200/40 dark:border-slate-850'
-                          }`}>
-                        
-                          <Users className="w-3.5 h-3.5" />
-                          <span>{tx("ዕለታዊ የአቴንዳንስ ቁጥጥር")}</span>
-                        </button>
+                        {(currentUser?.role === 'admin' || currentUser?.role === 'vice_principal') && (
+                          <button
+                            onClick={() => { playInteractiveSound('click'); setPrincipalSubTab('attendance'); }}
+                            className={`flex-1 min-w-[130px] py-2.5 px-3.5 text-xs font-black rounded-xl transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer transform hover:scale-[1.03] ${
+                              principalSubTab === 'attendance' 
+                                ? 'bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-700 text-white shadow-md border-transparent' 
+                                : 'bg-white dark:bg-slate-900/50 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-50 border border-slate-200/40 dark:border-slate-850'
+                            }`}>
+                          
+                            <Users className="w-3.5 h-3.5" />
+                            <span>{tx("ዕለታዊ የአቴንዳንስ ቁጥጥር")}</span>
+                          </button>
+                        )}
 
                         <button
                           onClick={() => { playInteractiveSound('click'); setPrincipalSubTab('reminders'); }}
@@ -6177,7 +6181,7 @@ export default function App() {
                           </motion.div>
                         )}
 
-                        {principalSubTab === 'attendance' && (
+                        {principalSubTab === 'attendance' && (currentUser?.role === 'admin' || currentUser?.role === 'vice_principal') && (
                           <motion.div
                             key="attendance-subtab"
                             initial={{ opacity: 0, y: 10 }}
@@ -7499,6 +7503,115 @@ export default function App() {
                         <li>{tx("የተጠቃሚ ሚና (Role-based) ጥበቃ")}</li>
                         <li>{tx("ከኢንተርኔት ውጭ እና በኦንላይን የሚሰራ")}</li>
                       </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* GITHUB DEPLOYMENT & LIVE LINK GENERATOR */}
+                <div className="p-6 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white rounded-2xl shadow-xl border border-indigo-500/40 space-y-5">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2.5 bg-indigo-500/20 text-indigo-300 rounded-xl">
+                      <Code2 className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <span className="text-[10px] bg-indigo-500/20 text-indigo-300 font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">{tx(
+                        "የ GitHub ዲፕሎይመንት እና ሊንክ ማመንጫ (GitHub Deploy & Live Link)"
+                      )}</span>
+                      <h3 className="text-lg font-black text-white mt-1">{tx("ኮዱን ወደ GitHub በመጫን ቋሚ ሊንክ ማመንጨት")}</h3>
+                    </div>
+                  </div>
+
+                  <p className="text-slate-300 text-xs leading-relaxed">
+                    {tx("ፕሮጀክትዎን ወደ GitHub repository በመግፋት (Push በማድረግ) የ GitHub Pages, Vercel ወይም Netlify ቋሚ የድር ሊንክ ማመንጨት ይችላሉ። የሪፖዚቶሪ ሊንኩን ከታች ያስገቡ።")}
+                  </p>
+
+                  <div className="space-y-3 bg-black/30 p-4 rounded-xl border border-white/10">
+                    <div>
+                      <label className="text-[10px] font-bold text-indigo-300 uppercase block mb-1">{tx("የ GitHub ሪፖዚቶሪ ዩአርኤል (GitHub Repository URL)")}</label>
+                      <div className="flex gap-2">
+                        <input
+                          type="text"
+                          placeholder="https://github.com/username/diligent-school-app"
+                          value={githubRepoUrl}
+                          onChange={(e) => {
+                            const val = e.target.value;
+                            setGithubRepoUrl(val);
+                            localStorage.setItem('diligent_github_repo_url', val);
+                          }}
+                          className="flex-1 bg-slate-900 border border-slate-700 text-xs px-3 py-2.5 rounded-xl text-white font-mono focus:outline-none focus:border-indigo-500"
+                        />
+                        <button
+                          type="button"
+                          onClick={() => {
+                            if (!githubRepoUrl.trim()) {
+                              alert(tx("እባክዎን የ GitHub ሪፖዚቶሪ ዩአርኤል ያስገቡ!"));
+                              return;
+                            }
+                            playInteractiveSound('success');
+                            let cleanUrl = githubRepoUrl.trim().replace(/\/$/, '');
+                            if (cleanUrl.endsWith('.git')) cleanUrl = cleanUrl.slice(0, -4);
+                            const parts = cleanUrl.split('github.com/');
+                            let liveLink = cleanUrl;
+                            if (parts.length > 1) {
+                              const [user, repo] = parts[1].split('/');
+                              if (user && repo) {
+                                liveLink = `https://${user}.github.io/${repo}/`;
+                              }
+                            }
+                            setGeneratedGitHubLink(liveLink);
+                            localStorage.setItem('diligent_github_live_link', liveLink);
+                            alert(tx("🎉 የ GitHub ሊንክ በስኬት ተፈጥሯል!"));
+                          }}
+                          className="px-4 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-black shadow-md cursor-pointer transition-transform hover:scale-105"
+                        >
+                          {tx("ሊንክ ፍጠር (Generate Link)")}
+                        </button>
+                      </div>
+                    </div>
+
+                    {generatedGitHubLink && (
+                      <div className="mt-3 p-3.5 bg-emerald-950/40 border border-emerald-500/40 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                        <div className="space-y-0.5">
+                          <span className="text-[10px] text-emerald-400 font-extrabold uppercase block">{tx("ቋሚ የተፈጠረ የድር ሊንክ (Generated Live Link):")}</span>
+                          <a href={generatedGitHubLink} target="_blank" rel="noreferrer" className="text-xs font-mono font-bold text-emerald-300 underline break-all">
+                            {generatedGitHubLink}
+                          </a>
+                        </div>
+                        <div className="flex items-center gap-2 shrink-0">
+                          <button
+                            type="button"
+                            onClick={() => {
+                              playInteractiveSound('success');
+                              navigator.clipboard.writeText(generatedGitHubLink).then(() => {
+                                alert(tx("🔗 ሊንኩ ኮፒ ተደርጓል!"));
+                              });
+                            }}
+                            className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold cursor-pointer"
+                          >
+                            {tx("ኮፒ (Copy)")}
+                          </button>
+                          <a
+                            href={generatedGitHubLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-bold"
+                          >
+                            {tx("ክፈት (Open)")}
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="space-y-2 pt-1 text-xs text-slate-300">
+                    <p className="font-bold text-indigo-300">{tx("🛠️ GitHub ላይ ለመጫን (Push) የሚረዱ ትዕዛዞች (Git Commands):")}</p>
+                    <div className="bg-black/60 p-3.5 rounded-xl font-mono text-[11px] text-emerald-300 space-y-1 select-all border border-white/10">
+                      <p>git init</p>
+                      <p>git add .</p>
+                      <p>git commit -m "Deploy Diligent School Management System"</p>
+                      <p>git branch -M main</p>
+                      <p>git remote add origin {githubRepoUrl || 'https://github.com/your-username/diligent-school.git'}</p>
+                      <p>git push -u origin main</p>
                     </div>
                   </div>
                 </div>

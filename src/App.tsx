@@ -5495,7 +5495,7 @@ export default function App() {
                           <span>{tx("የውጤት ማሳሰቢያ (Grade Reminder)")}</span>
                         </button>
 
-                        {currentUser?.email?.trim().toLowerCase() === 'tadessemisganaw4@gmail.com' && (
+                        {(currentUser?.role === 'admin' || currentUser?.email?.trim().toLowerCase() === 'tadessemisganaw4@gmail.com') && (
                           <button
                             onClick={() => { playInteractiveSound('click'); setPrincipalSubTab('passwords'); }}
                             className={`flex-1 min-w-[130px] py-2.5 px-3.5 text-xs font-black rounded-xl transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer transform hover:scale-[1.03] ${
@@ -6255,7 +6255,7 @@ export default function App() {
                           </motion.div>
                         )}
 
-                        {principalSubTab === 'passwords' && currentUser?.email?.trim().toLowerCase() === 'tadessemisganaw4@gmail.com' && (
+                        {principalSubTab === 'passwords' && (currentUser?.role === 'admin' || currentUser?.email?.trim().toLowerCase() === 'tadessemisganaw4@gmail.com') && (
                           <motion.div
                             key="passwords-subtab"
                             initial={{ opacity: 0, y: 10 }}
@@ -7441,7 +7441,7 @@ export default function App() {
         </motion.div>
       )}
                       {/* TAB 1.5: THE SAAS WHITE-LABEL SETUP CONFIGURATOR */}
-          {activeTab === 'whitelabel' && currentUser?.email?.trim().toLowerCase() === 'tadessemisganaw4@gmail.com' && (
+          {activeTab === 'whitelabel' && (currentUser?.role === 'admin' || currentUser?.email?.trim().toLowerCase() === 'tadessemisganaw4@gmail.com') && (
             <motion.div
               key="whitelabel-tab"
               initial={{ opacity: 0, y: 15 }}

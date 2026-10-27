@@ -980,12 +980,14 @@ export default function App() {
           }
         }
 
-        // Load students
+        // Load students (from workspace & global shared cloud collection)
         try {
           const studentsSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'students'));
-          const loadedStudents: Student[] = [];
-          studentsSnap.forEach(doc => loadedStudents.push(doc.data() as Student));
-          setStudents(loadedStudents);
+          const globalSnap = await getDocs(collection(db, 'schools', 'global_shared_school', 'students'));
+          const map = new Map<string, Student>();
+          studentsSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
+          globalSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
+          setStudents(Array.from(map.values()));
         } catch (e: any) {
           console.warn('Loaded students from local cache / storage (offline mode)', e);
           const errMsg = e?.message || String(e);
@@ -1181,6 +1183,44 @@ export default function App() {
     loadData();
   }, [schoolWorkspaceId]);
 
+  const loadDataFromFirestore = async () => {
+    try {
+      playInteractiveSound('click');
+      const studentsSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'students'));
+      const globalSnap = await getDocs(collection(db, 'schools', 'global_shared_school', 'students'));
+      const map = new Map<string, Student>();
+      studentsSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
+      globalSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
+      const combinedStudents = Array.from(map.values());
+      if (combinedStudents.length > 0) setStudents(combinedStudents);
+
+      const gradesSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'grades'));
+      const loadedGrades: Grade[] = [];
+      gradesSnap.forEach(doc => loadedGrades.push(doc.data() as Grade));
+      if (loadedGrades.length > 0) setGrades(loadedGrades);
+
+      const teachersSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'teachers'));
+      const loadedTeachers: Teacher[] = [];
+      teachersSnap.forEach(doc => loadedTeachers.push(doc.data() as Teacher));
+      if (loadedTeachers.length > 0) setTeachers(loadedTeachers);
+
+      const classesSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'classes'));
+      const loadedClasses: ClassSetup[] = [];
+      classesSnap.forEach(doc => loadedClasses.push(doc.data() as ClassSetup));
+      if (loadedClasses.length > 0) setClasses(loadedClasses);
+
+      const configDoc = await getDoc(doc(db, 'schools', schoolWorkspaceId, 'config', 'school'));
+      if (configDoc.exists()) {
+        setSchoolConfig(configDoc.data() as any);
+      }
+
+      alert(tx("✅ የክላውድ ዳታቤዝ መረጃዎች በስኬት ታድሰዋል! (Cloud database synced successfully!)"));
+    } catch (err: any) {
+      console.error('Sync error:', err);
+      alert(`❌ ከክላውድ ማመሳሰል አልተቻለም: ${err.message}`);
+    }
+  };
+
   // Auto login and display student report card from URL short link (e.g., ?student=ID-4021)
   React.useEffect(() => {
     if (!isSyncing && students.length > 0) {
@@ -1235,6 +1275,7 @@ export default function App() {
       changed.forEach(async (student) => {
         try {
           await setDoc(doc(db, 'schools', schoolWorkspaceId, 'students', student.id), cleanForFirestore(student));
+          await setDoc(doc(db, 'schools', 'global_shared_school', 'students', student.id), cleanForFirestore(student));
         } catch (e) {
           console.error('Firestore save student error:', e);
         }
@@ -1243,6 +1284,7 @@ export default function App() {
       deleted.forEach(async (student) => {
         try {
           await deleteDoc(doc(db, 'schools', schoolWorkspaceId, 'students', student.id));
+          await deleteDoc(doc(db, 'schools', 'global_shared_school', 'students', student.id));
         } catch (e) {
           console.error('Firestore delete student error:', e);
         }
@@ -2190,6 +2232,7 @@ export default function App() {
           for (const st of newStudents) {
             try {
               await setDoc(doc(db, 'schools', schoolWorkspaceId, 'students', st.id), st);
+              await setDoc(doc(db, 'schools', 'global_shared_school', 'students', st.id), st);
             } catch (e) {
               console.error('Firestore upload student error:', e);
             }
@@ -4245,6 +4288,15 @@ export default function App() {
                 )}</option>
               </select>
             </div>
+
+            <button
+              type="button"
+              onClick={loadDataFromFirestore}
+              className="p-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 rounded-xl text-xs font-bold border border-emerald-200 dark:border-emerald-800 transition-all cursor-pointer flex items-center gap-1 shadow-2xs ml-1"
+              title={tx("መረጃዎችን ከክላውድ ዳታቤዝ አሁን አድስ (Sync with Cloud)")}
+            >
+              🔄
+            </button>
 
             {/* Manage / Delete Schools trash icon */}
             <button

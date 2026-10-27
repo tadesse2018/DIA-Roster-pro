@@ -2153,7 +2153,7 @@ export default function App() {
     const file = e.target.files?.[0];
     if (!file) return;
     const reader = new FileReader();
-    reader.onload = (event) => {
+    reader.onload = async (event) => {
       try {
         const text = event.target?.result as string;
         let newStudents: Student[] = [];
@@ -2187,6 +2187,13 @@ export default function App() {
             newStudents.forEach(st => map.set(st.id, st));
             return Array.from(map.values());
           });
+          for (const st of newStudents) {
+            try {
+              await setDoc(doc(db, 'schools', schoolWorkspaceId, 'students', st.id), st);
+            } catch (e) {
+              console.error('Firestore upload student error:', e);
+            }
+          }
           alert(`🎉 በስኬት ${newStudents.length} ተማሪዎች ተጭነዋል! (Successfully uploaded ${newStudents.length} students!)`);
         } else {
           alert('⚠️ በፋይሉ ውስጥ ምንም የተማሪ መረጃ አልተገኘም። (No student records found in file)');
@@ -6105,7 +6112,19 @@ export default function App() {
                               staffList={staffList}
                               onAddStaff={(newStaff) => setStaffList(prev => [newStaff, ...prev])}
                               onEditStaff={handleEditStaff}
-                              onDeleteStaff={(staffId) => setStaffList(prev => prev.filter(s => s.id !== staffId))}
+                                                             onDeleteStaff={async (staffId) => {
+                                 setStaffList(prev => prev.filter(s => s.id !== staffId));
+                                 try {
+                                   await deleteDoc(doc(db, 'schools', schoolWorkspaceId, 'teachers', staffId));
+                                   await deleteDoc(doc(db, 'schools', schoolWorkspaceId, 'staff', staffId));
+                                   const staffMem = staffList.find(s => s.id === staffId);
+                                   if (staffMem?.email) {
+                                     await deleteDoc(doc(db, 'schools', schoolWorkspaceId, 'userAccounts', staffMem.email.replace(/\./g, '_')));
+                                   }
+                                 } catch (e) {
+                                   console.error('Firestore delete staff error:', e);
+                                 }
+                               }}
                               onOpenRegisterStaffModal={() => setIsRegisterStaffModalOpen(true)}
                               workspaceId={schoolWorkspaceId}
                               initialTab={principalSubTab === 'admin-division' ? 'admin-division' : 'directory'}

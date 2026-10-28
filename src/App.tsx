@@ -980,12 +980,18 @@ export default function App() {
           }
         }
 
-        // Load students strictly isolated to active schoolWorkspaceId
+        // Load students (isolated per workspace, with global fallback for diligent workspace where bulk uploads were made)
         try {
           const studentsSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'students'));
-          const loadedStudents: Student[] = [];
-          studentsSnap.forEach(doc => loadedStudents.push(doc.data() as Student));
-          setStudents(loadedStudents);
+          const map = new Map<string, Student>();
+          studentsSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
+
+          if (schoolWorkspaceId === 'diligent') {
+            const globalSnap = await getDocs(collection(db, 'schools', 'global_shared_school', 'students'));
+            globalSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
+          }
+
+          setStudents(Array.from(map.values()));
         } catch (e: any) {
           console.warn('Loaded students from local cache / storage (offline mode)', e);
           const errMsg = e?.message || String(e);
@@ -1185,9 +1191,13 @@ export default function App() {
     try {
       playInteractiveSound('click');
       const studentsSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'students'));
-      const loadedStudents: Student[] = [];
-      studentsSnap.forEach(doc => loadedStudents.push(doc.data() as Student));
-      setStudents(loadedStudents);
+      const map = new Map<string, Student>();
+      studentsSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
+      if (schoolWorkspaceId === 'diligent') {
+        const globalSnap = await getDocs(collection(db, 'schools', 'global_shared_school', 'students'));
+        globalSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
+      }
+      setStudents(Array.from(map.values()));
 
       const gradesSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'grades'));
       const loadedGrades: Grade[] = [];

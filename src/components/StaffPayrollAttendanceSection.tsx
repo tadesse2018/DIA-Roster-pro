@@ -79,7 +79,7 @@ export const getEthiopianDayOfWeek = (ethYear: number, ethMonth: number, ethDay:
   const meskerem1 = new Date(ethYear + 7, 8, startDayGC);
   const daysOffset = (ethMonth - 1) * 30 + (ethDay - 1);
   const targetDate = new Date(meskerem1.getFullYear(), meskerem1.getMonth(), meskerem1.getDate() + daysOffset);
-  return targetDate.getDay();
+  return (targetDate.getDay() + 1) % 7;
 };
 
 // Ethiopian local 12-hour school clock calculation:

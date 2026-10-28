@@ -36,6 +36,8 @@ import { StaffMember, Teacher, StaffAttendanceStatus, StaffMonthlyAttendance } f
 import { playInteractiveSound } from './AudioEngine';
 import { useLanguage } from './LanguageContext';
 import { getFormattedDualCalendarDate } from './GradeTrackerSection';
+import { db } from '../lib/firebase';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 
 interface StaffPayrollAttendanceProps {
   staffList: StaffMember[];
@@ -74,9 +76,10 @@ const ENG_DAYS_ABBR = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 export const getEthiopianDayOfWeek = (ethYear: number, ethMonth: number, ethDay: number): number => {
   const isPrevLeap = ((ethYear - 1) % 4 === 3);
   const startDayGC = isPrevLeap ? 12 : 11;
+  const meskerem1 = new Date(ethYear + 7, 8, startDayGC);
   const daysOffset = (ethMonth - 1) * 30 + (ethDay - 1);
-  const gregDate = new Date(ethYear + 7, 8, startDayGC + daysOffset);
-  return gregDate.getDay();
+  const targetDate = new Date(meskerem1.getFullYear(), meskerem1.getMonth(), meskerem1.getDate() + daysOffset);
+  return targetDate.getDay();
 };
 
 // Ethiopian local 12-hour school clock calculation:
@@ -346,68 +349,93 @@ export const StaffPayrollAttendanceSection: React.FC<StaffPayrollAttendanceProps
     }
   };
 
-  // Persist attendance when changed or monthKey changes
+  // Persist & Load attendance from Firestore and localStorage
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem(storageKey);
-      if (saved) {
-        setAttendanceMap(JSON.parse(saved));
-      } else {
-        // Pre-fill default all present for day 1..20 if empty
-        const initial: { [staffId: string]: { [day: number]: StaffAttendanceStatus } } = {};
-        allUnifiedStaff.forEach(stf => {
-          initial[stf.id] = {};
-          for (let d = 1; d <= 30; d++) {
-            initial[stf.id][d] = 'P'; // Default full present
-          }
-        });
-        setAttendanceMap(initial);
+    const loadAttendance = async () => {
+      try {
+        const docRef = doc(db, 'schools', workspaceId, 'staffAttendance', monthKey);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          if (data.attendanceMap) setAttendanceMap(data.attendanceMap);
+          if (data.attendanceTimeMap) setAttendanceTimeMap(data.attendanceTimeMap);
+          return;
+        }
+      } catch (err) {
+        console.warn('Failed to load attendance from Firestore, using local cache:', err);
       }
-    } catch (e) {
-      console.error(e);
-    }
 
-    try {
-      const savedTimes = localStorage.getItem(timesStorageKey);
-      if (savedTimes) {
-        setAttendanceTimeMap(JSON.parse(savedTimes));
-      } else {
-        const initialTimes: { [staffId: string]: { [day: number]: string } } = {};
-        allUnifiedStaff.forEach(stf => {
-          initialTimes[stf.id] = {};
-          for (let d = 1; d <= 30; d++) {
-            initialTimes[stf.id][d] = '1:30';
-          }
-        });
-        setAttendanceTimeMap(initialTimes);
+      try {
+        const saved = localStorage.getItem(storageKey);
+        if (saved) {
+          setAttendanceMap(JSON.parse(saved));
+        } else {
+          const initial: { [staffId: string]: { [day: number]: StaffAttendanceStatus } } = {};
+          allUnifiedStaff.forEach(stf => {
+            initial[stf.id] = {};
+            for (let d = 1; d <= 30; d++) {
+              initial[stf.id][d] = 'P';
+            }
+          });
+          setAttendanceMap(initial);
+        }
+      } catch (e) {
+        console.error(e);
       }
-    } catch (e) {
-      console.error(e);
-    }
+
+      try {
+        const savedTimes = localStorage.getItem(timesStorageKey);
+        if (savedTimes) {
+          setAttendanceTimeMap(JSON.parse(savedTimes));
+        } else {
+          const initialTimes: { [staffId: string]: { [day: number]: string } } = {};
+          allUnifiedStaff.forEach(stf => {
+            initialTimes[stf.id] = {};
+            for (let d = 1; d <= 30; d++) {
+              initialTimes[stf.id][d] = '1:30';
+            }
+          });
+          setAttendanceTimeMap(initialTimes);
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    };
+
+    loadAttendance();
 
     try {
       setIsFinanceApproved(localStorage.getItem(financeApprovalKey) === 'true');
     } catch (e) {}
-  }, [monthKey, storageKey, timesStorageKey, financeApprovalKey, allUnifiedStaff.length]);
+  }, [monthKey, storageKey, timesStorageKey, financeApprovalKey, allUnifiedStaff.length, workspaceId]);
 
-  const saveAttendance = (
+  const saveAttendance = async (
     newMap: { [staffId: string]: { [day: number]: StaffAttendanceStatus } },
     newTimesMap?: { [staffId: string]: { [day: number]: string } }
   ) => {
     setAttendanceMap(newMap);
+    const timesToSave = newTimesMap !== undefined ? newTimesMap : attendanceTimeMap;
+    if (newTimesMap !== undefined) {
+      setAttendanceTimeMap(newTimesMap);
+    }
+
     try {
       localStorage.setItem(storageKey, JSON.stringify(newMap));
+      if (newTimesMap !== undefined) {
+        localStorage.setItem(timesStorageKey, JSON.stringify(newTimesMap));
+      }
     } catch (e) {
       console.error(e);
     }
 
-    if (newTimesMap !== undefined) {
-      setAttendanceTimeMap(newTimesMap);
-      try {
-        localStorage.setItem(timesStorageKey, JSON.stringify(newTimesMap));
-      } catch (e) {
-        console.error(e);
-      }
+    try {
+      await setDoc(doc(db, 'schools', workspaceId, 'staffAttendance', monthKey), {
+        attendanceMap: newMap,
+        attendanceTimeMap: timesToSave,
+        updatedAt: Date.now()
+      });
+    } catch (err) {
+      console.error('Firestore save attendance error:', err);
     }
   };
 

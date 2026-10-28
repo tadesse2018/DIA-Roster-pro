@@ -19,7 +19,7 @@ try {
     localCache: persistentLocalCache({
       tabManager: persistentMultipleTabManager()
     })
-  }, firebaseConfig.firestoreDatabaseId || '(default)');
+  }, '(default)');
 } catch (err) {
   console.warn("Failed to initialize Firestore with persistentLocalCache. Trying memoryLocalCache...", err);
   try {
@@ -27,14 +27,13 @@ try {
       experimentalForceLongPolling: true,
       ignoreUndefinedProperties: true,
       localCache: memoryLocalCache()
-    }, firebaseConfig.firestoreDatabaseId || '(default)');
+    }, '(default)');
   } catch (err2) {
     console.error("Failed to initialize Firestore with memoryLocalCache:", err2);
-    // If all else fails, use default initializeFirestore
     firestoreDb = initializeFirestore(app, {
       experimentalForceLongPolling: true,
       ignoreUndefinedProperties: true
-    }, firebaseConfig.firestoreDatabaseId || '(default)');
+    }, '(default)');
   }
 }
 

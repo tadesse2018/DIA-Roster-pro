@@ -980,14 +980,12 @@ export default function App() {
           }
         }
 
-        // Load students (from workspace & global shared cloud collection)
+        // Load students strictly isolated to active schoolWorkspaceId
         try {
           const studentsSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'students'));
-          const globalSnap = await getDocs(collection(db, 'schools', 'global_shared_school', 'students'));
-          const map = new Map<string, Student>();
-          studentsSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
-          globalSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
-          setStudents(Array.from(map.values()));
+          const loadedStudents: Student[] = [];
+          studentsSnap.forEach(doc => loadedStudents.push(doc.data() as Student));
+          setStudents(loadedStudents);
         } catch (e: any) {
           console.warn('Loaded students from local cache / storage (offline mode)', e);
           const errMsg = e?.message || String(e);
@@ -1187,12 +1185,9 @@ export default function App() {
     try {
       playInteractiveSound('click');
       const studentsSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'students'));
-      const globalSnap = await getDocs(collection(db, 'schools', 'global_shared_school', 'students'));
-      const map = new Map<string, Student>();
-      studentsSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
-      globalSnap.forEach(doc => map.set(doc.id, doc.data() as Student));
-      const combinedStudents = Array.from(map.values());
-      if (combinedStudents.length > 0) setStudents(combinedStudents);
+      const loadedStudents: Student[] = [];
+      studentsSnap.forEach(doc => loadedStudents.push(doc.data() as Student));
+      setStudents(loadedStudents);
 
       const gradesSnap = await getDocs(collection(db, 'schools', schoolWorkspaceId, 'grades'));
       const loadedGrades: Grade[] = [];

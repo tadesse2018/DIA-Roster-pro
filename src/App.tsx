@@ -2229,15 +2229,21 @@ export default function App() {
             newStudents.forEach(st => map.set(st.id, st));
             return Array.from(map.values());
           });
+          let saveErrors = 0;
           for (const st of newStudents) {
             try {
-              await setDoc(doc(db, 'schools', schoolWorkspaceId, 'students', st.id), st);
-              await setDoc(doc(db, 'schools', 'global_shared_school', 'students', st.id), st);
-            } catch (e) {
+              await setDoc(doc(db, 'schools', schoolWorkspaceId, 'students', st.id), cleanForFirestore(st));
+              await setDoc(doc(db, 'schools', 'global_shared_school', 'students', st.id), cleanForFirestore(st));
+            } catch (e: any) {
               console.error('Firestore upload student error:', e);
+              saveErrors++;
             }
           }
-          alert(`🎉 በስኬት ${newStudents.length} ተማሪዎች ተጭነዋል! (Successfully uploaded ${newStudents.length} students!)`);
+          if (saveErrors > 0) {
+            alert(`⚠️ ተማሪዎች ተጭነዋል ግን ${saveErrors} ተማሪዎችን ወደ ክላውድ ዳታቤዝ ማስቀመጥ አልተቻለም።`);
+          } else {
+            alert(`🎉 በስኬት ${newStudents.length} ተማሪዎች በቋሚነት ወደ ክላውድ ዳታቤዝ ተጭነዋል! (Successfully uploaded ${newStudents.length} students permanently to Cloud DB!)`);
+          }
         } else {
           alert('⚠️ በፋይሉ ውስጥ ምንም የተማሪ መረጃ አልተገኘም። (No student records found in file)');
         }
